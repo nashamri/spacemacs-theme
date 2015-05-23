@@ -30,28 +30,31 @@
 
 (deftheme spacemacs-dark)
 (let ((class '((class color) (min-colors 89)))
-      (base "#b2b2b2")
-      (bg1 (if (display-graphic-p)"#28262e" "#262626"))
-      (bg2 (if (display-graphic-p)"#212026" "#1c1c1c"))
-      (bg3 (if (display-graphic-p)"#100a14" "#121212"))
-      (bg4 (if (display-graphic-p)"#0a0814" "#080808"))
-      (key2 "#4f97d7")
-      (key3 "#277bb8")
-      (builtin "#268bd2")
-      (keyword "#268bd2")
-      (const  (if (display-graphic-p) "#990061" "#cc9243"))
-      (comment (if (display-graphic-p)"#2aa198" "#2aa198"))
+      (base "#b2b2b2");;                     GUI       TER
+      (bg1        (if (display-graphic-p) "#24262e" "#262626"))
+      (bg2        (if (display-graphic-p) "#212026" "#1c1c1c"))
+      (bg3        (if (display-graphic-p) "#100a14" "#121212"))
+      (bg4        (if (display-graphic-p) "#0a0814" "#080808"))
+      (key1       (if (display-graphic-p) "#4f97d7" "#4f97d7"))
+      (key2       (if (display-graphic-p) "#277bb8" "#277bb8"))
+      (builtin    (if (display-graphic-p) "#268bd2" "#268bd2"))
+      (keyword    (if (display-graphic-p) "#268bd2" "#268bd2"))
+      (const      (if (display-graphic-p) "#a45bad" "#d75fd7"))
+      (comment    (if (display-graphic-p) "#2aa198" "#2aa198"))
       (comment-bg (if (display-graphic-p) "#282a32" "#282a32"))
-      (func   (if (display-graphic-p) "#cc43c1" "#d75fd7"))
-      (str     "#2aa198")
-      (type   (if (display-graphic-p) "#cc43c1" "#d75fd7"))
-      (var     "#adaab3")
-      (error   "#e0211d")
-      (warning "#dc752f")
-      (info    "#2f96dc")
-      (success "#86dc2f")
-      (greenish "#67b11d")
-      (highlight (if (display-graphic-p) "#433f4d" "#444444")))
+      (func       (if (display-graphic-p) "#b843c5" "#d75fd7"))
+      (str        (if (display-graphic-p) "#2aa198" "#2aa198"))
+      (type       (if (display-graphic-p) "#b843c5" "#d75fd7"))
+      (var        (if (display-graphic-p) "#adaab3" "#adaab3"))
+      (err        (if (display-graphic-p) "#e0211d" "#e0211d"))
+      (war        (if (display-graphic-p) "#dc752f" "#dc752f"))
+      (inf        (if (display-graphic-p) "#2f96dc" "#2f96dc"))
+      (suc        (if (display-graphic-p) "#86dc2f" "#86dc2f"))
+      (greenish   (if (display-graphic-p) "#67b11d" "#67b11d"))
+      (active1    (if (display-graphic-p) "#222226" "#121212"))
+      (active2    (if (display-graphic-p) "#304060" "#444444"))
+      (inactive   (if (display-graphic-p) "#304060" "#111111"))
+      (highlight  (if (display-graphic-p) "#433f4d" "#444444")))
 
   (custom-theme-set-faces
    'spacemacs-dark
@@ -67,33 +70,31 @@
    `(font-lock-string-face ((,class (:foreground ,str))))
    `(font-lock-type-face ((,class (:foreground ,type :bold t))))
    `(font-lock-variable-name-face ((,class (:foreground ,var))))
-   `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
+   `(font-lock-warning-face ((,class (:foreground ,war :background ,bg2))))
    `(region ((,class (:background ,highlight))))
    `(highlight ((,class (:foreground ,base :background ,bg3))))
    `(hl-line ((,class (:background ,bg2))))
-   `(fringe ((,class (:background ,bg2 :foreground ,base))))
+   `(fringe ((,class (:background ,bg1 :foreground ,base))))
    `(cursor ((,class (:background ,bg3))))
-   `(show-paren-match-face ((,class (:background ,warning))))
+   `(show-paren-match-face ((,class (:background ,war))))
    `(isearch ((,class (:bold t :foreground ,func :background ,greenish))))
-
    `(mode-line
      ((,class (:foreground ,base
-                           :background ,bg1
-                           :box (:color ,highlight :line-width 1)
+                           :background ,active1
+                           ;; :box (:color ,highlight :line-width 1)
                            ))))
    `(mode-line-inactive
      ((,class (:foreground ,base
                            :background ,bg1
-                           :box (:color ,bg1 :line-width 1)
+                           :box (:color ,inactive :line-width 1)
                            ))))
-
    `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
 
-   `(powerline-active1 ((,class (:background ,bg3 :foreground ,base))))
-   `(powerline-active2 ((,class (:background ,bg3 :foreground ,base))))
+;;;;; powerline
+   `(powerline-active1 ((,class (:background ,active2 :foreground ,base))))
+   `(powerline-active2 ((,class (:background ,active2 :foreground ,base))))
    `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
    `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
-
 
 ;;;;; guide-key
    `(guide-key/highlight-command-face ((,class (:foreground ,base))))
@@ -103,36 +104,36 @@
 ;;;;; flycheck
    `(flycheck-error
      ((,(append '((supports :underline (:style line))) class)
-       (:underline (:style line :color ,error)))
-      (,class (:foreground ,base :background ,error :weight bold :underline t))))
+       (:underline (:style line :color ,err)))
+      (,class (:foreground ,base :background ,err :weight bold :underline t))))
 
    `(flycheck-warning
      ((,(append '((supports :underline (:style line))) class)
-       (:underline (:style line :color ,warning)))
-      (,class (:foreground ,base :background ,warning :weight bold :underline t))))
+       (:underline (:style line :color ,war)))
+      (,class (:foreground ,base :background ,war :weight bold :underline t))))
 
    `(flycheck-info
      ((,(append '((supports :underline (:style line))) class)
-       (:underline (:style line :color ,info)))
-      (,class (:foreground ,base :background ,info :weight bold :underline t))))
+       (:underline (:style line :color ,inf)))
+      (,class (:foreground ,base :background ,inf :weight bold :underline t))))
 
    `(flycheck-fringe-error
-     ((,class (:foreground ,error :weight bold))))
+     ((,class (:foreground ,err :weight bold))))
 
    `(flycheck-fringe-warning
-     ((,class (:foreground ,warning :weight bold))))
+     ((,class (:foreground ,war :weight bold))))
 
    `(flycheck-fringe-info
-     ((,class (:foreground ,info :weight bold))))
+     ((,class (:foreground ,inf :weight bold))))
 
 ;;;;; smartparens
    `(sp-show-pair-match-face
-     ((,class (:foreground ,warning :weight bold))))
+     ((,class (:foreground ,war :weight bold))))
 
 ;;;;; git-gutter-fr
    `(git-gutter-fr:added ((,class (:foreground ,greenish :weight bold))))
-   `(git-gutter-fr:deleted ((,class (:foreground ,warning :weight bold))))
-   `(git-gutter-fr:modified ((,class (:foreground ,info :weight bold))))
+   `(git-gutter-fr:deleted ((,class (:foreground ,war :weight bold))))
+   `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
 
 ;;;;; helm
      ;; These probably needs tweaking.
@@ -174,7 +175,7 @@
      ;; `(helm-selection-line ((,class (:background ,base02 :foreground ,base1
      ;;                                             :underline nil))))
      ;; `(helm-separator ((,class (:foreground ,red))))
-     `(helm-source-header ((,class (:background ,info :foreground ,bg1 :bold t))))
+     `(helm-source-header ((,class (:background ,inf :foreground ,bg1 :bold t))))
      ;; `(helm-time-zone-current ((,class (:foreground ,green))))
      ;; `(helm-time-zone-home ((,class (:foreground ,red))))
      ;; `(helm-visible-mark ((,class (:background ,base03 :foreground ,magenta :bold t))))
@@ -182,7 +183,7 @@
    `(vertical-border ((,class (:foreground ,bg4))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
    `(default-italic ((,class (:italic t))))
-   `(link ((,class (:foreground ,const :underline t))))
+   `(link ((,class (:foreground ,comment :underline t))))
    `(org-code ((,class (:foreground ,base))))
    `(org-hide ((,class (:foreground ,base))))
    `(org-level-1 ((,class (:bold t :foreground ,base :height 1.1))))
@@ -191,14 +192,14 @@
    `(org-level-4 ((,class (:bold nil :foreground ,bg4))))
    `(org-date ((,class (:underline t :foreground ,var) )))
    `(org-footnote  ((,class (:underline t :foreground ,base))))
-   `(org-link ((,class (:underline t :foreground ,type ))))
+   `(org-link ((,class (:underline t :foreground ,comment))))
    `(org-special-keyword ((,class (:foreground ,func))))
    `(org-block ((,class (:foreground ,base))))
    `(org-quote ((,class (:inherit org-block :slant italic))))
    `(org-verse ((,class (:inherit org-block :slant italic))))
    `(org-todo ((,class (:box (:line-width 1 :color ,base) :foreground ,keyword :bold t))))
    `(org-done ((,class (:box (:line-width 1 :color ,bg3) :bold t :foreground ,bg4))))
-   `(org-warning ((,class (:underline t :foreground ,warning))))
+   `(org-warning ((,class (:underline t :foreground ,war))))
    `(org-agenda-structure ((,class (:weight bold :foreground ,base :box (:color ,base) :background ,bg3))))
    `(org-agenda-date ((,class (:foreground ,var :height 1.1 ))))
    `(org-agenda-date-weekend ((,class (:weight normal :foreground ,base))))
@@ -210,11 +211,11 @@
    `(org-verbatim ((,class (:foreground ,base))))
    `(org-document-info-keyword ((,class (:foreground ,func))))
    `(font-latex-bold-face ((,class (:foreground ,type))))
-   `(font-latex-italic-face ((,class (:foreground ,key3 :italic t))))
+   `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
    `(font-latex-string-face ((,class (:foreground ,str))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-   `(ido-only-match ((,class (:foreground ,warning))))
+   `(ido-only-match ((,class (:foreground ,war))))
    `(org-sexp-date ((,class (:foreground ,base))))
    `(ido-first-match ((,class (:foreground ,keyword :bold t))))
    `(gnus-header-content ((,class (:foreground ,keyword))))
@@ -228,18 +229,18 @@
    `(ffap ((,class (:foreground ,base))))
    `(js2-private-function-call ((,class (:foreground ,const))))
    `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,str))))
-   `(js2-jsdoc-html-tag-name ((,class (:foreground ,key2))))
+   `(js2-jsdoc-html-tag-name ((,class (:foreground ,key1))))
    `(js2-external-variable ((,class (:foreground ,type  ))))
    `(js2-function-param ((,class (:foreground ,const))))
    `(js2-jsdoc-value ((,class (:foreground ,str))))
    `(js2-private-member ((,class (:foreground ,base))))
    `(js3-warning-face ((,class (:underline ,keyword))))
-   `(js3-error-face ((,class (:underline ,warning))))
+   `(js3-error-face ((,class (:underline ,war))))
    `(js3-external-variable-face ((,class (:foreground ,var))))
-   `(js3-function-param-face ((,class (:foreground ,key3))))
+   `(js3-function-param-face ((,class (:foreground ,key2))))
    `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
    `(js3-instance-member-face ((,class (:foreground ,const))))
-   `(warning ((,class (:foreground ,warning))))
+   `(war ((,class (:foreground ,war))))
    `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
    `(info-quoted-name ((,class (:foreground ,builtin))))
    `(info-string ((,class (:foreground ,str))))
@@ -249,7 +250,7 @@
    `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
    `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
    `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-   `(trailing-whitespace ((,class :foreground nil :background ,warning)))
+   `(trailing-whitespace ((,class :foreground nil :background ,war)))
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,base)))
    `(rainbow-delimiters-depth-2-face ((,class :foreground ,type)))
    `(rainbow-delimiters-depth-3-face ((,class :foreground ,var)))
@@ -267,7 +268,7 @@
    `(magit-diffstat-added   ((,class (:foreground ,type))))
    `(magit-diffstat-removed ((,class (:foreground ,var))))
    `(magit-process-ok ((,class (:foreground ,func :weight bold))))
-   `(magit-process-ng ((,class (:foreground ,warning :weight bold))))
+   `(magit-process-ng ((,class (:foreground ,war :weight bold))))
    `(magit-branch ((,class (:foreground ,const :weight bold))))
    `(magit-log-author ((,class (:foreground ,base))))
    `(magit-hash ((,class (:foreground ,base))))
@@ -282,7 +283,7 @@
    `(term-color-magenta ((,class (:foreground ,builtin :background ,builtin))))
    `(term-color-cyan ((,class (:foreground ,str :background ,str))))
    `(term-color-white ((,class (:foreground ,base :background ,base))))
-   `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
+   `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
    `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
    `(helm-source-header ((,class (:foreground ,keyword :background ,bg1 :underline nil :weight bold))))
    `(helm-selection ((,class (:background ,bg2 :underline nil))))
@@ -298,8 +299,8 @@
    `(helm-buffer-size ((,class (:foreground ,base :background ,bg1))))
    `(helm-ff-directory ((,class (:foreground ,func :background ,bg1 :weight bold))))
    `(helm-ff-file ((,class (:foreground ,base :background ,bg1 :weight normal))))
-   `(helm-ff-executable ((,class (:foreground ,key2 :background ,bg1 :weight normal))))
-   `(helm-ff-invalid-symlink ((,class (:foreground ,key3 :background ,bg1 :weight bold))))
+   `(helm-ff-executable ((,class (:foreground ,key1 :background ,bg1 :weight normal))))
+   `(helm-ff-invalid-symlink ((,class (:foreground ,key2 :background ,bg1 :weight bold))))
    `(helm-ff-symlink ((,class (:foreground ,keyword :background ,bg1 :weight bold))))
    `(helm-ff-prefix ((,class (:foreground ,bg1 :background ,keyword :weight normal))))
    `(helm-grep-cmd-line ((,class (:foreground ,base :background ,bg1))))
@@ -312,7 +313,7 @@
    `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
    `(helm-bookmark-w3m ((,class (:foreground ,type))))
    `(company-echo-common ((,class (:foreground ,bg1 :background ,base))))
-   `(company-preview ((,class (:background ,bg1 :foreground ,key2))))
+   `(company-preview ((,class (:background ,bg1 :foreground ,key1))))
    `(company-preview-common ((,class (:foreground ,bg2 :foreground ,base))))
    `(company-preview-search ((,class (:foreground ,type :background ,bg1))))
    `(company-scrollbar-bg ((,class (:background ,bg3))))

@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2014 , Nasser
 
-;; Author: Nasser
+;; Author: Nasser Alshammari
 ;;
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
@@ -87,11 +87,11 @@
    `(fringe ((,class (:background ,bg1 :foreground ,base))))
    `(cursor ((,class (:background ,bg3))))
    `(show-paren-match-face ((,class (:background ,war))))
-   `(isearch ((,class (:bold t :foreground ,func :background ,green))))
+   `(isearch ((,class (:bold t :foreground ,bg1 :background ,inf))))
    `(success ((,class (:foreground ,suc))))
    `(warning ((,class (:foreground ,war ))))
    `(error ((,class (:foreground ,err))))
-   `(lazy-highlight ((,class (:foreground ,base :background ,yellow :weight normal))))
+   `(lazy-highlight ((,class (:foreground ,bg1 :background ,inf :weight normal))))
    `(mode-line
      ((,class (:foreground ,base
                            :background ,active1
@@ -140,6 +140,9 @@
    `(flycheck-fringe-info
      ((,class (:foreground ,inf :weight bold))))
 
+;;;;; anzu-mode
+   `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))
+
 ;;;;; smartparens
    `(sp-show-pair-match-face
      ((,class (:foreground ,war :weight bold))))
@@ -179,10 +182,9 @@
    `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
    `(helm-grep-running ((,class (:foreground ,func :background ,bg1))))
    `(helm-lisp-completion-info ((,class (:foreground ,base))))
-   `(helm-lisp-show-completion ((,class (:foreground ,yellow :background ,bg1
-                                                     :bold t))))
+   `(helm-lisp-show-completion ((,class (:foreground ,yellow :background ,bg1 :bold t))))
    `(helm-source-header ((,class (:background ,type :foreground ,bg1 :bold t))))
-   `(helm-selection ((,class (:background ,highlight :weight bold))))
+   `(helm-selection ((,class (:background ,highlight))))
    `(helm-selection-line ((,class (:background ,bg2))))
    `(helm-separator ((,class (:foreground ,type :background ,bg1))))
    `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
@@ -206,26 +208,26 @@
    `(org-block ((,class (:foreground ,base))))
    `(org-quote ((,class (:inherit org-block :slant italic))))
    `(org-verse ((,class (:inherit org-block :slant italic))))
-   `(org-todo ((,class (:box (:line-width 1 :color ,base) :foreground ,keyword :bold t))))
-   `(org-done ((,class (:box (:line-width 1 :color ,bg3) :bold t :foreground ,bg4))))
+   `(org-todo ((,class (:foreground ,keyword :bold t))))
+   `(org-done ((,class (:foreground ,bg4 :background ,suc :bold t))))
    `(org-warning ((,class (:underline t :foreground ,war))))
    `(org-agenda-structure ((,class (:weight bold :foreground ,base :box (:color ,base) :background ,bg3))))
    `(org-agenda-date ((,class (:foreground ,var :height 1.1 ))))
    `(org-agenda-date-weekend ((,class (:weight normal :foreground ,base))))
    `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height 1.4))))
-   `(org-agenda-done ((,class (:foreground ,bg4))))
+   `(org-agenda-done ((,class (:foreground ,bg4 :background ,suc))))
    `(org-scheduled ((,class (:foreground ,type))))
    `(org-scheduled-today ((,class (:foreground ,func :weight bold :height 1.2))))
    `(org-ellipsis ((,class (:foreground ,builtin))))
    `(org-verbatim ((,class (:foreground ,base))))
    `(org-document-info-keyword ((,class (:foreground ,func))))
+   `(org-sexp-date ((,class (:foreground ,base))))
    `(font-latex-bold-face ((,class (:foreground ,type))))
    `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
    `(font-latex-string-face ((,class (:foreground ,str))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
    `(ido-only-match ((,class (:foreground ,war))))
-   `(org-sexp-date ((,class (:foreground ,base))))
    `(ido-first-match ((,class (:foreground ,keyword :bold t))))
    `(gnus-header-content ((,class (:foreground ,keyword))))
    `(gnus-header-from ((,class (:foreground ,var))))
@@ -249,7 +251,6 @@
    `(js3-function-param-face ((,class (:foreground ,key2))))
    `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
    `(js3-instance-member-face ((,class (:foreground ,const))))
-   `(war ((,class (:foreground ,war))))
    `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
    `(info-quoted-name ((,class (:foreground ,builtin))))
    `(info-string ((,class (:foreground ,str))))
@@ -282,7 +283,6 @@
    `(magit-log-author ((,class (:foreground ,base))))
    `(magit-hash ((,class (:foreground ,base))))
    `(magit-diff-file-header ((,class (:foreground ,base :background ,bg3))))
-   `(lazy-highlight ((,class (:foreground ,base :background ,bg3))))
    `(term ((,class (:foreground ,base :background ,bg1))))
    `(term-color-black ((,class (:foreground ,bg3 :background ,bg3))))
    `(term-color-blue ((,class (:foreground ,func :background ,func))))

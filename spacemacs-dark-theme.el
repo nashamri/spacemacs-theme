@@ -207,6 +207,7 @@
    `(company-template-field ((,class (:inherit region))))
 
 ;;;;; rainbow-delimiters
+   `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
    `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
    `(rainbow-delimiters-depth-2-face ((,class :foreground ,type)))
    `(rainbow-delimiters-depth-3-face ((,class :foreground ,keyword)))
@@ -215,6 +216,17 @@
    `(rainbow-delimiters-depth-6-face ((,class :foreground ,type)))
    `(rainbow-delimiters-depth-7-face ((,class :foreground ,keyword)))
    `(rainbow-delimiters-depth-8-face ((,class :foreground ,type)))
+
+;;;;; dired
+   `(dired-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
+   `(dired-flagged ((,class (:foreground ,red))))
+   `(dired-header ((,class (:foreground ,type :weight bold))))
+   `(dired-ignored ((,class (:inherit shadow))))
+   `(dired-mark ((,class (:foreground ,type :weight bold))))
+   `(dired-marked ((,class (:foreground ,violet :weight bold))))
+   `(dired-perm-write ((,class (:foreground ,base :underline t))))
+   `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :weight bold))))
+   `(dired-warning ((,class (:foreground ,war))))
 
    `(org-code ((,class (:foreground ,base))))
    `(org-hide ((,class (:foreground ,base))))
@@ -305,7 +317,6 @@
    `(term-color-magenta ((,class (:foreground ,builtin :background ,builtin))))
    `(term-color-cyan ((,class (:foreground ,str :background ,str))))
    `(term-color-white ((,class (:foreground ,base :background ,base))))
-   `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
    `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
    `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))

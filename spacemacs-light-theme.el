@@ -139,7 +139,7 @@
 
 ;;;;; smartparens
    `(sp-show-pair-match-face
-     ((,class (:foreground ,war :weight bold))))
+     ((,class (:foreground ,red :weight bold))))
 
 ;;;;; git-gutter-fr
    `(git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
@@ -202,14 +202,14 @@
 
 ;;;;; rainbow-delimiters
    `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
-   `(rainbow-delimiters-depth-1-face ((,class :foreground ,base)))
+   `(rainbow-delimiters-depth-1-face ((,class :foreground ,inf)))
    `(rainbow-delimiters-depth-2-face ((,class :foreground ,func)))
-   `(rainbow-delimiters-depth-3-face ((,class :foreground ,builtin)))
-   `(rainbow-delimiters-depth-4-face ((,class :foreground ,str)))
-   `(rainbow-delimiters-depth-5-face ((,class :foreground ,war)))
-   `(rainbow-delimiters-depth-6-face ((,class :foreground ,cyan)))
-   `(rainbow-delimiters-depth-7-face ((,class :foreground ,keyword)))
-   `(rainbow-delimiters-depth-8-face ((,class :foreground ,type)))
+   `(rainbow-delimiters-depth-3-face ((,class :foreground ,str)))
+   `(rainbow-delimiters-depth-4-face ((,class :foreground ,green)))
+   `(rainbow-delimiters-depth-5-face ((,class :foreground ,yellow)))
+   `(rainbow-delimiters-depth-6-face ((,class :foreground ,inf)))
+   `(rainbow-delimiters-depth-7-face ((,class :foreground ,func)))
+   `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
 
 ;;;;; dired
    `(dired-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))

@@ -1,12 +1,13 @@
-;;; spacemacs-theme.el --- Emacs 24 theme with a light background.
+;;; spacemacs-theme.el --- Emacs 24 theme with a dark background.
 
-;; Copyright (C) 2014 , Nasser
+;; Copyright (C) 2014 , Nasser Alshammari
 
 ;; Author: Nasser Alshammari
+;; https://github.com/nashamri/spacemacs-theme
 ;;
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
-;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
+;; Initially created with the help of emacs-theme-generator, https://github.com/mswift42/theme-creator.
 
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -24,9 +25,6 @@
 
 ;; This file is not part of Emacs.
 
-;;; Commentary:
-
-;;; Code:
 
 (deftheme spacemacs-dark)
 (let ((class '((class color) (min-colors 89)))
@@ -62,6 +60,7 @@
 
   (custom-theme-set-faces
    'spacemacs-dark
+
 ;;;;; basics
    `(default ((,class (:background ,bg1 :foreground ,base))))
    `(vertical-border ((,class (:foreground ,bg4))))
@@ -94,14 +93,11 @@
    `(lazy-highlight ((,class (:foreground ,bg1 :background ,inf :weight normal))))
    `(mode-line
      ((,class (:foreground ,base
-                           :background ,active1
-                           ;; :box (:color ,highlight :line-width 1)
-                           ))))
+                           :background ,active1))))
    `(mode-line-inactive
      ((,class (:foreground ,base
                            :background ,bg1
-                           :box (:color ,inactive :line-width 1)
-                           ))))
+                           :box (:color ,inactive :line-width 1)))))
    `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
@@ -154,8 +150,6 @@
    `(helm-bookmark-info ((,class (:foreground ,type))))
    `(helm-bookmark-man ((,class (:foreground ,type))))
    `(helm-bookmark-w3m ((,class (:foreground ,type))))
-   `(helm-bookmarks-su ((,class (:foreground ,type))))
-   `(helm-bookmark-w3m ((,class (:foreground ,type))))
    `(helm-buffer-directory ((,class (:foreground ,base :background ,bg1))))
    `(helm-buffer-file ((,class (:foreground ,base :background ,bg1))))
    `(helm-buffer-not-saved ((,class (:foreground ,type :background ,bg1))))
@@ -176,18 +170,15 @@
    `(helm-grep-lineno ((,class (:foreground ,base :background ,bg1))))
    `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
    `(helm-grep-running ((,class (:foreground ,func :background ,bg1))))
-   `(helm-lisp-completion-info ((,class (:foreground ,base))))
-   `(helm-lisp-show-completion ((,class (:foreground ,yellow :background ,bg1 :bold t))))
    `(helm-source-header ((,class (:background ,type :foreground ,bg1 :bold t))))
    `(helm-selection ((,class (:background ,highlight))))
    `(helm-selection-line ((,class (:background ,bg2))))
    `(helm-separator ((,class (:foreground ,type :background ,bg1))))
-   `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
    `(helm-time-zone-current ((,class (:foreground ,builtin :background ,bg1))))
    `(helm-time-zone-home ((,class (:foreground ,type :background ,bg1))))
-   `(helm-M-x-key ((,class (:foreground ,func :underline t))))
-   `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
    `(helm-match ((,class (:inherit match))))
+   `(helm-match-item ((,class (:inherit match))))
+   `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
    `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
 
 ;;;;; company
@@ -228,6 +219,20 @@
    `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :weight bold))))
    `(dired-warning ((,class (:foreground ,war))))
 
+;;;;; eshell
+   `(eshell-prompt ((,class (:foreground ,keyword :weight bold))))
+   `(eshell-ls-archive ((,class (:foreground ,red :weight bold))))
+   `(eshell-ls-backup ((,class (:inherit font-lock-comment-face))))
+   `(eshell-ls-clutter ((,class (:inherit font-lock-comment-face))))
+   `(eshell-ls-directory ((,class (:foreground ,inf :weight bold))))
+   `(eshell-ls-executable ((,class (:foreground ,suc :weight bold))))
+   `(eshell-ls-unreadable ((,class (:foreground ,base))))
+   `(eshell-ls-missing ((,class (:inherit font-lock-warning-face))))
+   `(eshell-ls-product ((,class (:inherit font-lock-doc-face))))
+   `(eshell-ls-special ((,class (:foreground ,yellow :weight bold))))
+   `(eshell-ls-symlink ((,class (:foreground ,cyan :weight bold))))
+
+;;;;; other, need more work
    `(org-code ((,class (:foreground ,base))))
    `(org-hide ((,class (:foreground ,base))))
    `(org-level-1 ((,class (:bold t :foreground ,base :height 1.1))))
@@ -260,8 +265,10 @@
    `(font-latex-string-face ((,class (:foreground ,str))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-   `(ido-only-match ((,class (:foreground ,war))))
-   `(ido-first-match ((,class (:foreground ,keyword :bold t))))
+   `(ido-only-match ((,class (:foreground ,war :underline nil))))
+   `(ido-first-match ((,class (:foreground ,keyword :bold t :underline nil))))
+   `(ido-vertical-match-face ((,class (:foreground ,type :underline nil))))
+   `(flx-highlight-face ((,class (:foreground ,type :underline nil))))
    `(gnus-header-content ((,class (:foreground ,keyword))))
    `(gnus-header-from ((,class (:foreground ,var))))
    `(gnus-header-name ((,class (:foreground ,type))))
@@ -342,4 +349,4 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;; spacemacs-theme.el ends here
+;;; spacemacs-dark-theme.el ends here

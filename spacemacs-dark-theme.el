@@ -127,6 +127,7 @@
        (:underline (:style line :color ,inf)))
       (,class (:foreground ,base :background ,inf :weight bold :underline t))))
 
+   `(flycheck-error-list-checker-name ((,class (:foreground ,keyword))))
    `(flycheck-fringe-error ((,class (:foreground ,err :weight bold))))
    `(flycheck-fringe-warning ((,class (:foreground ,war :weight bold))))
    `(flycheck-fringe-info ((,class (:foreground ,inf :weight bold))))
@@ -183,13 +184,13 @@
 
 ;;;;; company
    `(company-echo-common ((,class (:background ,base :foreground ,bg1))))
-   ;; `(company-preview ((,class (:background ,bg1 :foreground ,key1))))
-   ;; `(company-preview-common ((,class (:background ,base :foreground ,bg3))))
-   ;; `(company-preview-search ((,class (:background ,war :foreground ,green))))
+   `(company-preview ((,class (:background ,bg1 :foreground ,key1))))
+   `(company-preview-common ((,class (:background ,bg2 :foreground ,keyword))))
+   `(company-preview-search ((,class (:background ,bg2 :foreground ,green))))
    `(company-scrollbar-bg ((,class (:background ,bg3))))
    `(company-scrollbar-fg ((,class (:background ,type))))
    `(company-tooltip ((,class (:foreground ,base :background ,bg2 :bold t))))
-   `(company-tooltop-annotation ((,class (:foreground ,const ))))
+   `(company-tooltip-annotation ((,class (:background ,bg2 :foreground ,inf))))
    `(company-tooltip-common ((,class ( :foreground ,base))))
    `(company-tooltip-common-selection ((,class (:foreground ,keyword))))
    `(company-tooltip-mouse ((,class (:inherit highlight))))

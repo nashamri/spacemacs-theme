@@ -68,7 +68,7 @@
    `(match ((,class (:background ,bg1 :foreground ,inf :weight bold))))
    `(default-italic ((,class (:italic t))))
    `(link ((,class (:foreground ,comment :underline t))))
-   `(font-lock-builtin-face ((,class (:foreground ,builtin))))
+   `(font-lock-builtin-face ((,class (:foreground ,builtin :underline nil))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
    `(font-lock-negation-char-face ((,class (:foreground ,const))))
    `(font-lock-reference-face ((,class (:foreground ,const))))
@@ -242,7 +242,7 @@
    `(neo-expand-btn-face ((,class (:foreground ,base))))
 
 ;;;;; linum-mode
-   `(linum ((,class (:foreground ,base :background ,bg2))))
+   `(linum ((,class (:foreground ,str :background ,bg2))))
 
 ;;;;; other, need more work
    `(org-code ((,class (:foreground ,base))))

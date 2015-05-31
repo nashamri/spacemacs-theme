@@ -1,6 +1,6 @@
 # Spacemacs-theme
 
-![spacemacs-theme](http://www.nass3r.com/spacemacs-theme-screenshot.png)
+![spacemacs-theme](/../screenshots/spacemacs-theme-screenshot.png?raw=true)
 
 # How to install it in spacemacs
 

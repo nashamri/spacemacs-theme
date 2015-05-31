@@ -235,6 +235,12 @@
    `(eshell-ls-special ((,class (:foreground ,yellow :weight bold))))
    `(eshell-ls-symlink ((,class (:foreground ,cyan :weight bold))))
 
+;;;;; neotree
+   `(neo-root-dir-face ((,class (:foreground ,func :weight bold))))
+   `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))
+   `(neo-file-link-face ((,class (:foreground ,base))))
+   `(neo-expand-btn-face ((,class (:foreground ,base))))
+
 ;;;;; other, need more work
    `(custom-button ((,class (:background ,yellow))))
    `(org-code ((,class (:foreground ,base))))

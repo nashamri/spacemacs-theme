@@ -53,8 +53,8 @@
       (cyan       (if (display-graphic-p) "#21b8c7" "#008080"))
       (violet     (if (display-graphic-p) "#a31db1" "#800080"))
       (red        (if (display-graphic-p) "#f2241f" "#d70008"))
-      (active1    (if (display-graphic-p) "#efeae9" "#d7dfff"))
-      (active2    (if (display-graphic-p) "#c0c0dc" "#afafd7"))
+      (active1    (if (display-graphic-p) "#e7e5eb" "#d7dfff"))
+      (active2    (if (display-graphic-p) "#d3d3e7" "#afafd7"))
       (inactive   (if (display-graphic-p) "#9f8fbd" "#af87d7"))
       (highlight  (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
 

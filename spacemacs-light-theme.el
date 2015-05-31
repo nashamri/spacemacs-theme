@@ -241,6 +241,9 @@
    `(neo-file-link-face ((,class (:foreground ,base))))
    `(neo-expand-btn-face ((,class (:foreground ,base))))
 
+;;;;; linum-mode
+   `(linum ((,class (:foreground ,base :background ,bg2))))
+
 ;;;;; other, need more work
    `(org-code ((,class (:foreground ,base))))
    `(org-hide ((,class (:foreground ,base))))

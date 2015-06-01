@@ -11,7 +11,7 @@ cd ~/.emacs.d/private
 git clone https://github.com/nashamri/spacemacs-theme
 ```
 
-* Add this into your `.spacemacs`
+* Add this into your `.spacemacs` (in your `dotspacemacs/config`)
 
 ```
 (add-to-list 'custom-theme-load-path "~/.emacs.d/private/spacemacs-theme")

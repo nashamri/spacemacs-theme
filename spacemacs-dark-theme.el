@@ -29,7 +29,7 @@
 (deftheme spacemacs-dark)
 (let ((class '((class color) (min-colors 89)))
       (base "#b2b2b2");;                     GUI       TER
-      (bg1        (if (display-graphic-p) "#26282e" "#262626"))
+      (bg1        (if (display-graphic-p) "#292b2e" "#262626"))
       (bg2        (if (display-graphic-p) "#212026" "#1c1c1c"))
       (bg3        (if (display-graphic-p) "#100a14" "#121212"))
       (bg4        (if (display-graphic-p) "#0a0814" "#080808"))
@@ -185,6 +185,11 @@
    `(helm-match-item ((,class (:inherit match))))
    `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
    `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
+
+;;;;; helm-swoop
+   `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))
+   `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,highlight))))
+   `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
 
 ;;;;; company
    `(company-echo-common ((,class (:background ,base :foreground ,bg1))))

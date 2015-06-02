@@ -186,6 +186,11 @@
    `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
    `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
 
+;;;;; helm-swoop
+   `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))
+   `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,highlight))))
+   `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
+
 ;;;;; company
    `(company-echo-common ((,class (:background ,base :foreground ,bg1))))
    `(company-preview ((,class (:background ,bg1 :foreground ,key1))))

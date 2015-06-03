@@ -244,6 +244,17 @@
    `(eshell-ls-special ((,class (:foreground ,yellow :weight bold))))
    `(eshell-ls-symlink ((,class (:foreground ,cyan :weight bold))))
 
+;;;;; term
+   `(term ((,class (:foreground ,base :background ,bg1))))
+   `(term-color-black ((,class (:foreground ,bg4))))
+   `(term-color-blue ((,class (:foreground ,inf))))
+   `(term-color-red ((,class (:foreground ,red))))
+   `(term-color-green ((,class (:foreground ,green))))
+   `(term-color-yellow ((,class (:foreground ,yellow))))
+   `(term-color-magenta ((,class (:foreground ,builtin))))
+   `(term-color-cyan ((,class (:foreground ,cyan))))
+   `(term-color-white ((,class (:foreground ,base))))
+
 ;;;;; neotree
    `(neo-root-dir-face ((,class (:foreground ,func :weight bold))))
    `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))
@@ -366,15 +377,6 @@
    `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
    `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
    `(trailing-whitespace ((,class :foreground nil :background ,err)))
-   `(term ((,class (:foreground ,base :background ,bg1))))
-   `(term-color-black ((,class (:foreground ,bg3))))
-   `(term-color-blue ((,class (:foreground ,inf))))
-   `(term-color-red ((,class (:foreground ,red))))
-   `(term-color-green ((,class (:foreground ,green))))
-   `(term-color-yellow ((,class (:foreground ,yellow))))
-   `(term-color-magenta ((,class (:foreground ,builtin))))
-   `(term-color-cyan ((,class (:foreground ,cyan))))
-   `(term-color-white ((,class (:foreground ,base))))
    `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
    `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))

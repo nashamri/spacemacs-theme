@@ -244,6 +244,17 @@
    `(eshell-ls-special ((,class (:foreground ,yellow :weight bold))))
    `(eshell-ls-symlink ((,class (:foreground ,cyan :weight bold))))
 
+;;;;; term
+   `(term ((,class (:foreground ,base :background ,bg1))))
+   `(term-color-black ((,class (:foreground ,bg4))))
+   `(term-color-blue ((,class (:foreground ,inf))))
+   `(term-color-red ((,class (:foreground ,red))))
+   `(term-color-green ((,class (:foreground ,green))))
+   `(term-color-yellow ((,class (:foreground ,yellow))))
+   `(term-color-magenta ((,class (:foreground ,builtin))))
+   `(term-color-cyan ((,class (:foreground ,cyan))))
+   `(term-color-white ((,class (:foreground ,base))))
+
 ;;;;; neotree
    `(neo-root-dir-face ((,class (:foreground ,func :weight bold))))
    `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))

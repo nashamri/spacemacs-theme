@@ -165,6 +165,7 @@
    `(helm-candidate-number ((,class (:background ,bg1 :foreground ,inf :bold t))))
    `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
    `(helm-ff-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
+   `(helm-ff-dotted-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
    `(helm-ff-executable ((,class (:foreground ,suc :background ,bg1 :weight normal))))
    `(helm-ff-file ((,class (:foreground ,base :background ,bg1 :weight normal))))
    `(helm-ff-invalid-symlink ((,class (:foreground ,red :background ,bg1 :weight bold))))

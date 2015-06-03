@@ -28,7 +28,8 @@
 
 (deftheme spacemacs-light)
 (let ((class '((class color) (min-colors 89)))
-      (base "#655370");;                     GUI       TER
+      ;;                                     GUI       TER
+      (base       (if (display-graphic-p) "#655370" "#5f5f87"))
       (bg1        (if (display-graphic-p) "#fbf8ef" "#ffffff"))
       (bg2        (if (display-graphic-p) "#efeae9" "#e4e4e4"))
       (bg3        (if (display-graphic-p) "#e3dedd" "#d0d0d0"))

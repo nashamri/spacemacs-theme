@@ -65,6 +65,8 @@
 ;;;;; basics
    `(default ((,class (:background ,bg1 :foreground ,base))))
    `(vertical-border ((,class (:foreground ,bg4))))
+   `(eval-sexp-fu-flash ((,class (:background ,suc :foreground ,bg1))))
+   `(eval-sexp-fu-flash-error ((,class (:background ,err :foreground ,bg1))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
    `(match ((,class (:background ,bg1 :foreground ,inf :weight bold))))
    `(default-italic ((,class (:italic t))))
@@ -148,6 +150,11 @@
    `(git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
    `(git-gutter-fr:deleted ((,class (:foreground ,war :weight bold))))
    `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
+
+;;;;; ido
+   `(ido-first-match ((,class (:foreground ,violet))))
+   `(ido-only-match ((,class (:foreground ,green))))
+   `(ido-subdir ((,class (:foreground ,key1))))
 
 ;;;;; helm
    `(helm-bookmark-directory ((,class (:inherit helm-ff-directory))))

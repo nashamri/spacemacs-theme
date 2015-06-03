@@ -57,7 +57,7 @@
       (active1    (if (display-graphic-p) "#222226" "#121212"))
       (active2    (if (display-graphic-p) "#5d4d7a" "#444444"))
       (inactive   (if (display-graphic-p) "#5d4d7a" "#111111"))
-      (highlight  (if (display-graphic-p) "#433f4d" "#444444")))
+      (highlight  (if (display-graphic-p) "#333c45" "#444444")))
 
   (custom-theme-set-faces
    'spacemacs-dark
@@ -143,8 +143,8 @@
    `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))
 
 ;;;;; smartparens
-   `(sp-show-pair-match-face
-     ((,class (:foreground ,red :weight bold))))
+   `(sp-show-pair-match-face ((,class (:foreground ,suc :weight bold :underline t))))
+   `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
 
 ;;;;; git-gutter-fr
    `(git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
@@ -152,7 +152,7 @@
    `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
 
 ;;;;; ido
-   `(ido-first-match ((,class (:foreground ,violet))))
+   `(ido-first-match ((,class (:foreground ,type :bold t))))
    `(ido-only-match ((,class (:foreground ,green))))
    `(ido-subdir ((,class (:foreground ,key1))))
 

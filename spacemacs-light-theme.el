@@ -143,8 +143,8 @@
    `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))
 
 ;;;;; smartparens
-   `(sp-show-pair-match-face
-     ((,class (:foreground ,red :weight bold))))
+   `(sp-show-pair-match-face ((,class (:foreground ,red :weight bold :underline t))))
+   `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
 
 ;;;;; git-gutter-fr
    `(git-gutter-fr:added ((,class (:foreground ,green :weight bold))))
@@ -152,7 +152,7 @@
    `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
 
 ;;;;; ido
-   `(ido-first-match ((,class (:foreground ,violet))))
+   `(ido-first-match ((,class (:foreground ,type :bold t))))
    `(ido-only-match ((,class (:foreground ,green))))
    `(ido-subdir ((,class (:foreground ,key1))))
 

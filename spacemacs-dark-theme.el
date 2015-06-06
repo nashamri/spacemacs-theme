@@ -71,6 +71,7 @@
    `(match ((,class (:background ,bg1 :foreground ,inf :weight bold))))
    `(default-italic ((,class (:italic t))))
    `(link ((,class (:foreground ,comment :underline t))))
+   `(link-visited ((,class (:foreground ,type :underline t))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
    `(font-lock-comment-face ((,class (:foreground ,comment))))
    `(font-lock-negation-char-face ((,class (:foreground ,const))))
@@ -342,6 +343,17 @@
    `(org-verbatim ((,class (:foreground ,base))))
    `(org-verse ((,class (:inherit org-block :slant italic))))
 
+;;;;; info
+   `(info-quoted-name ((,class (:foreground ,builtin))))
+   `(info-string ((,class (:foreground ,str))))
+   `(info-title-1 ((,class (:height 1.4 :bold t))))
+   `(info-title-2 ((,class (:height 1.3 :bold t))))
+   `(info-title-3 ((,class (:height 1.3))))
+   `(info-title-4 ((,class (:height 1.2))))
+   `(info-node ((,class (:foreground ,func :bold t))))
+   `(info-menu ((,class (:foreground ,suc))))
+   `(info-header-xref ((,class (:foreground ,func :underline t))))
+
 ;;;;; other, need more work
    `(custom-button ((,class (:background ,yellow))))
    `(font-latex-bold-face ((,class (:foreground ,type))))
@@ -376,8 +388,6 @@
    `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
    `(js3-instance-member-face ((,class (:foreground ,const))))
    `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
-   `(info-quoted-name ((,class (:foreground ,builtin))))
-   `(info-string ((,class (:foreground ,str))))
    `(icompletep-determined ((,class :foreground ,builtin)))
    `(undo-tree-visualizer-current-face ((,class :foreground ,builtin)))
    `(undo-tree-visualizer-default-face ((,class :foreground ,base)))

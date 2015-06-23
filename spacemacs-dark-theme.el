@@ -355,6 +355,15 @@
    `(info-menu ((,class (:foreground ,suc))))
    `(info-header-xref ((,class (:foreground ,func :underline t))))
 
+;;;;; ERC
+   `(erc-prompt-face ((,class (:foreground ,suc :bold t))))
+   `(erc-notice-face ((,class (:foreground ,str))))
+   `(erc-timestamp-face ((,class (:foreground ,builtin))))
+   `(erc-my-nick-face ((,class (:foreground ,key1))))
+   `(erc-input-face ((,class (:foreground ,func))))
+   `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
+   `(erc-nick-default-face ((,class (:foreground ,inf))))
+
 ;;;;; other, need more work
    `(custom-button ((,class (:background ,yellow))))
    `(font-latex-bold-face ((,class (:foreground ,type))))

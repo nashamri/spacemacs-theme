@@ -364,6 +364,13 @@
    `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
    `(erc-nick-default-face ((,class (:foreground ,inf))))
 
+;;;;; ein
+   `(ein:cell-input-area((,class (:background ,bg2))))
+   `(ein:cell-input-prompt ((,class (:foreground ,green))))
+   `(ein:cell-output-prompt ((,class (:foreground ,err))))
+   `(ein:notification-tab-selected ((,class (:foreground ,green :bold t))))
+   `(ein:notification-tab-normal ((,class (:foreground ,builtin))))
+
 ;;;;; other, need more work
    `(font-latex-bold-face ((,class (:foreground ,type))))
    `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))

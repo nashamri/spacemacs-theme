@@ -25,6 +25,14 @@
 
 ;; This file is not part of Emacs.
 
+(defgroup spacemacs-light nil
+  "Spacemacs-light theme options"
+  :group 'faces)
+
+(defcustom comment-background nil
+  "Use background color for comments"
+  :type 'boolean
+  :group 'spacemacs-light)
 
 (deftheme spacemacs-light)
 (let ((class '((class color) (min-colors 89)))
@@ -58,7 +66,10 @@
       (active1    (if (display-graphic-p) "#e7e5eb" "#d7dfff"))
       (active2    (if (display-graphic-p) "#d3d3e7" "#afafd7"))
       (inactive   (if (display-graphic-p) "#9f8fbd" "#af87d7"))
-      (highlight  (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
+      (highlight  (if (display-graphic-p) "#d3d3e7" "#d7d7ff"))
+
+      ;; customizable properties
+      (comment-bg (if comment-background (if (display-graphic-p) "#f6f5ec" "#ffffff") nil)))
 
   (custom-theme-set-faces
    'spacemacs-light
@@ -74,7 +85,7 @@
    `(link ((,class (:foreground ,comment :underline t))))
    `(link-visited ((,class (:foreground ,type :underline t))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
-   `(font-lock-comment-face ((,class (:foreground ,comment))))
+   `(font-lock-comment-face ((,class (:foreground ,comment :background ,comment-bg))))
    `(font-lock-negation-char-face ((,class (:foreground ,const))))
    `(font-lock-reference-face ((,class (:foreground ,const))))
    `(font-lock-constant-face ((,class (:foreground ,const))))

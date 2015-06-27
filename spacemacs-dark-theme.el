@@ -25,6 +25,14 @@
 
 ;; This file is not part of Emacs.
 
+(defgroup spacemacs-dark nil
+  "Spacemacs-dark theme options"
+  :group 'faces)
+
+(defcustom comment-background nil
+  "Use background color for comments"
+  :type 'boolean
+  :group 'spacemacs-dark)
 
 (deftheme spacemacs-dark)
 (let ((class '((class color) (min-colors 89)))
@@ -41,7 +49,7 @@
       (keyword    (if (display-graphic-p) "#237fbf" "#268bd2"))
       (const      (if (display-graphic-p) "#a45bad" "#d75fd7"))
       (comment    (if (display-graphic-p) "#2aa198" "#2aa198"))
-      (comment-bg (if (display-graphic-p) "#282a32" "#282a32"))
+      (comment-bg (if (display-graphic-p) "#293234" "#282a32"))
       (func       (if (display-graphic-p) "#bc6ec5" "#d75fd7"))
       (str        (if (display-graphic-p) "#2aa198" "#2aa198"))
       (type       (if (display-graphic-p) "#c56ec3" "#d75fd7"))
@@ -58,7 +66,10 @@
       (active1    (if (display-graphic-p) "#222226" "#121212"))
       (active2    (if (display-graphic-p) "#5d4d7a" "#444444"))
       (inactive   (if (display-graphic-p) "#5d4d7a" "#111111"))
-      (highlight  (if (display-graphic-p) "#333c45" "#444444")))
+      (highlight  (if (display-graphic-p) "#333c45" "#444444"))
+
+      ;; customizable properties
+      (comment-bg (if comment-background (if (display-graphic-p) "#293234" "#262626") nil)))
 
   (custom-theme-set-faces
    'spacemacs-dark
@@ -74,7 +85,7 @@
    `(link ((,class (:foreground ,comment :underline t))))
    `(link-visited ((,class (:foreground ,type :underline t))))
    `(font-lock-builtin-face ((,class (:foreground ,builtin))))
-   `(font-lock-comment-face ((,class (:foreground ,comment))))
+   `(font-lock-comment-face ((,class (:foreground ,comment :background ,comment-bg))))
    `(font-lock-negation-char-face ((,class (:foreground ,const))))
    `(font-lock-reference-face ((,class (:foreground ,const))))
    `(font-lock-constant-face ((,class (:foreground ,const))))

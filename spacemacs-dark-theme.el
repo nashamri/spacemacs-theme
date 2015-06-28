@@ -1,4 +1,4 @@
-;;; spacemacs-theme.el --- Emacs 24 theme with a dark background.
+;;; spacemacs-dark-theme.el --- Theme with a dark background.
 
 ;; Copyright (C) 2014 , Nasser Alshammari
 
@@ -25,12 +25,16 @@
 
 ;; This file is not part of Emacs.
 
+;;; Commentary:
+
+;;; Code:
+
 (defgroup spacemacs-dark nil
   "Spacemacs-dark theme options"
   :group 'faces)
 
 (defcustom comment-background nil
-  "Use background color for comments"
+  "Use background color for comments."
   :type 'boolean
   :group 'spacemacs-dark)
 

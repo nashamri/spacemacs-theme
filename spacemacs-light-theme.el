@@ -53,7 +53,6 @@
       (keyword    (if (display-graphic-p) "#237fbf" "#268bd2"))
       (const      (if (display-graphic-p) "#4e3163" "#8700af"))
       (comment    (if (display-graphic-p) "#2aa198" "#2aa198"))
-      (comment-bg (if (display-graphic-p) "#f6f5ec" "#d0d0d0"))
       (func       (if (display-graphic-p) "#6c3163" "#8700af"))
       (str        (if (display-graphic-p) "#2aa198" "#2aa198"))
       (type       (if (display-graphic-p) "#6c4173" "#8700af"))
@@ -73,7 +72,7 @@
       (highlight  (if (display-graphic-p) "#d3d3e7" "#d7d7ff"))
 
       ;; customizable properties
-      (comment-bg (if comment-background (if (display-graphic-p) "#f6f5ec" "#ffffff") nil)))
+      (comment-bg (if comment-background (if (display-graphic-p) "#eff3ea" "#ffffff") nil)))
 
   (custom-theme-set-faces
    'spacemacs-light

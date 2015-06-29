@@ -388,6 +388,14 @@
 ;;;;; eldoc
    `(eldoc-highlight-function-argument ((,class (:foreground ,err :bold t))))
 
+;;;;; gnus
+   `(gnus-header-content ((,class (:foreground ,keyword))))
+   `(gnus-header-from ((,class (:foreground ,var))))
+   `(gnus-header-name ((,class (:foreground ,type))))
+   `(gnus-header-subject ((,class (:foreground ,func :bold t))))
+   `(gnus-emphasis-highlight-words ((,class (:background ,suc))))
+   `(gnus-summary-cancelled ((,class (:background ,suc))))
+
 ;;;;; other, need more work
    `(font-latex-bold-face ((,class (:foreground ,type))))
    `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
@@ -398,10 +406,6 @@
    `(ido-first-match ((,class (:foreground ,keyword :bold t :underline nil))))
    `(ido-vertical-match-face ((,class (:foreground ,type :underline nil))))
    `(flx-highlight-face ((,class (:foreground ,type :underline nil))))
-   `(gnus-header-content ((,class (:foreground ,keyword))))
-   `(gnus-header-from ((,class (:foreground ,var))))
-   `(gnus-header-name ((,class (:foreground ,type))))
-   `(gnus-header-subject ((,class (:foreground ,func :bold t))))
    `(mu4e-view-url-number-face ((,class (:foreground ,type))))
    `(mu4e-cited-1-face ((,class (:foreground ,base))))
    `(mu4e-cited-7-face ((,class (:foreground ,base))))

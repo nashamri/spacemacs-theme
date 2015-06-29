@@ -386,6 +386,9 @@
    `(ein:notification-tab-selected ((,class (:foreground ,suc :bold t))))
    `(ein:notification-tab-normal ((,class (:foreground ,builtin))))
 
+;;;;; eldoc
+   `(eldoc-highlight-function-argument ((,class (:foreground ,suc :bold t))))
+
 ;;;;; other, need more work
    `(custom-button ((,class (:background ,yellow))))
    `(font-latex-bold-face ((,class (:foreground ,type))))

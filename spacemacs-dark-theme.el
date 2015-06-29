@@ -170,8 +170,9 @@
 
 ;;;;; ido
    `(ido-first-match ((,class (:foreground ,type :bold t))))
-   `(ido-only-match ((,class (:foreground ,green))))
+   `(ido-only-match ((,class (:foreground ,suc :bold t))))
    `(ido-subdir ((,class (:foreground ,key1))))
+   `(ido-vertical-match-face ((,class (:foreground ,type :underline nil))))
 
 ;;;;; helm
    `(helm-bookmark-directory ((,class (:inherit helm-ff-directory))))
@@ -404,9 +405,6 @@
    `(font-latex-string-face ((,class (:foreground ,str))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-   `(ido-only-match ((,class (:foreground ,war :underline nil))))
-   `(ido-first-match ((,class (:foreground ,keyword :bold t :underline nil))))
-   `(ido-vertical-match-face ((,class (:foreground ,type :underline nil))))
    `(flx-highlight-face ((,class (:foreground ,type :underline nil))))
    `(mu4e-view-url-number-face ((,class (:foreground ,type))))
    `(mu4e-cited-1-face ((,class (:foreground ,base))))

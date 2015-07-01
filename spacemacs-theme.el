@@ -288,6 +288,17 @@
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,str :background ,bg2))))
 
+;;;;; diff
+     `(diff-added             ((,class :background nil :foreground ,green)))
+     `(diff-changed           ((,class :background nil :foreground ,inf)))
+     `(diff-removed           ((,class :background nil :foreground ,red)))
+     `(diff-indicator-added   ((,class :background nil :foreground ,green)))
+     `(diff-indicator-changed ((,class :background nil :foreground ,inf)))
+     `(diff-indicator-removed ((,class :background nil :foreground ,red)))
+     `(diff-refine-added      ((,class :background ,green :foreground ,bg4)))
+     `(diff-refine-changed    ((,class :background ,inf :foreground ,bg4)))
+     `(diff-refine-removed    ((,class :background ,red :foreground ,bg4)))
+
 ;;;;; magit
      `(magit-blame-sha1 ((,class :background ,bg3 :foreground ,func)))
      `(magit-blame-time ((,class :background ,bg3 :foreground ,key1)))
@@ -298,8 +309,6 @@
      `(magit-diff-hunk-header ((,class (:background nil :foreground ,builtin))))
      `(magit-diff-file-header ((,class (:background nil :foreground ,str))))
      `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,base))))
-     `(magit-diffstat-added   ((,class (:foreground ,type))))
-     `(magit-diffstat-removed ((,class (:foreground ,var))))
      `(magit-hash ((,class (:foreground ,base))))
      `(magit-hunk-heading           ((,class (:background ,bg3))))
      `(magit-hunk-heading-highlight ((,class (:background ,bg3))))

@@ -30,11 +30,16 @@
 ;;; Code:
 
 (defgroup spacemacs-theme nil
-  "Spacemacs-theme theme options"
+  "Spacemacs-theme options."
   :group 'faces)
 
 (defcustom spacemacs-theme-comment-bg nil
-  "Use background color for comments."
+  "Use a background for comment lines."
+  :type 'boolean
+  :group 'spacemacs-theme)
+
+(defcustom spacemacs-theme-org-height t
+  "Use varying text heights for org headings."
   :type 'boolean
   :group 'spacemacs-theme)
 
@@ -339,19 +344,19 @@
      `(org-date ((,class (:underline t :foreground ,var) )))
      `(org-date-selected ((,class (:background ,func :foreground ,bg1) )))
      `(org-document-info-keyword ((,class (:foreground ,str))))
-     `(org-document-title ((,class (:foreground ,func :weight bold :height 1.4 :underline t))))
+     `(org-document-title ((,class (:foreground ,func :weight bold :height ,(if spacemacs-theme-org-height 1.4 1.0) :underline t))))
      `(org-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t :underline t))))
      `(org-ellipsis ((,class (:foreground ,builtin))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
-     `(org-level-1 ((,class (:bold t :foreground ,inf :height 1.3 :background ,(when (display-graphic-p) "#293239") :overline t))))
-     `(org-level-2 ((,class (:bold t :foreground ,str :height 1.2 :background ,(when (display-graphic-p) "#293235")))))
-     `(org-level-3 ((,class (:bold nil :foreground ,green :height 1.1 :background ,(when (display-graphic-p) "#2d332c")))))
-     `(org-level-4 ((,class (:bold nil :foreground ,yellow :height 1.0 :background ,(when (display-graphic-p) "#32322c")))))
-     `(org-level-5 ((,class (:bold nil :foreground ,inf :height 1.0))))
-     `(org-level-6 ((,class (:bold nil :foreground ,str :height 1.0))))
-     `(org-level-7 ((,class (:bold nil :foreground ,green :height 1.0))))
-     `(org-level-8 ((,class (:bold nil :foreground ,yellow :height 1.0))))
+     `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when (display-graphic-p) "#293239") :overline t))))
+     `(org-level-2 ((,class (:bold t :foreground ,str :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when (display-graphic-p) "#293235")))))
+     `(org-level-3 ((,class (:bold nil :foreground ,green :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when (display-graphic-p) "#2d332c")))))
+     `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,(when (display-graphic-p) "#32322c")))))
+     `(org-level-5 ((,class (:bold nil :foreground ,inf))))
+     `(org-level-6 ((,class (:bold nil :foreground ,str))))
+     `(org-level-7 ((,class (:bold nil :foreground ,green))))
+     `(org-level-8 ((,class (:bold nil :foreground ,yellow))))
      `(org-link ((,class (:underline t :foreground ,comment))))
      `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
      `(org-quote ((,class (:inherit org-block :slant italic))))

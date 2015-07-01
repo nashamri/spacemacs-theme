@@ -1,14 +1,14 @@
-;;; spacemacs-theme.el --- Theme with a dark background.
+;;; spacemacs-theme.el --- Color theme with a dark and light versions.
 
 ;; Copyright (C) 2014 , Nasser Alshammari
 
 ;; Author: Nasser Alshammari
-;; https://github.com/nashamri/spacemacs-theme
+;; URL: <https://github.com/nashamri/spacemacs-theme>
 ;;
 ;; Version: 0.1
+;; Keywords: color, theme
 ;; Package-Requires: ((emacs "24"))
-;; Initially created with the help of emacs-theme-generator, https://github.com/mswift42/theme-creator.
-
+;; Initially created with the help of emacs-theme-generator, <https://github.com/mswift42/theme-creator>.
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -26,6 +26,9 @@
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
+;; This is a color theme for spacemacs <https://github.com/syl20bnr/spacemacs>.
+;; It comes with two versions, dark and light and should work well in
+;; a 256 color terminal.
 
 ;;; Code:
 
@@ -121,13 +124,10 @@
      `(error ((,class (:foreground ,err))))
      `(lazy-highlight ((,class (:foreground ,bg1 :background ,inf :weight normal))))
      `(page-break-lines ((,class (:foreground ,active2))))
-     `(mode-line
-       ((,class (:foreground ,base
-                             :background ,active1))))
-     `(mode-line-inactive
-       ((,class (:foreground ,base
-                             :background ,bg1
-                             :box (:color ,inactive :line-width 1)))))
+
+;;;;; mode-line
+     `(mode-line ((,class (:foreground ,base :background ,active1))))
+     `(mode-line-inactive ((,class (:foreground ,base :background ,bg1 :box (:color ,inactive :line-width 1)))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
@@ -385,6 +385,7 @@
      `(info-node ((,class (:foreground ,func :bold t))))
      `(info-menu ((,class (:foreground ,suc))))
      `(info-header-xref ((,class (:foreground ,func :underline t))))
+     `(info-reference-item ((,class (:background nil :underline t :bold t))))
 
 ;;;;; ERC
      `(erc-prompt-face ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))

@@ -159,7 +159,7 @@
      `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))
 
 ;;;;; smartparens
-     `(sp-show-pair-match-face ((,class (:foreground ,suc :weight bold :underline t))))
+     `(sp-show-pair-match-face ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))))
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
 
 ;;;;; git-gutter-fr
@@ -169,7 +169,7 @@
 
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,type :bold t))))
-     `(ido-only-match ((,class (:foreground ,suc :bold t))))
+     `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
      `(ido-subdir ((,class (:foreground ,key1))))
      `(ido-vertical-match-face ((,class (:foreground ,type :underline nil))))
 
@@ -224,10 +224,10 @@
      `(company-preview-search ((,class (:background ,bg2 :foreground ,green))))
      `(company-scrollbar-bg ((,class (:background ,bg2))))
      `(company-scrollbar-fg ((,class (:background ,type))))
-     `(company-tooltip ((,class (:background ,active2 :foreground ,active1))))
+     `(company-tooltip ((,class (:background ,active2 :foreground ,(if (eq variant 'dark) active1 str)))))
      `(company-tooltip-annotation ((,class (:background ,active2 :foreground ,inf))))
      `(company-tooltip-common ((,class (:background ,active2 :foreground ,base))))
-     `(company-tooltip-common-selection ((,class (:foreground ,suc))))
+     `(company-tooltip-common-selection ((,class (:foreground ,(if (eq variant 'dark) suc war)))))
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,active2 :bold t))))
@@ -323,7 +323,7 @@
      `(org-agenda-date ((,class (:foreground ,var :height 1.1))))
      `(org-agenda-date-weekend ((,class (:weight normal :foreground ,base))))
      `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height 1.3))))
-     `(org-agenda-done ((,class (:foreground ,suc :bold t))))
+     `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
      `(org-block ((,class (:foreground ,base))))
      `(org-code ((,class (:foreground ,cyan))))
      `(org-column ((,class (:background ,highlight))))
@@ -333,7 +333,7 @@
      `(org-date-selected ((,class (:background ,func :foreground ,bg1) )))
      `(org-document-info-keyword ((,class (:foreground ,str))))
      `(org-document-title ((,class (:foreground ,func :weight bold :height 1.4 :underline t))))
-     `(org-done ((,class (:foreground ,suc :bold t :underline t))))
+     `(org-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t :underline t))))
      `(org-ellipsis ((,class (:foreground ,builtin))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
@@ -371,7 +371,7 @@
      `(info-header-xref ((,class (:foreground ,func :underline t))))
 
 ;;;;; ERC
-     `(erc-prompt-face ((,class (:foreground ,suc :bold t))))
+     `(erc-prompt-face ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
      `(erc-notice-face ((,class (:foreground ,str))))
      `(erc-timestamp-face ((,class (:foreground ,builtin))))
      `(erc-my-nick-face ((,class (:foreground ,key1))))
@@ -381,24 +381,23 @@
 
 ;;;;; ein
      `(ein:cell-input-area((,class (:background ,bg2))))
-     `(ein:cell-input-prompt ((,class (:foreground ,suc))))
+     `(ein:cell-input-prompt ((,class (:foreground ,(if (eq variant 'dark) suc green)))))
      `(ein:cell-output-prompt ((,class (:foreground ,err))))
-     `(ein:notification-tab-selected ((,class (:foreground ,suc :bold t))))
+     `(ein:notification-tab-selected ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
      `(ein:notification-tab-normal ((,class (:foreground ,builtin))))
 
 ;;;;; eldoc
-     `(eldoc-highlight-function-argument ((,class (:foreground ,suc :bold t))))
+     `(eldoc-highlight-function-argument ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
 
 ;;;;; gnus
      `(gnus-header-content ((,class (:foreground ,keyword))))
      `(gnus-header-from ((,class (:foreground ,var))))
      `(gnus-header-name ((,class (:foreground ,type))))
      `(gnus-header-subject ((,class (:foreground ,func :bold t))))
-     `(gnus-emphasis-highlight-words ((,class (:background ,err :foreground ,bg1))))
-     `(gnus-summary-cancelled ((,class (:background ,err :foreground ,bg1))))
+     `(gnus-emphasis-highlight-words ((,class (:background (if (eq variant 'dark) err suc) :foreground (when (eq variant 'light) bg1)))))
+     `(gnus-summary-cancelled ((,class (:background ,(if (eq variant 'dark) err suc) :foreground ,bg1))))
 
 ;;;;; other, need more work
-     `(custom-button ((,class (:background ,yellow))))
      `(font-latex-bold-face ((,class (:foreground ,type))))
      `(font-latex-italic-face ((,class (:foreground ,key2 :italic t))))
      `(font-latex-string-face ((,class (:foreground ,str))))
@@ -431,15 +430,6 @@
      `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
      `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
      `(trailing-whitespace ((,class :foreground nil :background ,err)))
-     `(term ((,class (:foreground ,base :background ,bg1))))
-     `(term-color-black ((,class (:foreground ,bg3))))
-     `(term-color-blue ((,class (:foreground ,inf))))
-     `(term-color-red ((,class (:foreground ,red))))
-     `(term-color-green ((,class (:foreground ,green))))
-     `(term-color-yellow ((,class (:foreground ,yellow))))
-     `(term-color-magenta ((,class (:foreground ,builtin))))
-     `(term-color-cyan ((,class (:foreground ,cyan))))
-     `(term-color-white ((,class (:foreground ,base))))
      `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
      `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
      `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))

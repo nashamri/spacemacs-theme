@@ -237,7 +237,7 @@
      `(company-tooltip-common-selection ((,class (:foreground ,(if (eq variant 'dark) suc war)))))
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
-     `(company-tooltip-selection ((,class (:background ,active2 :bold t))))
+     `(company-tooltip-selection ((,class (:background ,(if (eq variant 'dark) "#6b5d85" "#c8c6dd") :bold t))))
      `(company-template-field ((,class (:inherit region))))
 
 ;;;;; rainbow-delimiters

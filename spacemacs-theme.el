@@ -29,14 +29,14 @@
 
 ;;; Code:
 
-;; (defgroup spacemacs-dark nil
-;;   "Spacemacs-dark theme options"
-;;   :group 'faces)
+(defgroup spacemacs-theme nil
+  "Spacemacs-theme theme options"
+  :group 'faces)
 
-;; (defcustom spacemacs-dark-comment-bg nil
-;;   "Use background color for comments."
-;;   :type 'boolean
-;;   :group 'spacemacs-dark)
+(defcustom spacemacs-theme-comment-bg nil
+  "Use background color for comments."
+  :type 'boolean
+  :group 'spacemacs-theme)
 
 (defun create-spacemacs-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;                    ~~ Dark ~~                                   ~~ Light ~~
@@ -53,6 +53,7 @@
         (keyword    (if (eq variant 'dark) (if (display-graphic-p) "#237fbf" "#268bd2") (if (display-graphic-p) "#237fbf" "#268bd2")))
         (const      (if (eq variant 'dark) (if (display-graphic-p) "#a45bad" "#d75fd7") (if (display-graphic-p) "#4e3163" "#8700af")))
         (comment    (if (eq variant 'dark) (if (display-graphic-p) "#2aa198" "#2aa198") (if (display-graphic-p) "#2aa198" "#2aa198")))
+        (comment-bg (if (eq variant 'dark) (if (display-graphic-p) "#293234" "#262626") (if (display-graphic-p) "#eff3ea" "#ffffff")))
         (func       (if (eq variant 'dark) (if (display-graphic-p) "#bc6ec5" "#d75fd7") (if (display-graphic-p) "#6c3163" "#8700af")))
         (str        (if (eq variant 'dark) (if (display-graphic-p) "#2aa198" "#2aa198") (if (display-graphic-p) "#2aa198" "#2aa198")))
         (type       (if (eq variant 'dark) (if (display-graphic-p) "#c56ec3" "#d75fd7") (if (display-graphic-p) "#6c4173" "#8700af")))
@@ -70,8 +71,6 @@
         (active2    (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
         (inactive   (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#9f8fbd" "#af87d7")))
         (highlight  (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff"))))
-        ;; customizable properties
-        ;; (comment-bg (if spacemacs-dark-comment-bg (if (display-graphic-p) "#293234" "#262626") nil)))
 
     (custom-theme-set-faces
      theme-name
@@ -87,8 +86,7 @@
      `(link ((,class (:foreground ,comment :underline t))))
      `(link-visited ((,class (:foreground ,type :underline t))))
      `(font-lock-builtin-face ((,class (:foreground ,builtin))))
-     ;; `(font-lock-comment-face ((,class (:foreground ,comment :background ,comment-bg)))) ;;;;;;;;;;;;;;;;;;;; TODO
-     `(font-lock-comment-face ((,class (:foreground ,comment))))
+     `(font-lock-comment-face ((,class (:foreground ,comment :background ,(when spacemacs-theme-comment-bg comment-bg)))))
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-reference-face ((,class (:foreground ,const))))
      `(font-lock-constant-face ((,class (:foreground ,const))))

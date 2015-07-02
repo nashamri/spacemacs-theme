@@ -1,4 +1,4 @@
-(require 'spacemacs-theme)
+(require 'spacemacs-common)
 
 (deftheme spacemacs-light "Spacemacs theme, the light version")
 

@@ -1,20 +1,43 @@
 # Spacemacs-theme
 
-![spacemacs-theme](/../screenshots/spacemacs-theme-screenshot.png?raw=true)
+![spacemacs-theme](/../screenshots/spacemacs-theme.png)
 
-# How to install it in spacemacs
+Spacemacs theme is an Emacs color theme that started as a theme for [spacemacs](https://github.com/syl20bnr/spacemacs).
 
-* Clone the repo into `~/.emacs.d/private/`
+# Screenshots
 
-```
-cd ~/.emacs.d/private
-git clone https://github.com/nashamri/spacemacs-theme
-```
+![spacemacs-theme-preview](/../screenshots/preview.png)
 
-* Add this into your `.spacemacs` (in your `dotspacemacs/config`)
+# Highlights
 
-```
-(add-to-list 'custom-theme-load-path "~/.emacs.d/private/spacemacs-theme")
-```
+The theme has good support for org mode.
 
-* Select the light or dark version by `SPC T h`
+![spacemacs-theme-org](/../screenshots/org.png)
+
+# Supported modes
+
+Some of the supported modes are:
+
+* company
+* ein
+* erc
+* gnus
+* helm
+* ido
+* info
+* magit
+* neotree
+* org
+* and others :) more are coming!
+
+# Customizations
+
+The theme has some options that can be tweaked via `M-x customize`:
+
+### `spacemacs-theme-comment-bg`:
+
+This toggles a background color for the comment lines.
+
+### `spacemacs-theme-org-height`:
+
+This toggles the use of varying headings heights.

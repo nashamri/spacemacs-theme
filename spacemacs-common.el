@@ -8,6 +8,7 @@
 ;; Version: 0.1
 ;; Keywords: color, theme
 ;; Package-Requires: ((emacs "24"))
+
 ;; Initially created with the help of emacs-theme-generator, <https://github.com/mswift42/theme-creator>.
 
 ;; This program is free software: you can redistribute it and/or modify
@@ -26,7 +27,7 @@
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
-;;
+
 ;; This is a color theme for spacemacs <https://github.com/syl20bnr/spacemacs>.
 ;; It comes with two versions, dark and light and should work well in
 ;; a 256 color terminal.

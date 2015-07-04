@@ -1,21 +1,21 @@
-# Spacemacs-theme
+# Spacemacs-theme [![MELPA](http://melpa.org/packages/spacemacs-theme-badge.svg)](http://melpa.org/#/spacemacs-theme)
 
 ![spacemacs-theme](/../screenshots/spacemacs-theme.png)
 
 Spacemacs theme is an Emacs color theme that started as a theme for [spacemacs](https://github.com/syl20bnr/spacemacs).
 The theme comes with dark and light variants and it should work well with 256 color terminals. 
 
-# Screenshots
+## Screenshots
 
 ![spacemacs-theme-preview](/../screenshots/preview.png)
 
-# Highlights
+## Highlights
 
 The theme has good support for org mode.
 
 ![spacemacs-theme-org](/../screenshots/org.png)
 
-# Supported modes
+## Supported modes
 
 Some of the supported modes are:
 
@@ -31,14 +31,14 @@ Some of the supported modes are:
 * org
 * and others :) more are coming!
 
-# Customizations
+## Customizations
 
 The theme has some options that can be tweaked via `M-x customize`:
 
-### `spacemacs-theme-comment-bg`:
+* `spacemacs-theme-comment-bg`:
 
 This toggles a background color for the comment lines.
 
-### `spacemacs-theme-org-height`:
+* `spacemacs-theme-org-height`:
 
 This toggles the use of varying headings heights.

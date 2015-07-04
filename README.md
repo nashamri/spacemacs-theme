@@ -16,6 +16,14 @@ The theme has good support for org mode.
 
 ![spacemacs-theme-org](/../screenshots/org.png)
 
+## Installation
+
+You can install it from MELPA by:
+
+```
+M-x package-install RET spacemacs-theme
+```
+
 ## Supported modes
 
 Some of the supported modes are:

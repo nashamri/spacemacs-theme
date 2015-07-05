@@ -305,7 +305,7 @@
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,org-h4-bg :foreground ,yellow)))
      `(magit-blame-header  ((,class :background ,org-h4-bg :foreground ,green)))
-     `(magit-blame-sha1    ((,class :background ,org-h4-bg :foreground ,fun)))
+     `(magit-blame-sha1    ((,class :background ,org-h4-bg :foreground ,func)))
      `(magit-blame-subject ((,class :background ,org-h4-bg :foreground ,yellow)))
      `(magit-blame-time    ((,class :background ,org-h4-bg :foreground ,green)))
      `(magit-blame-name    ((,class :background ,org-h4-bg :foreground ,yellow)))

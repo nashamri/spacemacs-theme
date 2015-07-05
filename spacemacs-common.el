@@ -225,7 +225,7 @@
      `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
 
 ;;;;; gnus
-     `(gnus-emphasis-highlight-words ((,class (:background (if (eq variant 'dark) err suc) :foreground (when (eq variant 'light) bg1)))))
+     `(gnus-emphasis-highlight-words ((,class (:background ,(if (eq variant 'dark) err suc) :foreground ,(when (eq variant 'light) bg1)))))
      `(gnus-header-content ((,class (:foreground ,keyword))))
      `(gnus-header-from ((,class (:foreground ,var))))
      `(gnus-header-name ((,class (:foreground ,type))))

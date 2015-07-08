@@ -223,6 +223,9 @@
      `(git-gutter-fr:deleted ((,class (:foreground ,war :weight bold))))
      `(git-gutter-fr:modified ((,class (:foreground ,inf :weight bold))))
 
+;;;;; git-timemachine
+     `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,inf :bold t :background ,org-h1-bg))))
+
 ;;;;; gnus
      `(gnus-emphasis-highlight-words ((,class (:background ,(if (eq variant 'dark) err suc) :foreground ,(when (eq variant 'light) bg1)))))
      `(gnus-header-content ((,class (:foreground ,keyword))))

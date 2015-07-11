@@ -268,6 +268,7 @@
      `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
      `(helm-grep-running ((,class (:foreground ,func :background ,bg1))))
      `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
+     `(helm-header-line-left-margin ((,class (:foreground ,inf :background ,nil))))
      `(helm-match ((,class (:inherit match))))
      `(helm-match-item ((,class (:inherit match))))
      `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))

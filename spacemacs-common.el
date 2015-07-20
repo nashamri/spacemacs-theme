@@ -81,6 +81,7 @@
         (active1       (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
         (active2       (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
         (inactive      (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#9f8fbd" "#af87d7")))
+        (m-line-brdr   (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#B3B9BE" "#B3B9BE")))
         (org-block-bg  (if (eq variant 'dark) (if (display-graphic-p) "#232528" "#262626") (if (display-graphic-p) "#d9e6dd" "#ffffff")))
         (org-h1-bg     (if (eq variant 'dark) (if (display-graphic-p) "#293239" "#121212") (if (display-graphic-p) "#edf1ed" "#ffffff")))
         (org-h2-bg     (if (eq variant 'dark) (if (display-graphic-p) "#293235" "#262626") (if (display-graphic-p) "#edf2e9" "#ffffff")))
@@ -339,9 +340,9 @@
      `(magit-section-title ((,class (:background ,bg1 :foreground ,builtin :weight bold))))
 
 ;;;;; mode-line
-     `(mode-line ((,class (:foreground ,base :background ,active1))))
+     `(mode-line           ((,class (:foreground ,base :background ,active1 :box (:color ,m-line-brdr :line-width 1)))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1     :box (:color ,m-line-brdr :line-width 1)))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
-     `(mode-line-inactive ((,class (:foreground ,base :background ,bg1 :box (:color ,inactive :line-width 1)))))
 
 ;;;;; neotree
      `(neo-dir-link-face ((,class (:foreground ,inf :weight bold))))

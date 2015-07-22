@@ -81,7 +81,7 @@
         (active1       (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
         (active2       (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
         (inactive      (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#9f8fbd" "#af87d7")))
-        (m-line-brdr   (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#B3B9BE" "#B3B9BE")))
+        (m-line-brdr   (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#111111") (if (display-graphic-p) "#b3b9be" "#b3b9be")))
         (org-block-bg  (if (eq variant 'dark) (if (display-graphic-p) "#232528" "#262626") (if (display-graphic-p) "#d9e6dd" "#ffffff")))
         (org-h1-bg     (if (eq variant 'dark) (if (display-graphic-p) "#293239" "#121212") (if (display-graphic-p) "#edf1ed" "#ffffff")))
         (org-h2-bg     (if (eq variant 'dark) (if (display-graphic-p) "#293235" "#262626") (if (display-graphic-p) "#edf2e9" "#ffffff")))
@@ -169,6 +169,24 @@
      `(dired-perm-write ((,class (:foreground ,base :underline t))))
      `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :weight bold))))
      `(dired-warning ((,class (:foreground ,war))))
+
+;;;;; ediff
+     `(ediff-current-diff-A ((,class(:background ,org-h1-bg :foreground ,inf))))
+     `(ediff-current-diff-Ancestor ((,class(:background ,org-h2-bg :foreground ,str))))
+     `(ediff-current-diff-B ((,class(:background ,org-h4-bg :foreground ,yellow))))
+     `(ediff-current-diff-C ((,class(:background ,org-h3-bg :foreground ,green))))
+     `(ediff-even-diff-A ((,class(:background ,bg3))))
+     `(ediff-even-diff-Ancestor ((,class(:background ,bg3))))
+     `(ediff-even-diff-B ((,class(:background ,bg3))))
+     `(ediff-even-diff-C ((,class(:background ,bg3))))
+     `(ediff-fine-diff-A ((,class(:background nil :bold t :underline t))))
+     `(ediff-fine-diff-Ancestor ((,class(:background nil :bold t :underline t))))
+     `(ediff-fine-diff-B ((,class(:background nil :bold t :underline t))))
+     `(ediff-fine-diff-C ((,class(:background nil :bold t :underline t))))
+     `(ediff-odd-diff-A ((,class(:background ,bg4))))
+     `(ediff-odd-diff-Ancestor ((,class(:background ,bg4))))
+     `(ediff-odd-diff-B ((,class(:background ,bg4))))
+     `(ediff-odd-diff-C ((,class(:background ,bg4))))
 
 ;;;;; ein
      `(ein:cell-input-area((,class (:background ,bg2))))

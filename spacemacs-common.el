@@ -443,6 +443,13 @@
      `(term-color-white ((,class (:foreground ,base))))
      `(term-color-yellow ((,class (:foreground ,yellow))))
 
+;;;;; which-key
+     `(which-key-command-description-face ((,class (:foreground ,base))))
+     `(which-key-group-description-face ((,class (:foreground ,key2))))
+     `(which-key-key-face ((,class (:foreground ,func :bold t))))
+     `(which-key-separator-face ((,class (:background nil :foreground ,str))))
+     `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
+
 ;;;;; other, need more work
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
      `(ffap ((,class (:foreground ,base))))

@@ -411,6 +411,9 @@
      `(org-verse ((,class (:inherit org-block :slant italic))))
      `(org-warning ((,class (:foreground ,err))))
 
+;;;;; perspective
+     `(persp-selected-face ((,class (:bold t :foreground ,func))))
+
 ;;;;; powerline
      `(powerline-active1 ((,class (:background ,active2 :foreground ,base))))
      `(powerline-active2 ((,class (:background ,active2 :foreground ,base))))

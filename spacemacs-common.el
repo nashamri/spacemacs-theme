@@ -68,7 +68,7 @@
         (str           (if (eq variant 'dark) (if (display-graphic-p) "#2aa198" "#2aa198") (if (display-graphic-p) "#2aa198" "#2aa198")))
         (type          (if (eq variant 'dark) (if (display-graphic-p) "#38a882" "#5faf87") (if (display-graphic-p) "#428374" "#008787")))
         (comp          (if (eq variant 'dark) (if (display-graphic-p) "#c56ec3" "#d75fd7") (if (display-graphic-p) "#6c4173" "#8700af")))
-        (var           (if (eq variant 'dark) (if (display-graphic-p) "#adaab3" "#adaab3") (if (display-graphic-p) "#656370" "#767676")))
+        (var           (if (eq variant 'dark) (if (display-graphic-p) "#7590db" "#8787d7") (if (display-graphic-p) "#715ab1" "#af5fd7")))
         (err           (if (eq variant 'dark) (if (display-graphic-p) "#e0211d" "#e0211d") (if (display-graphic-p) "#e0211d" "#e0211d")))
         (war           (if (eq variant 'dark) (if (display-graphic-p) "#dc752f" "#dc752f") (if (display-graphic-p) "#dc752f" "#dc752f")))
         (inf           (if (eq variant 'dark) (if (display-graphic-p) "#2f96dc" "#2f96dc") (if (display-graphic-p) "#2f96dc" "#2f96dc")))

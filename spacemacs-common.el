@@ -124,10 +124,12 @@
      `(match ((,class (:background ,bg1 :foreground ,inf :weight bold))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
      `(page-break-lines ((,class (:foreground ,active2))))
+     `(popup-tip-face ((,class (:background ,active2 :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
      `(show-paren-match-face ((,class (:background ,suc))))
      `(success ((,class (:foreground ,suc))))
+     `(tooltip ((,class (:background ,active2 :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
      `(warning ((,class (:foreground ,war ))))
 

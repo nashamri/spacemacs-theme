@@ -87,7 +87,9 @@
         (org-h2-bg     (if (eq variant 'dark) (if (display-graphic-p) "#293235" "#262626") (if (display-graphic-p) "#edf2e9" "#ffffff")))
         (org-h3-bg     (if (eq variant 'dark) (if (display-graphic-p) "#2d332c" "#262626") (if (display-graphic-p) "#f1f3e1" "#ffffff")))
         (org-h4-bg     (if (eq variant 'dark) (if (display-graphic-p) "#32322c" "#262626") (if (display-graphic-p) "#f6f1e1" "#ffffff")))
-        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff"))))
+        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
+        (green-bg      (if (eq variant 'dark) (if (display-graphic-p) "#29422d" "#262626") (if (display-graphic-p) "#dae6d0" "#ffffff")))
+        (red-bg        (if (eq variant 'dark) (if (display-graphic-p) "#512e31" "#262626") (if (display-graphic-p) "#eed9d2" "#ffffff"))))
 
     (custom-theme-set-faces
      theme-name
@@ -430,6 +432,10 @@
      `(rainbow-delimiters-depth-7-face ((,class :foreground ,func)))
      `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
      `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
+
+;;;;; shm
+     `(shm-current-face ((,class (:background ,green-bg))))
+     `(shm-quarantine-face ((,class (:background ,red-bg))))
 
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))

@@ -374,9 +374,9 @@
 
 ;;;;; org
      `(org-agenda-clocking ((,class (:foreground ,comp))))
-     `(org-agenda-date ((,class (:foreground ,var :height 1.1))))
-     `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height 1.3))))
-     `(org-agenda-date-weekend ((,class (:weight normal :foreground ,base))))
+     `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
+     `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
+     `(org-agenda-date-weekend ((,class (:weight normal :foreground ,var))))
      `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
      `(org-agenda-structure ((,class (:weight bold :foreground ,comp))))
      `(org-block ((,class (:foreground ,base))))

@@ -308,6 +308,9 @@
      `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,highlight))))
      `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
 
+;;;;; highlight-indentation
+     `(highlight-indentation-face ((,class (:background ,comment-bg))))
+
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,comp :bold t))))
      `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))

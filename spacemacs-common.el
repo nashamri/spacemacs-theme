@@ -65,7 +65,7 @@
         (comment       (if (eq variant 'dark) (if (display-graphic-p) "#2aa198" "#2aa198") (if (display-graphic-p) "#2aa198" "#2aa198")))
         (comment-bg    (if (eq variant 'dark) (if (display-graphic-p) "#293234" "#262626") (if (display-graphic-p) "#eff3ea" "#ffffff")))
         (func          (if (eq variant 'dark) (if (display-graphic-p) "#bc6ec5" "#d75fd7") (if (display-graphic-p) "#6c3163" "#8700af")))
-        (str           (if (eq variant 'dark) (if (display-graphic-p) "#2aa198" "#2aa198") (if (display-graphic-p) "#2aa198" "#2aa198")))
+        (str           (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))
         (type          (if (eq variant 'dark) (if (display-graphic-p) "#38a882" "#5faf87") (if (display-graphic-p) "#428374" "#008787")))
         (comp          (if (eq variant 'dark) (if (display-graphic-p) "#c56ec3" "#d75fd7") (if (display-graphic-p) "#6c4173" "#8700af")))
         (var           (if (eq variant 'dark) (if (display-graphic-p) "#7590db" "#8787d7") (if (display-graphic-p) "#715ab1" "#af5fd7")))

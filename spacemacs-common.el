@@ -439,7 +439,8 @@
      `(rainbow-delimiters-depth-6-face ((,class :foreground ,inf)))
      `(rainbow-delimiters-depth-7-face ((,class :foreground ,func)))
      `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
-     `(rainbow-delimiters-unmatched-face ((,class :foreground ,war)))
+     `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
+     `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
 
 ;;;;; shm
      `(shm-current-face ((,class (:background ,green-bg))))

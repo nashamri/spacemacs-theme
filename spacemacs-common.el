@@ -163,6 +163,11 @@
      `(diff-refine-removed    ((,class :background ,red :foreground ,bg4)))
      `(diff-removed           ((,class :background nil :foreground ,red)))
 
+;;;;; diff-hl
+     `(diff-hl-change ((,class :background ,inf :foreground nil)))
+     `(diff-hl-delete ((,class :background ,err :foreground nil)))
+     `(diff-hl-insert ((,class :background ,suc :foreground nil)))
+
 ;;;;; dired
      `(dired-directory ((,class (:foreground ,key1 :background ,bg1 :weight bold))))
      `(dired-flagged ((,class (:foreground ,red))))

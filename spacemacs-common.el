@@ -66,7 +66,7 @@
         (comment-bg    (if (eq variant 'dark) (if (display-graphic-p) "#293234" "#262626") (if (display-graphic-p) "#eff3ea" "#ffffff")))
         (func          (if (eq variant 'dark) (if (display-graphic-p) "#bc6ec5" "#d75fd7") (if (display-graphic-p) "#6c3163" "#8700af")))
         (str           (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))
-        (type          (if (eq variant 'dark) (if (display-graphic-p) "#38a882" "#5faf87") (if (display-graphic-p) "#428374" "#008787")))
+        (type          (if (eq variant 'dark) (if (display-graphic-p) "#ce537a" "#df005f") (if (display-graphic-p) "#ba2f59" "#af005f")))
         (comp          (if (eq variant 'dark) (if (display-graphic-p) "#c56ec3" "#d75fd7") (if (display-graphic-p) "#6c4173" "#8700af")))
         (var           (if (eq variant 'dark) (if (display-graphic-p) "#7590db" "#8787d7") (if (display-graphic-p) "#715ab1" "#af5fd7")))
         (err           (if (eq variant 'dark) (if (display-graphic-p) "#e0211d" "#e0211d") (if (display-graphic-p) "#e0211d" "#e0211d")))
@@ -88,6 +88,7 @@
         (org-h3-bg     (if (eq variant 'dark) (if (display-graphic-p) "#2d332c" "#262626") (if (display-graphic-p) "#f1f3e1" "#ffffff")))
         (org-h4-bg     (if (eq variant 'dark) (if (display-graphic-p) "#32322c" "#262626") (if (display-graphic-p) "#f6f1e1" "#ffffff")))
         (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
+        (lnum          (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#b1b1c9" "#af87af")))
         (green-bg      (if (eq variant 'dark) (if (display-graphic-p) "#29422d" "#262626") (if (display-graphic-p) "#dae6d0" "#ffffff")))
         (red-bg        (if (eq variant 'dark) (if (display-graphic-p) "#512e31" "#262626") (if (display-graphic-p) "#eed9d2" "#ffffff"))))
 
@@ -335,7 +336,7 @@
      `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; linum-mode
-     `(linum ((,class (:foreground ,str :background ,bg2))))
+     `(linum ((,class (:foreground ,lnum :background ,bg2))))
 
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,org-h4-bg :foreground ,yellow)))

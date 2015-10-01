@@ -338,6 +338,9 @@
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))
 
+;;;;; linum-relative
+     `(linum-relative-current-face ((,class (:foreground ,comp))))
+
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,org-h4-bg :foreground ,yellow)))
      `(magit-blame-header  ((,class :background ,org-h4-bg :foreground ,green)))

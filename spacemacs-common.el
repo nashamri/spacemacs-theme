@@ -48,6 +48,11 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-org-highlight t
+  "Highlight org headings."
+  :type 'boolean
+  :group 'spacemacs-theme)
+
 (defun create-spacemacs-theme (variant theme-name)
   (let ((class '((class color) (min-colors 89))) ;;                    ~~ Dark ~~                                   ~~ Light ~~
         ;;                                                               GUI       TER                                GUI       TER
@@ -411,10 +416,10 @@
      `(org-ellipsis ((,class (:foreground ,builtin))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
-     `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,org-h1-bg :overline t))))
-     `(org-level-2 ((,class (:bold t :foreground ,str :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,org-h2-bg))))
-     `(org-level-3 ((,class (:bold nil :foreground ,green :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,org-h3-bg))))
-     `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,org-h4-bg))))
+     `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight org-h1-bg) :overline t))))
+     `(org-level-2 ((,class (:bold t :foreground ,str :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight org-h2-bg)))))
+     `(org-level-3 ((,class (:bold nil :foreground ,green :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight org-h3-bg)))))
+     `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,(when spacemacs-theme-org-highlight org-h4-bg)))))
      `(org-level-5 ((,class (:bold nil :foreground ,inf))))
      `(org-level-6 ((,class (:bold nil :foreground ,str))))
      `(org-level-7 ((,class (:bold nil :foreground ,green))))

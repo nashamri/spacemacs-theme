@@ -50,4 +50,8 @@ This toggles a background color for the comment lines.
 
 * `spacemacs-theme-org-height`:
 
-This toggles the use of varying headings heights.
+This toggles the use of varying org headings heights.
+
+* `spacemacs-theme-org-highlight`:
+
+This toggles highlighting of org headings.

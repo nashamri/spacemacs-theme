@@ -105,6 +105,7 @@
 
 ;;;;; basics
      `(cursor ((,class (:background ,cursor))))
+     `(custom-button ((,class :background ,bg2 :foreground ,base ,:box (:line-width 2 :style released-button))))
      `(default ((,class (:background ,bg1 :foreground ,base))))
      `(default-italic ((,class (:italic t))))
      `(error ((,class (:foreground ,err))))
@@ -416,6 +417,7 @@
      `(org-ellipsis ((,class (:foreground ,builtin))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
+     `(org-kbd ((,class (:inherit region :foreground ,base :box (:line-width 1 :style released-button)))))
      `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight org-h1-bg) :overline t))))
      `(org-level-2 ((,class (:bold t :foreground ,str :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight org-h2-bg)))))
      `(org-level-3 ((,class (:bold nil :foreground ,green :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight org-h3-bg)))))

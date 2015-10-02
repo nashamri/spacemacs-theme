@@ -62,7 +62,7 @@
         (builtin       (if (eq variant 'dark) (if (display-graphic-p) "#1f71ab" "#268bd2") (if (display-graphic-p) "#1f71ab" "#268bd2")))
         (keyword       (if (eq variant 'dark) (if (display-graphic-p) "#237fbf" "#268bd2") (if (display-graphic-p) "#237fbf" "#268bd2")))
         (const         (if (eq variant 'dark) (if (display-graphic-p) "#a45bad" "#d75fd7") (if (display-graphic-p) "#4e3163" "#8700af")))
-        (comment       (if (eq variant 'dark) (if (display-graphic-p) "#2aa1ae" "#2aa198") (if (display-graphic-p) "#2aa1ae" "#2aa198")))
+        (comment       (if (eq variant 'dark) (if (display-graphic-p) "#2aa1ae" "#008787") (if (display-graphic-p) "#2aa1ae" "#008787")))
         (comment-bg    (if (eq variant 'dark) (if (display-graphic-p) "#292e34" "#262626") (if (display-graphic-p) "#ecf3ec" "#ffffff")))
         (func          (if (eq variant 'dark) (if (display-graphic-p) "#bc6ec5" "#d75fd7") (if (display-graphic-p) "#6c3163" "#8700af")))
         (str           (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))

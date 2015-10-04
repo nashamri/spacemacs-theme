@@ -169,6 +169,7 @@
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
      `(diff-changed           ((,class :background nil :foreground ,inf)))
+     `(diff-header            ((,class :background ,org-cb-ln-bg :foreground ,func)))
      `(diff-indicator-added   ((,class :background nil :foreground ,green)))
      `(diff-indicator-changed ((,class :background nil :foreground ,inf)))
      `(diff-indicator-removed ((,class :background nil :foreground ,red)))

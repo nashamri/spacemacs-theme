@@ -494,6 +494,17 @@
      `(which-key-separator-face ((,class (:background nil :foreground ,str))))
      `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
 
+;;;;; whitespace-mode
+     `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-indentation ((,class (:background nil :foreground ,war))))
+     `(whitespace-line ((,class (:background nil :foreground ,comp))))
+     `(whitespace-newline ((,class (:background nil :foreground ,comp))))
+     `(whitespace-space ((,class (:background nil :foreground ,active2))))
+     `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
+     `(whitespace-tab ((,class (:background nil))))
+     `(whitespace-trailing ((,class (:background ,err :foreground ,war))))
+
 ;;;;; other, need more work
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
      `(ffap ((,class (:foreground ,base))))

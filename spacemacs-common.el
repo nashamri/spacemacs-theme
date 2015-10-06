@@ -320,7 +320,7 @@
      `(helm-source-header ((,class (:background ,comp :foreground ,bg1 :bold t))))
      `(helm-time-zone-current ((,class (:foreground ,builtin :background ,bg1))))
      `(helm-time-zone-home ((,class (:foreground ,comp :background ,bg1))))
-     `(helm-visible-mark ((,class (:foreground ,bg1 :background ,bg3))))
+     `(helm-visible-mark ((,class (:foreground ,inf :background ,bg3))))
 
 ;;;;; helm-swoop
      `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))

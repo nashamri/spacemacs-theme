@@ -437,7 +437,7 @@
      `(org-priority ((,class (:foreground ,war :bold t))))
      `(org-quote ((,class (:inherit org-block :slant italic))))
      `(org-scheduled ((,class (:foreground ,comp))))
-     `(org-scheduled-today ((,class (:foreground ,func :weight bold :height 1.2))))
+     `(org-scheduled-today ((,class (:foreground ,func :weight bold :height ,(if spacemacs-theme-org-height 1.2 1.0)))))
      `(org-sexp-date ((,class (:foreground ,base))))
      `(org-special-keyword ((,class (:foreground ,func))))
      `(org-table ((,class (:foreground ,yellow :background ,org-h4-bg))))

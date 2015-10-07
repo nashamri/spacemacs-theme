@@ -493,6 +493,9 @@
      `(which-key-separator-face ((,class (:background nil :foreground ,str))))
      `(which-key-special-key-face ((,class (:background ,func :foreground ,bg1))))
 
+;;;;; which-function-mode
+     `(which-func ((,class (:foreground ,func))))
+
 ;;;;; whitespace-mode
      `(whitespace-empty ((,class (:background nil :foreground ,yellow))))
      `(whitespace-indentation ((,class (:background nil :foreground ,war))))

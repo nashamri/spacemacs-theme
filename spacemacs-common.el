@@ -401,7 +401,7 @@
      `(neo-root-dir-face ((,class (:foreground ,func :weight bold))))
 
 ;;;;; org
-     `(org-agenda-clocking ((,class (:foreground ,comp))))
+     `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
      `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
      `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
      `(org-agenda-date-weekend ((,class (:weight normal :foreground ,var))))

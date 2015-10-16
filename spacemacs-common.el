@@ -403,8 +403,8 @@
 ;;;;; org
      `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
      `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
-     `(org-agenda-date-today ((,class (:foreground ,keyword :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
-     `(org-agenda-date-weekend ((,class (:weight normal :foreground ,var))))
+     `(org-agenda-date-today ((,class (:foreground ,keyword :slant italic :weight bold :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
+     `(org-agenda-date-weekend ((,class (:weight bold :foreground ,var))))
      `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green)))))
      `(org-agenda-structure ((,class (:weight bold :foreground ,comp))))
      `(org-block ((,class (:background ,org-cb-bg :foreground ,org-cb))))

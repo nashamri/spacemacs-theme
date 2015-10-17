@@ -409,7 +409,7 @@
      `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
      `(org-agenda-date-today ((,class (:foreground ,keyword :slant italic :weight bold :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
      `(org-agenda-date-weekend ((,class (:weight bold :foreground ,var))))
-     `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green)))))
+     `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :height ,(if spacemacs-theme-org-height 1.2 1.0)))))
      `(org-agenda-structure ((,class (:weight bold :foreground ,comp))))
      `(org-block ((,class (:background ,org-cb-bg :foreground ,org-cb))))
      `(org-block-begin-line ((,class (:background ,org-cb-ln-bg :foreground ,org-cb-ln))))

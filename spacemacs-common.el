@@ -222,6 +222,10 @@
 ;;;;; eldoc
      `(eldoc-highlight-function-argument ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
 
+;;;;; enh-ruby
+     `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
+     `(enh-ruby-op-face ((,class (:background ,bg1 :foreground ,base))))
+
 ;;;;; erc
      `(erc-input-face ((,class (:foreground ,func))))
      `(erc-my-nick-face ((,class (:foreground ,key1))))

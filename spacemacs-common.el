@@ -479,6 +479,9 @@
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
      `(sp-show-pair-match-face ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))))
 
+;;;;; spaceline
+     `(spaceline-python-venv ((,class (:foreground ,comp))))
+
 ;;;;; term
      `(term ((,class (:foreground ,base :background ,bg1))))
      `(term-color-black ((,class (:foreground ,bg4))))

@@ -48,7 +48,7 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
-(defcustom spacemacs-theme-org-highlight t
+(defcustom spacemacs-theme-org-highlight nil
   "Highlight org headings."
   :type 'boolean
   :group 'spacemacs-theme)
@@ -426,12 +426,12 @@
      `(org-date-selected ((,class (:background ,func :foreground ,bg1) )))
      `(org-document-info-keyword ((,class (:foreground ,org-ml))))
      `(org-document-title ((,class (:foreground ,func :weight bold :height ,(if spacemacs-theme-org-height 1.4 1.0) :underline t))))
-     `(org-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t :overline t :background ,org-h3-bg))))
+     `(org-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t :background ,org-h3-bg))))
      `(org-ellipsis ((,class (:foreground ,builtin))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
      `(org-kbd ((,class (:inherit region :foreground ,base :box (:line-width 1 :style released-button)))))
-     `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight org-h1-bg) :overline t))))
+     `(org-level-1 ((,class (:bold t :foreground ,inf :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight org-h1-bg)))))
      `(org-level-2 ((,class (:bold t :foreground ,str :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight org-h2-bg)))))
      `(org-level-3 ((,class (:bold nil :foreground ,green :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight org-h3-bg)))))
      `(org-level-4 ((,class (:bold nil :foreground ,yellow :background ,(when spacemacs-theme-org-highlight org-h4-bg)))))
@@ -449,7 +449,7 @@
      `(org-sexp-date ((,class (:foreground ,base))))
      `(org-special-keyword ((,class (:foreground ,func))))
      `(org-table ((,class (:foreground ,yellow :background ,org-h4-bg))))
-     `(org-todo ((,class (:foreground ,war :bold t :overline t :background ,org-h4-bg))))
+     `(org-todo ((,class (:foreground ,war :bold t :background ,org-h4-bg))))
      `(org-verbatim ((,class (:foreground ,inf))))
      `(org-verse ((,class (:inherit org-block :slant italic))))
      `(org-warning ((,class (:foreground ,err))))

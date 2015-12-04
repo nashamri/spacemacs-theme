@@ -34,6 +34,9 @@
 
 ;;; Code:
 
+(defmacro dyn-let (varlist fn body)
+  (list 'let (append varlist (funcall fn)) body))
+
 (defgroup spacemacs-theme nil
   "Spacemacs-theme options."
   :group 'faces)
@@ -53,8 +56,17 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-custom-colors nil
+  "Specify a list of custom colors"
+  :type 'alist
+  :group 'spacemacs-theme)
+
+(defun custom-colors-override ()
+  (mapcar (lambda (x) (list (car x) (cdr x)))
+          spacemacs-theme-custom-colors))
+
 (defun create-spacemacs-theme (variant theme-name)
-  (let ((class '((class color) (min-colors 89))) ;;                       ~~ Dark ~~                                   ~~ Light ~~
+  (dyn-let ((class '((class color) (min-colors 89))) ;;                   ~~ Dark ~~                                   ~~ Light ~~
         ;;                                                               GUI       TER                                GUI       TER
         ;; generic
         (active1       (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
@@ -106,6 +118,8 @@
         (yellow        (if (eq variant 'dark) (if (display-graphic-p) "#b1951d" "#875f00") (if (display-graphic-p) "#b1951d" "#875f00")))
         (yellow-bg     (if (eq variant 'dark) (if (display-graphic-p) "#32322c" "#262626") (if (display-graphic-p) "#f6f1e1" "#ffffff")))
         )
+
+        custom-colors-override
 
     (custom-theme-set-faces
      theme-name

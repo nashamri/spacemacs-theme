@@ -79,9 +79,10 @@
         (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
         (keyword       (if (eq variant 'dark) (if (display-graphic-p) "#4f97d7" "#268bd2") (if (display-graphic-p) "#3a81c3" "#268bd2")))
         (lnum          (if (eq variant 'dark) (if (display-graphic-p) "#44505c" "#444444") (if (display-graphic-p) "#a8a8bf" "#af87af")))
+        (mat           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#ba2f59" "#af005f")))
         (meta          (if (eq variant 'dark) (if (display-graphic-p) "#9f8766" "#af875f") (if (display-graphic-p) "#da8b55" "#df5f5f")))
         (str           (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))
-        (suc           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#86dc2f" "#87ff00")))
+        (suc           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#42ae2c" "#00af00")))
         (ttip          (if (eq variant 'dark) (if (display-graphic-p) "#9a9aba" "#888888") (if (display-graphic-p) "#8c799f" "#5f5f87")))
         (ttip-sl       (if (eq variant 'dark) (if (display-graphic-p) "#6b5d85" "#333333") (if (display-graphic-p) "#c8c6dd" "#afafff")))
         (ttip-bg       (if (eq variant 'dark) (if (display-graphic-p) "#34323e" "#444444") (if (display-graphic-p) "#e2e0ea" "#dfdfff")))
@@ -143,7 +144,7 @@
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
-     `(show-paren-match-face ((,class (:background ,suc))))
+     `(show-paren-match-face ((,class (:background ,mat))))
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
@@ -216,13 +217,13 @@
 
 ;;;;; ein
      `(ein:cell-input-area((,class (:background ,bg2))))
-     `(ein:cell-input-prompt ((,class (:foreground ,(if (eq variant 'dark) suc green)))))
+     `(ein:cell-input-prompt ((,class (:foreground ,suc))))
      `(ein:cell-output-prompt ((,class (:foreground ,err))))
      `(ein:notification-tab-normal ((,class (:foreground ,keyword))))
-     `(ein:notification-tab-selected ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
+     `(ein:notification-tab-selected ((,class (:foreground ,suc :bold t))))
 
 ;;;;; eldoc
-     `(eldoc-highlight-function-argument ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
+     `(eldoc-highlight-function-argument ((,class (:foreground ,mat :bold t))))
 
 ;;;;; enh-ruby
      `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
@@ -234,7 +235,7 @@
      `(erc-nick-default-face ((,class (:foreground ,keyword))))
      `(erc-nick-prefix-face ((,class (:foreground ,yellow))))
      `(erc-notice-face ((,class (:foreground ,str))))
-     `(erc-prompt-face ((,class (:foreground ,(if (eq variant 'dark) suc green) :bold t))))
+     `(erc-prompt-face ((,class (:foreground ,mat :bold t))))
      `(erc-timestamp-face ((,class (:foreground ,keyword))))
 
 ;;;;; eshell
@@ -277,12 +278,12 @@
      `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :bold t :background ,blue-bg))))
 
 ;;;;; gnus
-     `(gnus-emphasis-highlight-words ((,class (:background ,(if (eq variant 'dark) err suc) :foreground ,(when (eq variant 'light) bg1)))))
+     `(gnus-emphasis-highlight-words ((,class (:background ,suc :foreground ,bg1))))
      `(gnus-header-content ((,class (:foreground ,keyword))))
      `(gnus-header-from ((,class (:foreground ,var))))
      `(gnus-header-name ((,class (:foreground ,comp))))
      `(gnus-header-subject ((,class (:foreground ,func :bold t))))
-     `(gnus-summary-cancelled ((,class (:background ,(if (eq variant 'dark) err suc) :foreground ,bg1))))
+     `(gnus-summary-cancelled ((,class (:background ,war :foreground ,bg1))))
 
 ;;;;; guide-key
      `(guide-key/highlight-command-face ((,class (:foreground ,base))))
@@ -338,7 +339,7 @@
 
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,comp :bold t))))
-     `(ido-only-match ((,class (:foreground ,(if (eq variant 'dark) suc red) :bold t))))
+     `(ido-only-match ((,class (:foreground ,mat :bold t))))
      `(ido-subdir ((,class (:foreground ,keyword))))
      `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
 
@@ -415,7 +416,7 @@
      `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
      `(org-agenda-date-today ((,class (:foreground ,keyword :slant italic :weight bold :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
      `(org-agenda-date-weekend ((,class (:weight bold :foreground ,var))))
-     `(org-agenda-done ((,class (:foreground ,(if (eq variant 'dark) suc green) :height ,(if spacemacs-theme-org-height 1.2 1.0)))))
+     `(org-agenda-done ((,class (:foreground ,suc :height ,(if spacemacs-theme-org-height 1.2 1.0)))))
      `(org-agenda-structure ((,class (:weight bold :foreground ,comp))))
      `(org-block ((,class (:background ,cblk-bg :foreground ,cblk))))
      `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))
@@ -483,7 +484,7 @@
 
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
-     `(sp-show-pair-match-face ((,class (:foreground ,(if (eq variant 'dark) suc red) :weight bold :underline t))))
+     `(sp-show-pair-match-face ((,class (:foreground ,mat :weight bold :underline t))))
 
 ;;;;; spaceline
      `(spaceline-python-venv ((,class (:foreground ,comp))))

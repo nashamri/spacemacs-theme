@@ -79,6 +79,7 @@
         (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
         (keyword       (if (eq variant 'dark) (if (display-graphic-p) "#4f97d7" "#268bd2") (if (display-graphic-p) "#3a81c3" "#268bd2")))
         (lnum          (if (eq variant 'dark) (if (display-graphic-p) "#44505c" "#444444") (if (display-graphic-p) "#a8a8bf" "#af87af")))
+        (meta          (if (eq variant 'dark) (if (display-graphic-p) "#9f8766" "#af875f") (if (display-graphic-p) "#da8b55" "#df5f5f")))
         (str           (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))
         (suc           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#86dc2f" "#87ff00")))
         (ttip          (if (eq variant 'dark) (if (display-graphic-p) "#9a9aba" "#888888") (if (display-graphic-p) "#8c799f" "#5f5f87")))
@@ -87,7 +88,6 @@
         (type          (if (eq variant 'dark) (if (display-graphic-p) "#ce537a" "#df005f") (if (display-graphic-p) "#ba2f59" "#af005f")))
         (var           (if (eq variant 'dark) (if (display-graphic-p) "#7590db" "#8787d7") (if (display-graphic-p) "#715ab1" "#af5fd7")))
         (war           (if (eq variant 'dark) (if (display-graphic-p) "#dc752f" "#dc752f") (if (display-graphic-p) "#dc752f" "#dc752f")))
-        (org-ml        (if (eq variant 'dark) (if (display-graphic-p) "#ac641b" "#af5f00") (if (display-graphic-p) "#da8b55" "#df5f5f")))
 
         ;; colors
         (aqua          (if (eq variant 'dark) (if (display-graphic-p) "#2d9574" "#2aa198") (if (display-graphic-p) "#2d9574" "#2aa198")))
@@ -426,7 +426,7 @@
      `(org-column-title ((,class (:background ,highlight))))
      `(org-date ((,class (:underline t :foreground ,var) )))
      `(org-date-selected ((,class (:background ,func :foreground ,bg1) )))
-     `(org-document-info-keyword ((,class (:foreground ,org-ml))))
+     `(org-document-info-keyword ((,class (:foreground ,meta))))
      `(org-document-title ((,class (:foreground ,func :weight bold :height ,(if spacemacs-theme-org-height 1.4 1.0) :underline t))))
      `(org-done ((,class (:foreground ,suc :bold t :background ,green-bg))))
      `(org-ellipsis ((,class (:foreground ,keyword))))
@@ -442,7 +442,7 @@
      `(org-level-7 ((,class (:bold nil :foreground ,green))))
      `(org-level-8 ((,class (:bold nil :foreground ,yellow))))
      `(org-link ((,class (:underline t :foreground ,comment))))
-     `(org-meta-line ((,class (:foreground ,org-ml))))
+     `(org-meta-line ((,class (:foreground ,meta))))
      `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
      `(org-priority ((,class (:foreground ,war :bold t))))
      `(org-quote ((,class (:inherit org-block :slant italic))))

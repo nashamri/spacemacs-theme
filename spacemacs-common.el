@@ -69,8 +69,8 @@
   (dyn-let ((class '((class color) (min-colors 89))) ;;                   ~~ Dark ~~                                   ~~ Light ~~
         ;;                                                               GUI       TER                                GUI       TER
         ;; generic
-        (active1       (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
-        (active2       (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
+        (act1          (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
+        (act2          (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
         (base          (if (eq variant 'dark) (if (display-graphic-p) "#b2b2b2" "#b2b2b2") (if (display-graphic-p) "#655370" "#5f5f87")))
         (bg1           (if (eq variant 'dark) (if (display-graphic-p) "#292b2e" "#262626") (if (display-graphic-p) "#fbf8ef" "#ffffff")))
         (bg2           (if (eq variant 'dark) (if (display-graphic-p) "#212026" "#1c1c1c") (if (display-graphic-p) "#efeae9" "#e4e4e4")))
@@ -154,7 +154,7 @@
      `(link-visited ((,class (:foreground ,comp :underline t))))
      `(match ((,class (:background ,bg1 :foreground ,keyword :weight bold))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
-     `(page-break-lines ((,class (:foreground ,active2))))
+     `(page-break-lines ((,class (:foreground ,act2))))
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
@@ -173,7 +173,7 @@
      `(company-preview-common ((,class (:background ,ttip-bg :foreground ,base))))
      `(company-preview-search ((,class (:inherit match))))
      `(company-scrollbar-bg ((,class (:background ,bg2))))
-     `(company-scrollbar-fg ((,class (:background ,active2))))
+     `(company-scrollbar-fg ((,class (:background ,act2))))
      `(company-template-field ((,class (:inherit region))))
      `(company-tooltip ((,class (:background ,ttip-bg :foreground ,ttip))))
      `(company-tooltip-annotation ((,class (:background ,ttip-bg :foreground ,keyword))))
@@ -415,7 +415,7 @@
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :weight bold))))
 
 ;;;;; mode-line
-     `(mode-line           ((,class (:foreground ,base :background ,active1 :box (:color ,border :line-width 1)))))
+     `(mode-line           ((,class (:foreground ,base :background ,act1 :box (:color ,border :line-width 1)))))
      `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1     :box (:color ,border :line-width 1)))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
 
@@ -475,8 +475,8 @@
      `(persp-selected-face ((,class (:bold t :foreground ,func))))
 
 ;;;;; powerline
-     `(powerline-active1 ((,class (:background ,active2 :foreground ,base))))
-     `(powerline-active2 ((,class (:background ,active2 :foreground ,base))))
+     `(powerline-active1 ((,class (:background ,act2 :foreground ,base))))
+     `(powerline-active2 ((,class (:background ,act2 :foreground ,base))))
      `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
      `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
 
@@ -529,7 +529,7 @@
      `(whitespace-indentation ((,class (:background nil :foreground ,war))))
      `(whitespace-line ((,class (:background nil :foreground ,comp))))
      `(whitespace-newline ((,class (:background nil :foreground ,comp))))
-     `(whitespace-space ((,class (:background nil :foreground ,active2))))
+     `(whitespace-space ((,class (:background nil :foreground ,act2))))
      `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
      `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
      `(whitespace-tab ((,class (:background nil))))

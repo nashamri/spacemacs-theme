@@ -67,7 +67,7 @@ The theme can be customized by overriding one of the theme local variables by se
 Here's a list of all the local variables and roles:
 
 | var        | role                                                                                              |
-|------------+---------------------------------------------------------------------------------------------------|
+|------------|---------------------------------------------------------------------------------------------------|
 | act1       | One of mode-line's active colors.                                                                 |
 | act2       | The other active color of mode-line.                                                              |
 | base       | The basic color of normal text.                                                                   |

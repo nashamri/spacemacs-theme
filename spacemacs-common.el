@@ -422,9 +422,17 @@
      `(magit-section-highlight      ((,class (:background ,bg2))))
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :weight bold))))
 
+;;;;; markdown
+     `(markdown-header-face-1 ((,class (:bold t :foreground ,head1))))
+     `(markdown-header-face-2 ((,class (:bold t :foreground ,head2))))
+     `(markdown-header-face-3 ((,class (:bold t :foreground ,head3))))
+     `(markdown-header-face-4 ((,class (:foreground ,head4))))
+     `(markdown-header-face-5 ((,class (:foreground ,head1))))
+     `(markdown-header-face-6 ((,class (:foreground ,head2))))
+
 ;;;;; mode-line
      `(mode-line           ((,class (:foreground ,base :background ,act1 :box (:color ,border :line-width 1)))))
-     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1     :box (:color ,border :line-width 1)))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
      `(mode-line-buffer-id ((,class (:bold t :foreground ,func))))
 
 ;;;;; neotree

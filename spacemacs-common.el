@@ -72,6 +72,7 @@
         (act1          (if (eq variant 'dark) (if (display-graphic-p) "#222226" "#121212") (if (display-graphic-p) "#e7e5eb" "#d7dfff")))
         (act2          (if (eq variant 'dark) (if (display-graphic-p) "#5d4d7a" "#444444") (if (display-graphic-p) "#d3d3e7" "#afafd7")))
         (base          (if (eq variant 'dark) (if (display-graphic-p) "#b2b2b2" "#b2b2b2") (if (display-graphic-p) "#655370" "#5f5f87")))
+        (base-dim      (if (eq variant 'dark) (if (display-graphic-p) "#545557" "#585858") (if (display-graphic-p) "#cdc5c8" "#afafd7")))
         (bg1           (if (eq variant 'dark) (if (display-graphic-p) "#292b2e" "#262626") (if (display-graphic-p) "#fbf8ef" "#ffffff")))
         (bg2           (if (eq variant 'dark) (if (display-graphic-p) "#212026" "#1c1c1c") (if (display-graphic-p) "#efeae9" "#e4e4e4")))
         (bg3           (if (eq variant 'dark) (if (display-graphic-p) "#100a14" "#121212") (if (display-graphic-p) "#e3dedd" "#d0d0d0")))

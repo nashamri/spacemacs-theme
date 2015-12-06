@@ -519,6 +519,9 @@
 
 ;;;;; spaceline
      `(spaceline-python-venv ((,class (:foreground ,comp))))
+     `(spaceline-flycheck-error  ((,class (:foreground ,err))))
+     `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
+     `(spaceline-flycheck-warning((,class (:foreground ,war))))
 
 ;;;;; term
      `(term ((,class (:foreground ,base :background ,bg1))))

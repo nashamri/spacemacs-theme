@@ -1,6 +1,7 @@
 # Spacemacs-theme
 
-[![MELPA](http://melpa.org/packages/spacemacs-theme-badge.svg)](http://melpa.org/#/spacemacs-theme) [![Join the chat at https://gitter.im/nashamri/spacemacs-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nashamri/spacemacs-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) ![Made with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)
+[![MELPA](http://melpa.org/packages/spacemacs-theme-badge.svg)] (http://melpa.org/#/spacemacs-theme)![Made with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)
+ [![Join the chat at https://gitter.im/nashamri/spacemacs-theme](https://badges.gitter.im/Join%20Chat.svg)] (https://gitter.im/nashamri/spacemacs-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![spacemacs-theme](/../screenshots/spacemacs-theme.png)
 
@@ -71,6 +72,7 @@ Here's a list of all the local variables and roles:
 | act1       | One of mode-line's active colors.                                                                 |
 | act2       | The other active color of mode-line.                                                              |
 | base       | The basic color of normal text.                                                                   |
+| base-dim   | A dimmer version of the normal text color.                                                        |
 | bg1        | The background color.                                                                             |
 | bg2        | A darker background color. Used to highlight current line.                                        |
 | bg3        | Yet another darker shade of the background color.                                                 |

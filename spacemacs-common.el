@@ -1,6 +1,6 @@
 ;;; spacemacs-common.el --- Color theme with a dark and light versions.
 
-;; Copyright (C) 2014 , Nasser Alshammari
+;; Copyright (C) 2015-2016 Nasser Alshammari
 
 ;; Author: Nasser Alshammari
 ;; URL: <https://github.com/nashamri/spacemacs-theme>

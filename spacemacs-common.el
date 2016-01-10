@@ -378,6 +378,14 @@
      `(info-title-3 ((,class (:height 1.3))))
      `(info-title-4 ((,class (:height 1.2))))
 
+;;;;; ivy
+     `(ivy-current-match ((,class (:foreground ,mat :background ,nil :bold t))))
+     `(ivy-minibuffer-match-face-1 ((,class (:foreground ,head2 :background nil))))
+     `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :background nil))))
+     `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head3 :background nil))))
+     `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head4 :background nil))))
+     `(ivy-remote ((,class (:foreground ,cyan))))
+
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))
 

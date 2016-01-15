@@ -155,13 +155,13 @@
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
-     `(highlight ((,class (:foreground ,base :background ,bg3))))
+     `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
-     `(isearch ((,class (:bold t :foreground ,bg1 :background ,keyword))))
-     `(lazy-highlight ((,class (:foreground ,bg1 :background ,keyword :weight normal))))
+     `(isearch ((,class (:foreground ,bg1 :background ,mat))))
+     `(lazy-highlight ((,class (:foreground ,bg1 :background ,mat :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
      `(link-visited ((,class (:foreground ,comp :underline t))))
-     `(match ((,class (:background ,bg1 :foreground ,keyword :weight bold))))
+     `(match ((,class (:background ,mat :foreground ,bg1))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
      `(page-break-lines ((,class (:foreground ,act2))))
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
@@ -172,6 +172,10 @@
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
      `(warning ((,class (:foreground ,war ))))
+
+;;;;; ahs
+     `(ahs-face ((,class (:background ,highlight))))
+     `(ahs-plugin-whole-buffer-face ((,class (:background ,mat :foreground ,bg1))))
 
 ;;;;; anzu-mode
      `(anzu-mode-line ((,class (:foreground ,yellow :weight bold))))

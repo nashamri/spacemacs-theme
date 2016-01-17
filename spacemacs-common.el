@@ -97,7 +97,7 @@
         (head3-bg      (if (eq variant 'dark) (if (display-graphic-p) "#293235" "#262626") (if (display-graphic-p) "#edf2e9" "#ffffff")))
         (head4         (if (eq variant 'dark) (if (display-graphic-p) "#b1951d" "#875f00") (if (display-graphic-p) "#b1951d" "#875f00")))
         (head4-bg      (if (eq variant 'dark) (if (display-graphic-p) "#32322c" "#262626") (if (display-graphic-p) "#f6f1e1" "#ffffff")))
-        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#333c45" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
+        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#3f4953" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
         (keyword       (if (eq variant 'dark) (if (display-graphic-p) "#4f97d7" "#268bd2") (if (display-graphic-p) "#3a81c3" "#268bd2")))
         (lnum          (if (eq variant 'dark) (if (display-graphic-p) "#44505c" "#444444") (if (display-graphic-p) "#a8a8bf" "#af87af")))
         (mat           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#ba2f59" "#af005f")))
@@ -158,10 +158,10 @@
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
-     `(lazy-highlight ((,class (:foreground ,bg1 :background ,mat :weight normal))))
+     `(lazy-highlight ((,class (:background ,highlight :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
      `(link-visited ((,class (:foreground ,comp :underline t))))
-     `(match ((,class (:background ,mat :foreground ,bg1))))
+     `(match ((,class (:background ,highlight :foreground ,mat))))
      `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
      `(page-break-lines ((,class (:foreground ,act2))))
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
@@ -345,8 +345,8 @@
      `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
      `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
      `(helm-header-line-left-margin ((,class (:foreground ,keyword :background ,nil))))
-     `(helm-match ((,class (:inherit match))))
-     `(helm-match-item ((,class (:inherit match))))
+     `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
+     `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
      `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
      `(helm-selection ((,class (:background ,highlight))))
      `(helm-selection-line ((,class (:background ,bg2))))
@@ -358,8 +358,8 @@
 
 ;;;;; helm-swoop
      `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))
-     `(helm-swoop-target-line-face ((,class (:foreground ,base :background ,highlight))))
-     `(helm-swoop-target-word-face ((,class (:foreground ,bg1 :background ,suc))))
+     `(helm-swoop-target-line-face ((,class (:background ,highlight))))
+     `(helm-swoop-target-word-face ((,class (:background ,highlight :foreground ,mat))))
 
 ;;;;; highlight-indentation
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
@@ -383,7 +383,7 @@
      `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; ivy
-     `(ivy-current-match ((,class (:foreground ,mat :background ,bg3 :bold t))))
+     `(ivy-current-match ((,class (:foreground ,mat :background ,highlight :bold t))))
      `(ivy-minibuffer-match-face-1 ((,class (:bold t))))
      `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :background ,head1-bg :bold t))))
      `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :background ,head4-bg :bold t))))
@@ -530,7 +530,7 @@
      `(sp-show-pair-match-face ((,class (:foreground ,mat :weight bold :underline t))))
 
 ;;;;; swiper
-     `(swiper-line-face ((,class (:foreground ,mat :background ,bg3 :bold t))))
+     `(swiper-line-face ((,class (:foreground ,mat :background ,highlight :bold t))))
      `(swiper-match-face-1 ((,class (:bold t))))
      `(swiper-match-face-2 ((,class (:foreground ,head1 :background ,head1-bg :bold t))))
      `(swiper-match-face-3 ((,class (:foreground ,head4 :background ,head4-bg :bold t))))

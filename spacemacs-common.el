@@ -97,7 +97,7 @@
         (head3-bg      (if (eq variant 'dark) (if (display-graphic-p) "#293235" "#262626") (if (display-graphic-p) "#edf2e9" "#ffffff")))
         (head4         (if (eq variant 'dark) (if (display-graphic-p) "#b1951d" "#875f00") (if (display-graphic-p) "#b1951d" "#875f00")))
         (head4-bg      (if (eq variant 'dark) (if (display-graphic-p) "#32322c" "#262626") (if (display-graphic-p) "#f6f1e1" "#ffffff")))
-        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#3f4953" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
+        (highlight     (if (eq variant 'dark) (if (display-graphic-p) "#444155" "#444444") (if (display-graphic-p) "#d3d3e7" "#d7d7ff")))
         (keyword       (if (eq variant 'dark) (if (display-graphic-p) "#4f97d7" "#268bd2") (if (display-graphic-p) "#3a81c3" "#268bd2")))
         (lnum          (if (eq variant 'dark) (if (display-graphic-p) "#44505c" "#444444") (if (display-graphic-p) "#a8a8bf" "#af87af")))
         (mat           (if (eq variant 'dark) (if (display-graphic-p) "#86dc2f" "#86dc2f") (if (display-graphic-p) "#ba2f59" "#af005f")))

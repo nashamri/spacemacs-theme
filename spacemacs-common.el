@@ -383,11 +383,11 @@
      `(info-title-4 ((,class (:height 1.2))))
 
 ;;;;; ivy
-     `(ivy-current-match ((,class (:foreground ,mat :background ,highlight :bold t))))
+     `(ivy-current-match ((,class (:background ,highlight :bold t))))
      `(ivy-minibuffer-match-face-1 ((,class (:bold t))))
-     `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :background ,head1-bg :bold t))))
-     `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :background ,head4-bg :bold t))))
-     `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :background ,head3-bg :bold t))))
+     `(ivy-minibuffer-match-face-2 ((,class (:foreground ,head1 :underline t))))
+     `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :underline t))))
+     `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :underline t))))
      `(ivy-remote ((,class (:foreground ,cyan))))
 
 ;;;;; linum-mode
@@ -530,11 +530,11 @@
      `(sp-show-pair-match-face ((,class (:foreground ,mat :weight bold :underline t))))
 
 ;;;;; swiper
-     `(swiper-line-face ((,class (:foreground ,mat :background ,highlight :bold t))))
+     `(swiper-line-face ((,class (:background ,highlight :bold t))))
      `(swiper-match-face-1 ((,class (:bold t))))
-     `(swiper-match-face-2 ((,class (:foreground ,head1 :background ,head1-bg :bold t))))
-     `(swiper-match-face-3 ((,class (:foreground ,head4 :background ,head4-bg :bold t))))
-     `(swiper-match-face-4 ((,class (:foreground ,head3 :background ,head3-bg :bold t))))
+     `(swiper-match-face-2 ((,class (:foreground ,head1 :underline t))))
+     `(swiper-match-face-3 ((,class (:foreground ,head4 :underline t))))
+     `(swiper-match-face-4 ((,class (:foreground ,head3 :underline t))))
 
 ;;;;; spaceline
      `(spaceline-python-venv ((,class (:foreground ,comp))))

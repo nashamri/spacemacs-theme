@@ -600,6 +600,7 @@
      `(mu4e-cited-1-face ((,class (:foreground ,base))))
      `(mu4e-cited-7-face ((,class (:foreground ,base))))
      `(mu4e-header-marks-face ((,class (:foreground ,comp))))
+     `(mu4e-header-key-face ((,class (:foreground ,head2 :bold t))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
      `(slime-repl-inputed-output-face ((,class (:foreground ,comp))))
      `(trailing-whitespace ((,class :foreground nil :background ,err)))

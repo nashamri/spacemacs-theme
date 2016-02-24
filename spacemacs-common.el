@@ -435,6 +435,11 @@
      `(magit-section-highlight      ((,class (:background ,bg2))))
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :weight bold))))
 
+;;;;; man
+     `(Man-overstrike ((,class (:foreground ,head1 :weight bold))))
+     `(Man-reverse ((,class (:foreground ,highlight))))
+     `(Man-underline ((,class (:foreground ,comp :underline t))))
+
 ;;;;; markdown
      `(markdown-header-face-1 ((,class (:bold t :foreground ,head1))))
      `(markdown-header-face-2 ((,class (:bold t :foreground ,head2))))

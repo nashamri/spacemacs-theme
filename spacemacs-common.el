@@ -436,7 +436,7 @@
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
 
 ;;;;; man
-     `(Man-overstrike ((,class (:foreground ,head1 :weight bold))))
+     `(Man-overstrike ((,class (:foreground ,head1 :inherit bold))))
      `(Man-reverse ((,class (:foreground ,highlight))))
      `(Man-underline ((,class (:foreground ,comp :underline t))))
 

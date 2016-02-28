@@ -71,8 +71,8 @@
           spacemacs-theme-custom-colors))
 
 (defun create-spacemacs-theme (variant theme-name)
-  (dyn-let ((class '((class color) (min-colors 89))) ;;                   ~~ Dark ~~                                   ~~ Light ~~
-        ;;                                                               GUI       TER                                GUI       TER
+  (dyn-let ((class '((class color) (min-colors 89))) ;;              ~~ Dark ~~                              ~~ Light ~~
+        ;;                                                          GUI       TER                           GUI       TER
         ;; generic
         (act1          (if (eq variant 'dark) (if (true-color-p) "#222226" "#121212") (if (true-color-p) "#e7e5eb" "#d7dfff")))
         (act2          (if (eq variant 'dark) (if (true-color-p) "#5d4d7a" "#444444") (if (true-color-p) "#d3d3e7" "#afafd7")))
@@ -282,6 +282,10 @@
      `(eshell-ls-symlink ((,class (:foreground ,cyan :inherit bold))))
      `(eshell-ls-unreadable ((,class (:foreground ,base))))
      `(eshell-prompt ((,class (:foreground ,keyword :inherit bold))))
+
+;;;;; evil
+     `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
+     `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))
 
 ;;;;; flycheck
      `(flycheck-error

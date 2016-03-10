@@ -140,7 +140,7 @@
 
 ;;;;; basics
      `(cursor ((,class (:background ,cursor))))
-     `(custom-button ((,class :background ,bg2 :foreground ,base ,:box (:line-width 2 :style released-button))))
+     `(custom-button ((,class :background ,bg2 :foreground ,base :box (:line-width 2 :style released-button))))
      `(default ((,class (:background ,bg1 :foreground ,base))))
      `(default-italic ((,class (:italic t))))
      `(error ((,class (:foreground ,err))))
@@ -184,6 +184,16 @@
 
 ;;;;; anzu-mode
      `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
+
+;;;;; cider
+     `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
+     `(cider-enlightened-local ((,class (:foreground ,yellow))))
+     `(cider-instrumented-face ((,class (:background nil :box (:color ,red :line-width -1 :style nil) :foreground ,red))))
+     `(cider-result-overlay-face ((,class (:background nil :box (:color ,blue :line-width -1 :style nil) :foreground ,blue))))
+     `(cider-test-error-face ((,class (:background ,war :foreground ,bg1))))
+     `(cider-test-failure-face ((,class (:background ,err :foreground ,bg1))))
+     `(cider-test-success-face ((,class (:background ,suc :foreground ,bg1))))
+     `(cider-traced-face ((,class :box (:color ,cyan :line-width -1 :style nil))))
 
 ;;;;; company
      `(company-echo-common ((,class (:background ,base :foreground ,bg1))))

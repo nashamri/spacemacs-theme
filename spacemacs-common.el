@@ -380,6 +380,10 @@
      `(helm-swoop-target-line-face ((,class (:background ,highlight))))
      `(helm-swoop-target-word-face ((,class (:background ,highlight :foreground ,mat))))
 
+;;;;; highlights
+     `(hi-yellow ((,class (:foreground ,yellow :background ,yellow-bg))))
+     `(hi-green  ((,class (:foreground ,green :background ,green-bg))))
+
 ;;;;; highlight-indentation
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
 

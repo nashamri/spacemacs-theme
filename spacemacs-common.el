@@ -172,7 +172,6 @@
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
-     `(show-paren-match-face ((,class (:background ,mat))))
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
@@ -553,9 +552,19 @@
      `(shm-current-face ((,class (:background ,green-bg-s))))
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))
 
+;;;;; show-paren
+     `(show-paren-match ((,class (:background ,green))))
+     `(show-paren-mismatch ((,class (:background ,red))))
+
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
      `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
+
+;;;;; spaceline
+     `(spaceline-python-venv ((,class (:foreground ,comp))))
+     `(spaceline-flycheck-error  ((,class (:foreground ,err))))
+     `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
+     `(spaceline-flycheck-warning((,class (:foreground ,war))))
 
 ;;;;; swiper
      `(swiper-line-face ((,class (:background ,highlight :inherit bold))))
@@ -563,12 +572,6 @@
      `(swiper-match-face-2 ((,class (:foreground ,head1 :underline t))))
      `(swiper-match-face-3 ((,class (:foreground ,head4 :underline t))))
      `(swiper-match-face-4 ((,class (:foreground ,head3 :underline t))))
-
-;;;;; spaceline
-     `(spaceline-python-venv ((,class (:foreground ,comp))))
-     `(spaceline-flycheck-error  ((,class (:foreground ,err))))
-     `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
-     `(spaceline-flycheck-warning((,class (:foreground ,war))))
 
 ;;;;; term
      `(term ((,class (:foreground ,base :background ,bg1))))

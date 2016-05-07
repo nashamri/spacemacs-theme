@@ -210,6 +210,18 @@
      `(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,ttip-sl :foreground ,base))))
 
+;;;;; auto-complete
+     `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
+
+;;;;; popup
+     `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
+     `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,base))))
+     `(popup-menu-selection-face ((,class (:background ,ttip-sl :foreground ,base))))
+     `(popup-menu-mouse-face ((,class (:inherit highlight))))
+     `(popup-isearch-match ((,class (:inherit match))))
+     `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
+     `(popup-scroll-bar-background-face ((,class (:background ,bg2))))
+
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
      `(diff-changed           ((,class :background nil :foreground ,keyword)))

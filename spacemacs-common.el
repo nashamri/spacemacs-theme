@@ -169,7 +169,6 @@
      `(match ((,class (:background ,highlight :foreground ,mat))))
      `(minibuffer-prompt ((,class (:inherit bold :foreground ,keyword))))
      `(page-break-lines ((,class (:foreground ,act2))))
-     `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
      `(success ((,class (:foreground ,suc))))
@@ -183,6 +182,9 @@
 
 ;;;;; anzu-mode
      `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
+
+;;;;; auto-complete
+     `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
 
 ;;;;; cider
      `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
@@ -209,18 +211,6 @@
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,ttip-sl :foreground ,base))))
-
-;;;;; auto-complete
-     `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
-
-;;;;; popup
-     `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
-     `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,base))))
-     `(popup-menu-selection-face ((,class (:background ,ttip-sl :foreground ,base))))
-     `(popup-menu-mouse-face ((,class (:inherit highlight))))
-     `(popup-isearch-match ((,class (:inherit match))))
-     `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
-     `(popup-scroll-bar-background-face ((,class (:background ,bg2))))
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
@@ -541,6 +531,16 @@
 
 ;;;;; perspective
      `(persp-selected-face ((,class (:inherit bold :foreground ,func))))
+
+;;;;; popup
+     `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
+     `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
+     `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,base))))
+     `(popup-enu-selection-face ((,class (:background ,ttip-sl :foreground ,base))))
+     `(popup-menu-mouse-face ((,class (:inherit highlight))))
+     `(popup-isearch-match ((,class (:inherit match))))
+     `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
+     `(popup-scroll-bar-background-face ((,class (:background ,bg2))))
 
 ;;;;; powerline
      `(powerline-active1 ((,class (:background ,act2 :foreground ,base))))

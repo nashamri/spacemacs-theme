@@ -388,6 +388,9 @@
 ;;;;; highlight-indentation
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
 
+;;;;; highlight-symbol
+     `(highlight-symbol-face ((,class (:background ,bg2))))
+
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,comp :inherit bold))))
      `(ido-only-match ((,class (:foreground ,mat :inherit bold))))

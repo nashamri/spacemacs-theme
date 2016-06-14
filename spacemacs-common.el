@@ -599,6 +599,21 @@
      `(term-color-white ((,class (:foreground ,base))))
      `(term-color-yellow ((,class (:foreground ,yellow))))
 
+;;;;; web-mode
+     `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
+     `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
+     `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
+     `(web-mode-doctype-face ((,class (:inherit ,font-lock-comment-face))))
+     `(web-mode-function-name-face ((,class (:inherit ,font-lock-function-name-face))))
+     `(web-mode-html-attr-name-face ((,class (:foreground ,func))))
+     `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
+     `(web-mode-html-tag-face ((,class (:foreground ,keyword))))
+     `(web-mode-keyword-face ((,class (:foreground ,keyword))))
+     `(web-mode-string-face ((,class (:foreground ,str))))
+     `(web-mode-symbol-face ((,class (:foreground ,type))))
+     `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
+     `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
+
 ;;;;; which-key
      `(which-key-command-description-face ((,class (:foreground ,base))))
      `(which-key-group-description-face ((,class (:foreground ,keyword))))
@@ -653,19 +668,7 @@
      `(undo-tree-visualizer-current-face ((,class :foreground ,keyword)))
      `(undo-tree-visualizer-default-face ((,class :foreground ,base)))
      `(undo-tree-visualizer-register-face ((,class :foreground ,comp)))
-     `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
-     `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
-     `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
-     `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
-     `(web-mode-doctype-face ((,class (:inherit ,font-lock-comment-face))))
-     `(web-mode-function-name-face ((,class (:inherit ,font-lock-function-name-face))))
-     `(web-mode-html-attr-name-face ((,class (:foreground ,func))))
-     `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
-     `(web-mode-html-tag-face ((,class (:foreground ,keyword))))
-     `(web-mode-keyword-face ((,class (:foreground ,keyword))))
-     `(web-mode-string-face ((,class (:foreground ,str))))
-     `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
-     `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face)))))))
+     `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var))))))
 
 
 ;;;###autoload

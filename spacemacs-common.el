@@ -353,6 +353,7 @@
      `(helm-candidate-number ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
      `(helm-ff-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
      `(helm-ff-dotted-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
+     `(helm-ff-dotted-symlink-directory ((,class (:foreground ,cyan :background ,bg1 :inherit bold))))
      `(helm-ff-executable ((,class (:foreground ,suc :background ,bg1 :weight normal))))
      `(helm-ff-file ((,class (:foreground ,base :background ,bg1 :weight normal))))
      `(helm-ff-invalid-symlink ((,class (:foreground ,red :background ,bg1 :inherit bold))))

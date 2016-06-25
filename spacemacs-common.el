@@ -481,6 +481,14 @@
      `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,func))))
 
+;;;;; mu4e
+     `(mu4e-cited-1-face ((,class (:foreground ,base))))
+     `(mu4e-cited-7-face ((,class (:foreground ,base))))
+     `(mu4e-header-marks-face ((,class (:foreground ,comp))))
+     `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
+     `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
+     `(mu4e-unread-face ((,class (:foreground ,yellow :inherit bold))))
+
 ;;;;; neotree
      `(neo-dir-link-face ((,class (:foreground ,keyword :inherit bold))))
      `(neo-expand-btn-face ((,class (:foreground ,base))))
@@ -659,11 +667,6 @@
      `(js3-instance-member-face ((,class (:foreground ,const))))
      `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
      `(js3-warning-face ((,class (:underline ,keyword))))
-     `(mu4e-cited-1-face ((,class (:foreground ,base))))
-     `(mu4e-cited-7-face ((,class (:foreground ,base))))
-     `(mu4e-header-marks-face ((,class (:foreground ,comp))))
-     `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
-     `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
      `(slime-repl-inputed-output-face ((,class (:foreground ,comp))))
      `(trailing-whitespace ((,class :foreground nil :background ,err)))
      `(undo-tree-visualizer-current-face ((,class :foreground ,keyword)))

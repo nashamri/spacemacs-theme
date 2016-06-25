@@ -34,8 +34,8 @@
 
 ;;; Code:
 
-(defmacro dyn-let (varlist fn body)
-  (list 'let (append varlist (funcall fn)) body))
+(defmacro dyn-let (varlist fn setfaces setvars)
+  (list 'let (append varlist (funcall fn)) setfaces setvars))
 
 (defgroup spacemacs-theme nil
   "Spacemacs-theme options."
@@ -128,7 +128,7 @@
         (red-bg-s      (if (eq variant 'dark) (if (true-color-p) "#512e31" "#262626") (if (true-color-p) "#eed9d2" "#ffffff")))
         (blue          (if (eq variant 'dark) (if (true-color-p) "#4f97d7" "#268bd2") (if (true-color-p) "#3a81c3" "#268bd2")))
         (blue-bg       (if (eq variant 'dark) (if (true-color-p) "#293239" "#262626") (if (true-color-p) "#edf1ed" "#ffffff")))
-        (violet        (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
+        (magenta        (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
         (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
         (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff")))
         )
@@ -235,7 +235,7 @@
      `(dired-header ((,class (:foreground ,comp :inherit bold))))
      `(dired-ignored ((,class (:inherit shadow))))
      `(dired-mark ((,class (:foreground ,comp :inherit bold))))
-     `(dired-marked ((,class (:foreground ,violet :inherit bold))))
+     `(dired-marked ((,class (:foreground ,magenta :inherit bold))))
      `(dired-perm-write ((,class (:foreground ,base :underline t))))
      `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :inherit bold))))
      `(dired-warning ((,class (:foreground ,war))))
@@ -454,7 +454,7 @@
      `(magit-log-head-label-head ((,class (:background ,yellow :foreground ,bg1 :inherit bold))))
      `(magit-log-head-label-local ((,class (:background ,keyword :foreground ,bg1 :inherit bold))))
      `(magit-log-head-label-remote ((,class (:background ,suc :foreground ,bg1 :inherit bold))))
-     `(magit-log-head-label-tags ((,class (:background ,violet :foreground ,bg1 :inherit bold))))
+     `(magit-log-head-label-tags ((,class (:background ,magenta :foreground ,bg1 :inherit bold))))
      `(magit-log-head-label-wip ((,class (:background ,cyan :foreground ,bg1 :inherit bold))))
      `(magit-log-sha1 ((,class (:foreground ,str))))
      `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
@@ -595,7 +595,7 @@
      `(term-color-blue ((,class (:foreground ,keyword))))
      `(term-color-cyan ((,class (:foreground ,cyan))))
      `(term-color-green ((,class (:foreground ,green))))
-     `(term-color-magenta ((,class (:foreground ,violet))))
+     `(term-color-magenta ((,class (:foreground ,magenta))))
      `(term-color-red ((,class (:foreground ,red))))
      `(term-color-white ((,class (:foreground ,base))))
      `(term-color-yellow ((,class (:foreground ,yellow))))
@@ -669,7 +669,13 @@
      `(undo-tree-visualizer-current-face ((,class :foreground ,keyword)))
      `(undo-tree-visualizer-default-face ((,class :foreground ,base)))
      `(undo-tree-visualizer-register-face ((,class :foreground ,comp)))
-     `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var))))))
+     `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var))))
+
+    (custom-theme-set-variables
+     theme-name
+     `(ansi-color-names-vector [,bg4 ,red ,green ,yellow ,blue ,magenta ,cyan ,base]))
+
+    ))
 
 
 ;;;###autoload

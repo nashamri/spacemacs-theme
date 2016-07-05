@@ -225,9 +225,9 @@
      `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; diff-hl
-     `(diff-hl-change ((,class :background ,keyword :foreground nil)))
-     `(diff-hl-delete ((,class :background ,err :foreground nil)))
-     `(diff-hl-insert ((,class :background ,suc :foreground nil)))
+     `(diff-hl-change ((,class :background ,blue-bg :foreground ,blue)))
+     `(diff-hl-delete ((,class :background ,red-bg :foreground ,red)))
+     `(diff-hl-insert ((,class :background ,green-bg :foreground ,green)))
 
 ;;;;; dired
      `(dired-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))

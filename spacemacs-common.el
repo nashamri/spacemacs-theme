@@ -577,8 +577,8 @@
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))
 
 ;;;;; show-paren
-     `(show-paren-match ((,class (:background ,green))))
-     `(show-paren-mismatch ((,class (:background ,red))))
+     `(show-paren-match ((,class (:background ,green-bg-s))))
+     `(show-paren-mismatch ((,class (:background ,red-bg-s))))
 
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))

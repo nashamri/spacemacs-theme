@@ -159,7 +159,7 @@
      `(font-lock-type-face ((,class (:foreground ,type :inherit bold))))
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
-     `(fringe ((,class (:background ,bg2 :foreground ,base))))
+     `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))

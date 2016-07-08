@@ -128,7 +128,7 @@
         (red-bg-s      (if (eq variant 'dark) (if (true-color-p) "#512e31" "#262626") (if (true-color-p) "#eed9d2" "#ffffff")))
         (blue          (if (eq variant 'dark) (if (true-color-p) "#4f97d7" "#268bd2") (if (true-color-p) "#3a81c3" "#268bd2")))
         (blue-bg       (if (eq variant 'dark) (if (true-color-p) "#293239" "#262626") (if (true-color-p) "#edf1ed" "#ffffff")))
-        (magenta        (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
+        (magenta       (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
         (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
         (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff")))
         )
@@ -160,6 +160,7 @@
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
+     `(header-line ((,class :background ,bg4)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
@@ -174,7 +175,8 @@
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
-     `(warning ((,class (:foreground ,war ))))
+     `(warning ((,class (:foreground ,war))))
+     `(warning ((,class (:foreground ,war))))
 
 ;;;;; ahs
      `(ahs-face ((,class (:background ,highlight))))
@@ -392,6 +394,10 @@
 ;;;;; highlight-symbol
      `(highlight-symbol-face ((,class (:background ,bg2))))
 
+;;;;; hydra
+     `(hydra-face-blue ((,class (:foreground ,blue))))
+     `(hydra-face-red ((,class (:foreground ,red))))
+
 ;;;;; ido
      `(ido-first-match ((,class (:foreground ,comp :inherit bold))))
      `(ido-only-match ((,class (:foreground ,mat :inherit bold))))
@@ -509,8 +515,8 @@
      `(org-code ((,class (:foreground ,cyan))))
      `(org-column ((,class (:background ,highlight))))
      `(org-column-title ((,class (:background ,highlight))))
-     `(org-date ((,class (:underline t :foreground ,var) )))
-     `(org-date-selected ((,class (:background ,func :foreground ,bg1) )))
+     `(org-date ((,class (:underline t :foreground ,var))))
+     `(org-date-selected ((,class (:background ,func :foreground ,bg1))))
      `(org-document-info-keyword ((,class (:foreground ,meta))))
      `(org-document-title ((,class (:foreground ,func :inherit bold :height ,(if spacemacs-theme-org-height 1.4 1.0) :underline t))))
      `(org-done ((,class (:foreground ,suc :inherit bold :background ,green-bg))))
@@ -590,6 +596,9 @@
      `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
      `(spaceline-flycheck-warning((,class (:foreground ,war))))
 
+;;;;; spacemacs-specific
+     `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
+
 ;;;;; swiper
      `(swiper-line-face ((,class (:background ,highlight :inherit bold))))
      `(swiper-match-face-1 ((,class (:inherit bold))))
@@ -654,7 +663,7 @@
      `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
      `(font-latex-string-face ((,class (:foreground ,str))))
      `(icompletep-determined ((,class :foreground ,keyword)))
-     `(js2-external-variable ((,class (:foreground ,comp  ))))
+     `(js2-external-variable ((,class (:foreground ,comp))))
      `(js2-function-param ((,class (:foreground ,const))))
      `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,str))))
      `(js2-jsdoc-html-tag-name ((,class (:foreground ,keyword))))

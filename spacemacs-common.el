@@ -164,7 +164,7 @@
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
-     `(lazy-highlight ((,class (:background ,highlight :weight normal))))
+     `(lazy-highlight ((,class (:background ,blue-bg :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
      `(link-visited ((,class (:foreground ,comp :underline t))))
      `(match ((,class (:background ,highlight :foreground ,mat))))

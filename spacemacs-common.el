@@ -176,7 +176,6 @@
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))
      `(warning ((,class (:foreground ,war))))
-     `(warning ((,class (:foreground ,war))))
 
 ;;;;; ahs
      `(ahs-face ((,class (:background ,highlight))))
@@ -370,13 +369,13 @@
      `(helm-grep-cmd-line ((,class (:foreground ,base :background ,bg1))))
      `(helm-grep-file ((,class (:foreground ,base :background ,bg1))))
      `(helm-grep-finish ((,class (:foreground ,base :background ,bg1))))
-     `(helm-grep-lineno ((,class (:foreground ,base :background ,bg1))))
+     `(helm-grep-lineno ((,class (:foreground ,type :background ,bg1 :inherit bold))))
      `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
      `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
      `(helm-header-line-left-margin ((,class (:foreground ,keyword :background ,nil))))
      `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
      `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
-     `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
+     `(helm-moccur-buffer ((,class (:foreground ,var :background ,bg1))))
      `(helm-selection ((,class (:background ,highlight))))
      `(helm-selection-line ((,class (:background ,bg2))))
      `(helm-separator ((,class (:foreground ,comp :background ,bg1))))

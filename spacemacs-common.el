@@ -429,6 +429,19 @@
      `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :underline t))))
      `(ivy-remote ((,class (:foreground ,cyan))))
 
+;;;;; latex
+     `(font-latex-bold-face ((,class (:foreground ,comp))))
+     `(font-latex-italic-face ((,class (:foreground ,keyword :italic t))))
+     `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
+     `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
+     `(font-latex-sectioning-0-face ((,class (:inherit bold :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
+     `(font-latex-sectioning-1-face ((,class (:inherit bold :foreground ,head4 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(font-latex-sectioning-2-face ((,class (:inherit bold :foreground ,head1 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head1-bg)))))
+     `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,head2 :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight head2-bg)))))
+     `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
+     `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(font-latex-string-face ((,class (:foreground ,str))))
+
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))
 
@@ -480,12 +493,12 @@
      `(Man-underline ((,class (:foreground ,comp :underline t))))
 
 ;;;;; markdown
-     `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1))))
-     `(markdown-header-face-2 ((,class (:inherit bold :foreground ,head2))))
-     `(markdown-header-face-3 ((,class (:inherit bold :foreground ,head3))))
-     `(markdown-header-face-4 ((,class (:foreground ,head4))))
-     `(markdown-header-face-5 ((,class (:foreground ,head1))))
-     `(markdown-header-face-6 ((,class (:foreground ,head2))))
+     `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head1-bg)))))
+     `(markdown-header-face-2 ((,class (:inherit bold :foreground ,head2 :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight head2-bg)))))
+     `(markdown-header-face-3 ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
+     `(markdown-header-face-4 ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(markdown-header-face-5 ((,class (:bold nil :foreground ,head1))))
+     `(markdown-header-face-6 ((,class (:bold nil :foreground ,head2))))
 
 ;;;;; mode-line
      `(mode-line           ((,class (:foreground ,base :background ,act1 :box (:color ,border :line-width 1)))))
@@ -662,11 +675,6 @@
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
      `(ffap ((,class (:foreground ,base))))
      `(flx-highlight-face ((,class (:foreground ,comp :underline nil))))
-     `(font-latex-bold-face ((,class (:foreground ,comp))))
-     `(font-latex-italic-face ((,class (:foreground ,keyword :italic t))))
-     `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
-     `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-     `(font-latex-string-face ((,class (:foreground ,str))))
      `(icompletep-determined ((,class :foreground ,keyword)))
      `(js2-external-variable ((,class (:foreground ,comp))))
      `(js2-function-param ((,class (:foreground ,const))))

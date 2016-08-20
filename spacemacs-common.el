@@ -323,6 +323,24 @@
          (:underline (:style line :color ,war)))
         (,class (:foreground ,base :background ,war :inherit bold :underline t))))
 
+;;;;; jabber
+     `(jabber-activity-face ((,class (:inherit bold :foreground ,red))))
+     `(jabber-activity-personal-face ((,class (:inherit bold :foreground ,blue))))
+     `(jabber-chat-error ((,class (:inherit bold :foreground ,red))))
+     `(jabber-chat-prompt-foreign ((,class (:inherit bold :foreground ,red))))
+     `(jabber-chat-prompt-local ((,class (:inherit bold :foreground ,blue))))
+     `(jabber-chat-prompt-system ((,class (:inherit bold :foreground ,green))))
+     `(jabber-chat-text-foreign ((,class (:foreground ,base))))
+     `(jabber-chat-text-local ((,class (:foreground ,base))))
+     `(jabber-rare-time-face ((,class (:foreground ,green))))
+     `(jabber-roster-user-away ((,class (:foreground ,yellow))))
+     `(jabber-roster-user-chatty ((,class (:inherit bold :foreground ,green))))
+     `(jabber-roster-user-dnd ((,class (:foreground ,red))))
+     `(jabber-roster-user-error ((,class (:foreground ,err))))
+     `(jabber-roster-user-offline ((,class (:foreground ,base))))
+     `(jabber-roster-user-online ((,class (:inherit bold :foreground ,green))))
+     `(jabber-roster-user-xa ((,class (:foreground ,aqua))))
+
 ;;;;; git-gutter-fr
      `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
      `(git-gutter-fr:deleted ((,class (:foreground ,war :inherit bold))))

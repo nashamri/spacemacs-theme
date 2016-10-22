@@ -50,6 +50,10 @@ The theme has some options that can be tweaked via `M-x customize`:
 
 This toggles a background color for the comment lines.
 
+* `spacemacs-theme-org-agenda-height`:
+
+This toggles the use of varying org agenda heights.
+
 * `spacemacs-theme-org-height`:
 
 This toggles the use of varying org headings heights.

@@ -46,6 +46,11 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-org-agenda-height t
+  "Use varying text heights for org agenda."
+  :type 'boolean
+  :group 'spacemacs-theme)
+
 (defcustom spacemacs-theme-org-height t
   "Use varying text heights for org headings."
   :type 'boolean
@@ -539,10 +544,10 @@
 
 ;;;;; org
      `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
-     `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-height 1.1 1.0)))))
-     `(org-agenda-date-today ((,class (:foreground ,keyword :slant italic :inherit bold :height ,(if spacemacs-theme-org-height 1.3 1.0)))))
+     `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-agenda-height 1.1 1.0)))))
+     `(org-agenda-date-today ((,class (:foreground ,keyword :inherit bold :height ,(if spacemacs-theme-org-agenda-height 1.3 1.0)))))
      `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,var))))
-     `(org-agenda-done ((,class (:foreground ,suc :height ,(if spacemacs-theme-org-height 1.2 1.0)))))
+     `(org-agenda-done ((,class (:foreground ,suc :height ,(if spacemacs-theme-org-agenda-height 1.2 1.0)))))
      `(org-agenda-structure ((,class (:inherit bold :foreground ,comp))))
      `(org-block ((,class (:background ,cblk-bg :foreground ,cblk))))
      `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln))))

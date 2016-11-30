@@ -1,4 +1,4 @@
-;;; spacemacs-common.el --- Color theme with a dark and light versions.
+;;; spacemacs-theme.el --- Color theme with a dark and light versions.
 
 ;; Copyright (C) 2015-2016 Nasser Alshammari
 
@@ -738,10 +738,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide 'spacemacs-common)
+(provide 'spacemacs-theme)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; spacemacs-common.el ends here
+;;; spacemacs-theme.el ends here

@@ -701,6 +701,15 @@
      `(whitespace-tab ((,class (:background nil))))
      `(whitespace-trailing ((,class (:background ,err :foreground ,war))))
 
+;;;;; tabbar
+            `(tabbar-default ((,class (:background ,bg1 :foreground ,head1 :height 0.9))))
+            `(tabbar-button ((,class (:inherit tabbar-default ))))
+            `(tabbar-button-highlight ((,class (:inherit tabbar-default))))
+            `(tabbar-highlight ((,class (:underline t))))
+            `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,func :weight bold))))
+            `(tabbar-separator ((,class (:inherit tabbar-default))))
+            `(tabbar-unselected ((,class (:inherit tabbar-default :background ,bg1 :slant italic :weight light))))
+
 ;;;;; other, need more work
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
      `(ffap ((,class (:foreground ,base))))

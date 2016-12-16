@@ -108,6 +108,7 @@
         (head4         (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
         (head4-bg      (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff")))
         (highlight     (if (eq variant 'dark) (if (true-color-p) "#444155" "#444444") (if (true-color-p) "#d3d3e7" "#d7d7ff")))
+        (highlight-dim (if (eq variant 'dark) (if (true-color-p) "#3b314d" "#444444") (if (true-color-p) "#e7e7fc" "#d7d7ff")))
         (keyword       (if (eq variant 'dark) (if (true-color-p) "#4f97d7" "#268bd2") (if (true-color-p) "#3a81c3" "#268bd2")))
         (lnum          (if (eq variant 'dark) (if (true-color-p) "#44505c" "#444444") (if (true-color-p) "#a8a8bf" "#af87af")))
         (mat           (if (eq variant 'dark) (if (true-color-p) "#86dc2f" "#86dc2f") (if (true-color-p) "#ba2f59" "#af005f")))
@@ -541,6 +542,14 @@
      `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
      `(mu4e-unread-face ((,class (:foreground ,yellow :inherit bold))))
+
+;;;;; notmuch
+     `(notmuch-search-date ((,class (:foreground ,func))))
+     `(notmuch-search-flagged-face ((,class (:weight extra-bold))))
+     `(notmuch-search-non-matching-authors ((,class (:foreground ,base-dim))))
+     `(notmuch-search-unread-face ((,class (:background ,highlight-dim :box ,border))))
+     `(notmuch-tag-face ((,class (:foreground ,keyword))))
+     `(notmuch-tag-flagged ((,class (:foreground ,war))))
 
 ;;;;; neotree
      `(neo-dir-link-face ((,class (:foreground ,keyword :inherit bold))))

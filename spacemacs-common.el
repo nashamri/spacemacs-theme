@@ -286,6 +286,7 @@
      `(elfeed-search-unread-title-face ((,class (:foreground ,base))))
      `(elfeed-search-feed-face ((,class (:foreground ,blue))))
      `(elfeed-search-tag-face ((,class (:foreground ,func))))
+     `(elfeed-search-date-face ((,class (:foreground ,head2))))
 
 ;;;;; enh-ruby
      `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))

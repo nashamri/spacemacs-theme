@@ -472,6 +472,7 @@
      `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
      `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
      `(font-latex-string-face ((,class (:foreground ,str))))
+     `(font-latex-warning-face ((,class (:foreground ,war))))
 
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))

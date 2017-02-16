@@ -637,6 +637,14 @@
      `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
      `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
 
+;;;;; rcirc
+     `(rcirc-bright-nick ((,class (:background ,aqua-bg :foreground ,cyan))))
+     `(rcirc-dim-nick ((,class (:foreground ,base-dim))))
+     `(rcirc-keyword ((,class (:background ,green-bg-s :foreground ,green))))
+     `(rcirc-timestamp ((,class (:foreground ,keyword))))
+     `(rcirc-track-keyword ((,class (:background ,green :foreground ,bg1))))
+     `(rcirc-url ((,class (:inherit link))))
+
 ;;;;; shm
      `(shm-current-face ((,class (:background ,green-bg-s))))
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))

@@ -178,6 +178,7 @@
      `(page-break-lines ((,class (:foreground ,act2))))
      `(region ((,class (:background ,highlight))))
      `(secondary-selection ((,class (:background ,bg3))))
+     `(shadow ((,class (:foreground ,base-dim))))
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,bg4))))

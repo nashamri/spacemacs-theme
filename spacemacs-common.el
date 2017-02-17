@@ -518,6 +518,15 @@
      `(magit-process-ok ((,class (:foreground ,func :inherit bold))))
      `(magit-section-heading        ((,class (:foreground ,keyword :inherit bold))))
      `(magit-section-highlight      ((,class (:background ,bg2))))
+     `(magit-reflog-commit ((,class (:foreground ,green))))
+     `(magit-reflog-amend ((,class (:foreground ,magenta))))
+     `(magit-reflog-merge ((,class (:foreground ,green))))
+     `(magit-reflog-checkout ((,class (:foreground ,blue))))
+     `(magit-reflog-reset ((,class (:foreground ,red))))
+     `(magit-reflog-rebase ((,class (:foreground ,magenta))))
+     `(magit-reflog-cherry-pick ((,class (:foreground ,green))))
+     `(magit-reflog-remote ((,class (:foreground ,cyan))))
+     `(magit-reflog-other ((,class (:foreground ,cyan))))
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
 
 ;;;;; man

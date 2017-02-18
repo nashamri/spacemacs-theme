@@ -283,15 +283,15 @@
      `(eldoc-highlight-function-argument ((,class (:foreground ,mat :inherit bold))))
 
 ;;;;; elfeed
-     `(elfeed-search-title-face ((,class (:foreground ,base-dim))))
-     `(elfeed-search-unread-title-face ((,class (:foreground ,base))))
+     `(elfeed-search-date-face ((,class (:foreground ,head2))))
      `(elfeed-search-feed-face ((,class (:foreground ,blue))))
      `(elfeed-search-tag-face ((,class (:foreground ,func))))
-     `(elfeed-search-date-face ((,class (:foreground ,head2))))
+     `(elfeed-search-title-face ((,class (:foreground ,base-dim))))
+     `(elfeed-search-unread-title-face ((,class (:foreground ,base))))
 
 ;;;;; enh-ruby
-     `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
      `(enh-ruby-op-face ((,class (:background ,bg1 :foreground ,base))))
+     `(enh-ruby-string-delimiter-face ((,class (:foreground ,str))))
 
 ;;;;; erc
      `(erc-input-face ((,class (:foreground ,func))))
@@ -422,8 +422,8 @@
      `(helm-swoop-target-word-face ((,class (:background ,highlight :foreground ,mat))))
 
 ;;;;; highlights
-     `(hi-yellow ((,class (:foreground ,yellow :background ,yellow-bg))))
      `(hi-green  ((,class (:foreground ,green :background ,green-bg))))
+     `(hi-yellow ((,class (:foreground ,yellow :background ,yellow-bg))))
 
 ;;;;; highlight-indentation
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
@@ -483,15 +483,15 @@
 
 ;;;;; magit
      `(magit-blame-culprit ((,class :background ,yellow-bg :foreground ,yellow)))
+     `(magit-blame-date    ((,class :background ,yellow-bg :foreground ,green)))
+     `(magit-blame-hash    ((,class :background ,yellow-bg :foreground ,func)))
      `(magit-blame-header  ((,class :background ,yellow-bg :foreground ,green)))
+     `(magit-blame-heading ((,class :background ,yellow-bg :foreground ,green)))
+     `(magit-blame-name    ((,class :background ,yellow-bg :foreground ,yellow)))
      `(magit-blame-sha1    ((,class :background ,yellow-bg :foreground ,func)))
      `(magit-blame-subject ((,class :background ,yellow-bg :foreground ,yellow)))
-     `(magit-blame-time    ((,class :background ,yellow-bg :foreground ,green)))
-     `(magit-blame-name    ((,class :background ,yellow-bg :foreground ,yellow)))
-     `(magit-blame-heading ((,class :background ,yellow-bg :foreground ,green)))
-     `(magit-blame-hash    ((,class :background ,yellow-bg :foreground ,func)))
      `(magit-blame-summary ((,class :background ,yellow-bg :foreground ,yellow)))
-     `(magit-blame-date    ((,class :background ,yellow-bg :foreground ,green)))
+     `(magit-blame-time    ((,class :background ,yellow-bg :foreground ,green)))
      `(magit-branch ((,class (:foreground ,const :inherit bold))))
      `(magit-branch-current ((,class (:background ,blue-bg :foreground ,blue :inherit bold :box t))))
      `(magit-branch-local ((,class (:background ,blue-bg :foreground ,blue :inherit bold))))
@@ -516,17 +516,17 @@
      `(magit-log-sha1 ((,class (:foreground ,str))))
      `(magit-process-ng ((,class (:foreground ,war :inherit bold))))
      `(magit-process-ok ((,class (:foreground ,func :inherit bold))))
+     `(magit-reflog-amend ((,class (:foreground ,magenta))))
+     `(magit-reflog-checkout ((,class (:foreground ,blue))))
+     `(magit-reflog-cherry-pick ((,class (:foreground ,green))))
+     `(magit-reflog-commit ((,class (:foreground ,green))))
+     `(magit-reflog-merge ((,class (:foreground ,green))))
+     `(magit-reflog-other ((,class (:foreground ,cyan))))
+     `(magit-reflog-rebase ((,class (:foreground ,magenta))))
+     `(magit-reflog-remote ((,class (:foreground ,cyan))))
+     `(magit-reflog-reset ((,class (:foreground ,red))))
      `(magit-section-heading        ((,class (:foreground ,keyword :inherit bold))))
      `(magit-section-highlight      ((,class (:background ,bg2))))
-     `(magit-reflog-commit ((,class (:foreground ,green))))
-     `(magit-reflog-amend ((,class (:foreground ,magenta))))
-     `(magit-reflog-merge ((,class (:foreground ,green))))
-     `(magit-reflog-checkout ((,class (:foreground ,blue))))
-     `(magit-reflog-reset ((,class (:foreground ,red))))
-     `(magit-reflog-rebase ((,class (:foreground ,magenta))))
-     `(magit-reflog-cherry-pick ((,class (:foreground ,green))))
-     `(magit-reflog-remote ((,class (:foreground ,cyan))))
-     `(magit-reflog-other ((,class (:foreground ,cyan))))
      `(magit-section-title ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
 
 ;;;;; man
@@ -544,16 +544,16 @@
 
 ;;;;; mode-line
      `(mode-line           ((,class (:foreground ,base :background ,act1 :box (:color ,border :line-width 1)))))
-     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,func))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
 
 ;;;;; mu4e
      `(mu4e-cited-1-face ((,class (:foreground ,base))))
      `(mu4e-cited-7-face ((,class (:foreground ,base))))
-     `(mu4e-header-marks-face ((,class (:foreground ,comp))))
      `(mu4e-header-key-face ((,class (:foreground ,head2 :inherit bold))))
-     `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
+     `(mu4e-header-marks-face ((,class (:foreground ,comp))))
      `(mu4e-unread-face ((,class (:foreground ,yellow :inherit bold))))
+     `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
 
 ;;;;; notmuch
      `(notmuch-search-date ((,class (:foreground ,func))))
@@ -620,14 +620,14 @@
      `(persp-selected-face ((,class (:inherit bold :foreground ,func))))
 
 ;;;;; popup
-     `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
-     `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
-     `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,base))))
      `(popup-enu-selection-face ((,class (:background ,ttip-sl :foreground ,base))))
-     `(popup-menu-mouse-face ((,class (:inherit highlight))))
+     `(popup-face ((,class (:background ,ttip-bg :foreground ,ttip))))
      `(popup-isearch-match ((,class (:inherit match))))
-     `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
+     `(popup-menu-face ((,class (:background ,ttip-bg :foreground ,base))))
+     `(popup-menu-mouse-face ((,class (:inherit highlight))))
      `(popup-scroll-bar-background-face ((,class (:background ,bg2))))
+     `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
+     `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
 
 ;;;;; powerline
      `(powerline-active1 ((,class (:background ,act2 :foreground ,base))))
@@ -644,8 +644,8 @@
      `(rainbow-delimiters-depth-6-face ((,class :foreground ,keyword)))
      `(rainbow-delimiters-depth-7-face ((,class :foreground ,func)))
      `(rainbow-delimiters-depth-8-face ((,class :foreground ,str)))
-     `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
      `(rainbow-delimiters-mismatched-face ((,class :foreground ,err :overline t)))
+     `(rainbow-delimiters-unmatched-face ((,class :foreground ,err :overline t)))
 
 ;;;;; rcirc
      `(rcirc-bright-nick ((,class (:background ,aqua-bg :foreground ,cyan))))
@@ -668,10 +668,10 @@
      `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
 
 ;;;;; spaceline
-     `(spaceline-python-venv ((,class (:foreground ,comp))))
      `(spaceline-flycheck-error  ((,class (:foreground ,err))))
      `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
      `(spaceline-flycheck-warning((,class (:foreground ,war))))
+     `(spaceline-python-venv ((,class (:foreground ,comp))))
 
 ;;;;; spacemacs-specific
      `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
@@ -684,9 +684,9 @@
      `(swiper-match-face-4 ((,class (:foreground ,head3 :underline t))))
 
 ;;;;; tabbar
-     `(tabbar-default ((,class (:background ,bg1 :foreground ,head1 :height 0.9))))
      `(tabbar-button ((,class (:inherit tabbar-default ))))
      `(tabbar-button-highlight ((,class (:inherit tabbar-default))))
+     `(tabbar-default ((,class (:background ,bg1 :foreground ,head1 :height 0.9))))
      `(tabbar-highlight ((,class (:underline t))))
      `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,func :weight bold))))
      `(tabbar-separator ((,class (:inherit tabbar-default))))

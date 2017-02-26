@@ -230,6 +230,7 @@
      `(diff-added             ((,class :background nil :foreground ,green)))
      `(diff-changed           ((,class :background nil :foreground ,keyword)))
      `(diff-header            ((,class :background ,cblk-ln-bg :foreground ,func)))
+     `(diff-file-header       ((,class :background ,cblk-ln-bg :foreground ,cblk)))
      `(diff-indicator-added   ((,class :background nil :foreground ,green)))
      `(diff-indicator-changed ((,class :background nil :foreground ,keyword)))
      `(diff-indicator-removed ((,class :background nil :foreground ,red)))

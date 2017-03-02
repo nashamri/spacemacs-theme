@@ -181,7 +181,7 @@
      `(shadow ((,class (:foreground ,base-dim))))
      `(success ((,class (:foreground ,suc))))
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
-     `(vertical-border ((,class (:foreground ,bg4))))
+     `(vertical-border ((,class (:foreground ,border))))
      `(warning ((,class (:foreground ,war))))
 
 ;;;;; ahs

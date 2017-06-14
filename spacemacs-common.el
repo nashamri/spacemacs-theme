@@ -682,6 +682,15 @@
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
      `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
 
+;;;;; smerge
+     `(smerge-base ((,class (:background ,yellow-bg))))
+     `(smerge-markers ((,class (:background ,ttip-bg :foreground ,ttip))))
+     `(smerge-mine ((,class (:background ,red-bg))))
+     `(smerge-other ((,class (:background ,green-bg))))
+     `(smerge-refined-added ((,class (:background ,green-bg-s :foreground ,green))))
+     `(smerge-refined-changed ((,class (:background ,blue-bg :foreground ,blue))))
+     `(smerge-refined-removed ((,class (:background ,red-bg-s :foreground ,red))))
+
 ;;;;; spaceline
      `(spaceline-flycheck-error  ((,class (:foreground ,err))))
      `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))

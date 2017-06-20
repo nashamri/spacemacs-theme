@@ -570,6 +570,9 @@
      `(mu4e-unread-face ((,class (:foreground ,type :inherit bold))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
 
+;;;;; mu4e-maildirs
+     `(mu4e-maildirs-extension-maildir-hl-face ((,class (:foreground ,head2 :inherit bold))))
+
 ;;;;; notmuch
      `(notmuch-search-date ((,class (:foreground ,func))))
      `(notmuch-search-flagged-face ((,class (:weight extra-bold))))

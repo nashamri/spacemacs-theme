@@ -476,6 +476,12 @@
      `(font-latex-string-face ((,class (:foreground ,str))))
      `(font-latex-warning-face ((,class (:foreground ,war))))
 
+;;;;; ledger-mode
+     `(ledger-font-directive-face ((,class (:foreground ,meta))))
+     `(ledger-font-posting-amount-face ((,class (:foreground ,yellow))))
+     `(ledger-font-posting-date-face ((,class (:foreground ,head1))))
+     `(ledger-occur-xact-face ((,class (:background ,bg2))))
+
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))
 

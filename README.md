@@ -37,7 +37,9 @@ Some of the supported modes are:
 * helm
 * ido
 * info
+* ledger
 * magit
+* mu4e
 * neotree
 * org
 * and others :) more are coming!

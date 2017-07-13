@@ -52,6 +52,10 @@ The theme has some options that can be tweaked via `M-x customize`:
 
 This toggles a background color for the comment lines.
 
+* `spacemacs-theme-comment-italic`:
+
+This toggles italics for comments and will also add a lighter color to it. It is recommended to disable `spacemacs-theme-comment-bg` if you turn this option on for better contrast.
+
 * `spacemacs-theme-org-agenda-height`:
 
 This toggles the use of varying org agenda heights.

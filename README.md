@@ -30,6 +30,7 @@ M-x package-install RET spacemacs-theme
 
 Some of the supported modes are:
 
+* calfw
 * company
 * ein
 * erc
@@ -136,7 +137,7 @@ There is also explicit colors variables that can be customized:
 * red-bg-s
 * blue
 * blue-bg
-* violet
+* magenta
 * yellow
 * yellow-bg
 

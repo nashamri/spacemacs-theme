@@ -206,6 +206,26 @@
      `(avy-lead-face-1 ((,class (:background ,blue-bg :foreground ,magenta))))
      `(avy-lead-face-2 ((,class (:background ,blue-bg :foreground ,blue))))
 
+;;;;; calfw
+     `(cfw:face-title               ((,class (:foreground ,head1 :height 2.0 :weight bold :inherit variable-pitch))))
+     `(cfw:face-header              ((,class (:foreground ,base :weight bold))))
+     `(cfw:face-saturday            ((,class (:foreground ,base :weight bold))))
+     `(cfw:face-sunday              ((,class (:foreground ,base :weight bold))))
+     `(cfw:face-holiday             ((,class (:foreground ,head1 :weight bold))))
+     `(cfw:face-grid                ((,class (:foreground ,border))))
+     `(cfw:face-default-content     ((,class (:foreground ,green))))
+     `(cfw:face-periods             ((,class (:foreground ,cyan))))
+     `(cfw:face-day-title           ((,class (:background ,head1-bg))))
+     `(cfw:face-default-day         ((,class (:foreground ,base :weight bold))))
+     `(cfw:face-annotation          ((,class (:foreground ,aqua))))
+     `(cfw:face-disable             ((,class (:foreground ,base-dim))))
+     `(cfw:face-today-title         ((,class (:background ,blue :weight bold))))
+     `(cfw:face-today               ((,class (:background ,head1-bg :weight bold))))
+     `(cfw:face-select              ((,class (:background ,magenta :weight bold))))
+     `(cfw:face-toolbar             ((,class (:foreground ,base :background ,bg1))))
+     `(cfw:face-toolbar-button-off  ((,class (:foreground ,base :weight bold))))
+     `(cfw:face-toolbar-button-on   ((,class (:foreground ,base :weight bold))))
+
 ;;;;; cider
      `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
      `(cider-enlightened-local ((,class (:foreground ,yellow))))

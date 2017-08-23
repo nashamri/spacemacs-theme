@@ -589,21 +589,24 @@
      `(mu4e-cited-5-face ((,class (:foreground ,head1))))
      `(mu4e-cited-6-face ((,class (:foreground ,head2))))
      `(mu4e-cited-7-face ((,class (:foreground ,head3))))
+     `(mu4e-contact-face ((,class (:foreground ,func))))
      `(mu4e-draft-face ((,class (:foreground ,var))))
      `(mu4e-flagged-face ((,class (:foreground ,yellow :inherit bold))))
      `(mu4e-header-key-face ((,class (:foreground ,meta :inherit bold))))
+     `(mu4e-header-title-face ((,class (:foreground ,keyword :inherit bold))))
      `(mu4e-header-marks-face ((,class (:foreground ,comp))))
+     `(mu4e-header-value-face ((,class (:foreground ,keyword :inherit bold))))
      `(mu4e-header-highlight-face ((,class (:background ,highlight))))
      `(mu4e-highlight-face ((,class (:foreground ,comp))))
-     `(mu4e-title-face ((,class (:foreground ,head1 :inherit bold))))
+     `(mu4e-title-face ((,class (:foreground ,head2 :inherit bold))))
      `(mu4e-replied-face ((,class (:foreground ,green))))
      `(mu4e-modeline-face ((,class (:foreground ,func))))
      `(mu4e-special-header-value-face ((,class (:foreground ,green))))
-     `(mu4e-unread-face ((,class (:foreground ,type :inherit bold))))
+     `(mu4e-unread-face ((,class (:foreground ,head1 :inherit bold))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))
 
 ;;;;; mu4e-maildirs
-     `(mu4e-maildirs-extension-maildir-hl-face ((,class (:foreground ,head2 :inherit bold))))
+     `(mu4e-maildirs-extension-maildir-hl-face ((,class (:foreground ,head1 :inherit bold))))
 
 ;;;;; notmuch
      `(notmuch-search-date ((,class (:foreground ,func))))

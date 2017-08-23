@@ -660,6 +660,7 @@
      `(org-sexp-date ((,class (:foreground ,base))))
      `(org-special-keyword ((,class (:foreground ,func))))
      `(org-table ((,class (:foreground ,base :background ,head1-bg))))
+     `(org-tag ((,class (:foreground ,meta))))
      `(org-time-grid ((,class (:foreground ,str))))
      `(org-todo ((,class (:foreground ,war :inherit bold :background ,yellow-bg))))
      `(org-verbatim ((,class (:foreground ,keyword))))

@@ -51,8 +51,8 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
-(defcustom spacemacs-theme-org-agenda-height t
-  "Use varying text heights for org agenda."
+(defcustom spacemacs-theme-org-agenda-height nil
+  "If non-nil, use varying text heights for agenda items."
   :type 'boolean
   :group 'spacemacs-theme)
 

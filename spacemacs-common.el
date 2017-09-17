@@ -51,8 +51,12 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
-(defcustom spacemacs-theme-org-agenda-height t
-  "Use varying text heights for org agenda."
+(defcustom spacemacs-theme-org-agenda-height nil
+  "If non-nil, use varying text heights for agenda items.
+
+Note that if you change this to a non-nil value, you may want to
+also adjust the value of `org-agenda-tags-column'. If that is set
+to 'auto, tags may not be properly aligned. "
   :type 'boolean
   :group 'spacemacs-theme)
 

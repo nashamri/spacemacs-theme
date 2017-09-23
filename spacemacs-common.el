@@ -515,6 +515,10 @@ to 'auto, tags may not be properly aligned. "
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2))))
 
+;;;;; line-numbers-mode (Emacs 26+)
+     (when (>= emacs-major-version 26)
+       `(line-number ((,class (:foreground ,lnum :background ,bg2)))))
+
 ;;;;; linum-relative
      `(linum-relative-current-face ((,class (:foreground ,comp))))
 

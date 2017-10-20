@@ -513,7 +513,7 @@ to 'auto, tags may not be properly aligned. "
      `(ledger-occur-xact-face ((,class (:background ,bg2))))
 
 ;;;;; linum-mode
-     `(linum ((,class (:foreground ,lnum :background ,bg2))))
+     `(linum ((,class (:foreground ,lnum :background ,bg2 :inherit default))))
 
 ;;;;; line-numbers-mode (Emacs 26+)
      (when (>= emacs-major-version 26)

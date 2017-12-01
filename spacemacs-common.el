@@ -811,7 +811,7 @@ to 'auto, tags may not be properly aligned. "
      `(whitespace-space ((,class (:background nil :foreground ,act2))))
      `(whitespace-space-after-tab ((,class (:background nil :foreground ,yellow))))
      `(whitespace-space-before-tab ((,class (:background nil :foreground ,yellow))))
-     `(whitespace-tab ((,class (:background nil))))
+     `(whitespace-tab ((,class (:background nil :foreground ,act2))))
      `(whitespace-trailing ((,class (:background ,err :foreground ,war))))
 
 ;;;;; other, need more work

@@ -194,6 +194,9 @@ to 'auto, tags may not be properly aligned. "
      `(vertical-border ((,class (:foreground ,border))))
      `(warning ((,class (:foreground ,war))))
 
+;;;;; ace-window
+     `(aw-leading-char-face ((,class (:foreground ,func :weight bold :box (:line-width 1 :color ,keyword :style released-button)))))
+
 ;;;;; ahs
      `(ahs-face ((,class (:background ,highlight))))
      `(ahs-plugin-whole-buffer-face ((,class (:background ,mat :foreground ,bg1))))

@@ -195,7 +195,7 @@ to 'auto, tags may not be properly aligned. "
      `(warning ((,class (:foreground ,war))))
 
 ;;;;; ace-window
-     `(aw-leading-char-face ((,class (:foreground ,func :weight bold :box (:line-width 1 :color ,keyword :style released-button)))))
+     `(aw-leading-char-face ((,class (:foreground ,func :weight bold :height 2.0 :box (:line-width 1 :color ,keyword :style released-button)))))
 
 ;;;;; ahs
      `(ahs-face ((,class (:background ,highlight))))

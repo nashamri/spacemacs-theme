@@ -137,12 +137,13 @@ There is also explicit colors variables that can be customized:
 * red-bg-s
 * blue
 * blue-bg
+* blue-bg-s
 * magenta
 * yellow
 * yellow-bg
 
 The `green` and `red` colors have two background versions. The `green-bg` and  `red-bg` are normal light background colors.
-The `green-bg-s` and `red-bg-s` are a stronger version and are used in `ediff` and places were text is added or deleted.
+The `green-bg-s`, `red-bg-s`, and `blue-bg-s` are a stronger version and are used in `ediff` and places were text is added, deleted or changed.
 
 Here are some screenshots of the various variables:
 

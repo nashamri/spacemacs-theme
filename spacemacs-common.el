@@ -320,7 +320,7 @@ to 'auto, tags may not be properly aligned. "
      `(elfeed-search-date-face ((,class (:foreground ,head2))))
      `(elfeed-search-feed-face ((,class (:foreground ,blue))))
      `(elfeed-search-tag-face ((,class (:foreground ,func))))
-     `(elfeed-search-title-face ((,class (:foreground ,base-dim))))
+     `(elfeed-search-title-face ((,class (:foreground ,var))))
      `(elfeed-search-unread-title-face ((,class (:foreground ,base))))
 
 ;;;;; enh-ruby

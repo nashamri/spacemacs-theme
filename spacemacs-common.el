@@ -775,6 +775,9 @@ to 'auto, tags may not be properly aligned. "
      `(term-color-white ((,class (:foreground ,base))))
      `(term-color-yellow ((,class (:foreground ,yellow))))
 
+;;;;; tide
+     `(tide-hl-identifier-face ((,class (:foreground ,yellow :background ,yellow-bg))))
+
 ;;;;; treemacs
      `(treemacs-git-added-face ((,class (:foreground ,green :background ,green-bg))))
      `(treemacs-git-conflict-face ((,class (:foreground ,red :background ,red-bg))))

@@ -688,9 +688,10 @@ to 'auto, tags may not be properly aligned. "
      `(org-time-grid ((,class (:foreground ,str))))
      `(org-todo ((,class (:foreground ,war :inherit bold :background ,yellow-bg))))
      `(org-upcoming-deadline ((,class (:foreground ,war :inherit org-priority))))
+     `(org-upcoming-distant-deadline ((,class (:foreground ,suc :inherit org-priority))))
      `(org-verbatim ((,class (:foreground ,keyword))))
      `(org-verse ((,class (:inherit org-block :slant italic))))
-     `(org-warning ((,class (:foreground ,err))))
+     `(org-warning ((,class (:foreground ,err :inherit org-priority))))
 
 ;;;;; perspective
      `(persp-selected-face ((,class (:inherit bold :foreground ,func))))

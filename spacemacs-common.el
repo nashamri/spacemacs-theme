@@ -383,6 +383,14 @@ to 'auto, tags may not be properly aligned. "
                          (:underline (:style line :color ,war)))
                         (,class (:foreground ,base :background ,war :inherit bold :underline t))))
 
+;;;;; flyspell
+     `(flyspell-incorrect ((,(append '((supports :underline (:style line))) class)
+                            (:underline (:style wave :color ,war)))
+                           (,class (:foreground ,base :background ,war :inherit bold :underline t))))
+     `(flyspell-duplicate ((,(append '((supports :underline (:style line))) class)
+                            (:underline (:style wave :color ,keyword)))
+                           (,class (:foreground ,base :background ,keyword :inherit bold :underline t))))
+
 ;;;;; jabber
      `(jabber-activity-face ((,class (:inherit bold :foreground ,red))))
      `(jabber-activity-personal-face ((,class (:inherit bold :foreground ,blue))))

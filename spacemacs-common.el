@@ -75,6 +75,11 @@ to 'auto, tags may not be properly aligned. "
   :type 'alist
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-underline-parens t
+  "If non-nil, underline matching parens when using `show-paren-mode' or similar."
+  :type 'boolean
+  :group 'spacemacs-theme)
+
 (defun true-color-p ()
   (or
    (display-graphic-p)
@@ -746,12 +751,13 @@ to 'auto, tags may not be properly aligned. "
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))
 
 ;;;;; show-paren
-     `(show-paren-match ((,class (:background ,green-bg-s))))
-     `(show-paren-mismatch ((,class (:background ,red-bg-s))))
+     `(show-paren-match ((,class (:foreground ,mat :inherit bold  :underline ,(when spacemacs-theme-underline-parens t)))))
+     `(show-paren-match-expression ((,class (:background ,green-bg-s))))
+     `(show-paren-mismatch ((,class (:foreground ,err :inherit bold :underline ,(when spacemacs-theme-underline-parens t)))))
 
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
-     `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
+     `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold  :underline ,(when spacemacs-theme-underline-parens t)))))
 
 ;;;;; smerge
      `(smerge-base ((,class (:background ,yellow-bg))))

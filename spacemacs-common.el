@@ -746,12 +746,13 @@ to 'auto, tags may not be properly aligned. "
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))
 
 ;;;;; show-paren
-     `(show-paren-match ((,class (:background ,green-bg-s))))
-     `(show-paren-mismatch ((,class (:background ,red-bg-s))))
+     `(show-paren-match ((,class (:foreground ,mat :inherit bold))))
+     `(show-paren-match-expression ((,class (:background ,green-bg-s))))
+     `(show-paren-mismatch ((,class (:foreground ,err :inherit bold))))
 
 ;;;;; smartparens
      `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
-     `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold :underline t))))
+     `(sp-show-pair-match-face ((,class (:foreground ,mat :inherit bold))))
 
 ;;;;; smerge
      `(smerge-base ((,class (:background ,yellow-bg))))

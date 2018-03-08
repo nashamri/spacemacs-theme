@@ -73,6 +73,10 @@ This toggles highlighting of org headings.
 
 This allows for specifying a list of custom colors to override spacemacs theme colors. More details in the next section.
 
+* `spacemacs-theme-underline-parens`:
+
+This toggles the underline of matching parens when using `show-paren-mode` or similar.
+
 ### Override theme's colors
 
 The theme can be customized by overriding one of the theme local variables by setting a list in the `spacemacs-theme-custom-colors` variable.

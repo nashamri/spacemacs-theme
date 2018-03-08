@@ -34,6 +34,7 @@ Some of the supported modes are:
 * company
 * ein
 * erc
+* ESS modes (users may want to customize the variables ess-R-font-lock-keywords and inferior-ess-r-font-lock-keywords)
 * gnus
 * helm
 * ido

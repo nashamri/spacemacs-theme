@@ -355,6 +355,19 @@ to 'auto, tags may not be properly aligned. "
      `(eshell-ls-unreadable ((,class (:foreground ,base))))
      `(eshell-prompt ((,class (:foreground ,keyword :inherit bold))))
 
+;;;;; ESS
+     `(ess-assignment-face ((,class (:foreground ,type :inherit bold))))
+     `(ess-backquoted-face ((,class (:foreground ,var))))
+     `(ess-constant-face ((,class (:inherit font-lock-constant-face))))
+     `(ess-f-t-face ((,class (:inherit font-lock-constant-face))))
+     `(ess-function-call-face ((,class (:foreground ,func))))
+     `(ess-keyword-face ((,class (:inherit font-lock-keyword-face))))
+     `(ess-matrix-face ((,class (:foreground ,base-dim))))
+     `(ess-modifiers-face ((,class (:foreground ,keyword))))
+     `(ess-numbers-face ((,class (:inherit font-lock-constant-face))))
+     `(ess-operator-face ((,class (:foreground ,var))))
+     `(ess-paren-face ((,class (:foreground ,blue))))
+
 ;;;;; evil
      `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
      `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))

@@ -647,7 +647,7 @@ to 'auto, tags may not be properly aligned. "
      `(mu4e-highlight-face ((,class (:foreground ,comp))))
      `(mu4e-title-face ((,class (:foreground ,head2 :inherit bold))))
      `(mu4e-replied-face ((,class (:foreground ,green))))
-     `(mu4e-modeline-face ((,class (:foreground ,func))))
+     `(mu4e-modeline-face ((,class (:foreground ,yellow))))
      `(mu4e-special-header-value-face ((,class (:foreground ,green))))
      `(mu4e-unread-face ((,class (:foreground ,head1 :inherit bold))))
      `(mu4e-view-url-number-face ((,class (:foreground ,comp))))

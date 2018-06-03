@@ -51,6 +51,11 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
+(defcustom spacemacs-theme-keyword-italic nil
+  "Enable italics for keywords."
+  :type 'boolean
+  :group 'spacemacs-theme)
+
 (defcustom spacemacs-theme-org-agenda-height nil
   "If non-nil, use varying text heights for agenda items.
 
@@ -173,7 +178,7 @@ to 'auto, tags may not be properly aligned. "
      `(font-lock-constant-face ((,class (:foreground ,const))))
      `(font-lock-doc-face ((,class (:foreground ,meta))))
      `(font-lock-function-name-face ((,class (:foreground ,func :inherit bold))))
-     `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword))))
+     `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword :slant ,(if spacemacs-theme-keyword-italic 'italic 'normal)))))
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,const))))

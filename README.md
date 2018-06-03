@@ -59,6 +59,10 @@ This toggles a background color for the comment lines.
 
 This toggles italics for comments and will also add a lighter color to it. It is recommended to disable `spacemacs-theme-comment-bg` if you turn this option on for better contrast.
 
+* `spacemacs-theme-keyword-italic`:
+
+This toggles italics for keywords.
+
 * `spacemacs-theme-org-agenda-height`:
 
 This toggles the use of varying org agenda heights.

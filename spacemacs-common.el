@@ -372,6 +372,26 @@ to 'auto, tags may not be properly aligned. "
      `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
      `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))
 
+;;;;; evil-goggles
+      `(evil-goggles--pulse-face ((,class (:background ,yellow-bg :foreground ,yellow))))
+      `(evil-goggles-change-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-commentary-face ((,class (:background ,aqua-bg :foreground ,aqua))))
+      `(evil-goggles-delete-face ((,class (:background ,red-bg-s :foreground ,red))))
+      `(evil-goggles-fill-and-move-face ((,class (:background ,green-bg-s :foreground ,green))))
+      `(evil-goggles-indent-face ((,class (:background ,green-bg-s :foreground ,green))))
+      `(evil-goggles-join-face ((,class (:background ,green-bg-s :foreground ,green))))
+      `(evil-goggles-nerd-commenter-face ((,class (:background ,aqua-bg :foreground ,aqua))))
+      `(evil-goggles-paste-face ((,class (:background ,green-bg-s :foreground ,green))))
+      `(evil-goggles-record-macro-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-replace-with-register-face ((,class (:background ,yellow-bg :foreground ,yellow))))
+      `(evil-goggles-set-marker-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-shift-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-surround-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-yank-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-undo-redo-add-face ((,class (:background ,green-bg-s :foreground ,green))))
+      `(evil-goggles-undo-redo-change-face ((,class (:background ,blue-bg-s :foreground ,blue))))
+      `(evil-goggles-undo-redo-remove-face ((,class (:background ,red-bg-s :foreground ,red))))
+
 ;;;;; flycheck
      `(flycheck-error
        ((,(append '((supports :underline (:style line))) class)

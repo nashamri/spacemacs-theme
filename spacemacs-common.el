@@ -372,6 +372,8 @@ to 'auto, tags may not be properly aligned. "
      `(ess-numbers-face ((,class (:inherit font-lock-constant-face))))
      `(ess-operator-face ((,class (:foreground ,var))))
      `(ess-paren-face ((,class (:foreground ,blue))))
+     `(ess-r-control-flow-keyword-face ((,class (:foreground ,keyword))))
+     `(ess-r-signal-keyword-face ((,class (:foreground ,war))))
 
 ;;;;; evil
      `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))

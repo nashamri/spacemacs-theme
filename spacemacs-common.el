@@ -284,9 +284,9 @@ to 'auto, tags may not be properly aligned. "
      `(diff-removed           ((,class :background nil :foreground ,red)))
 
 ;;;;; diff-hl
-     `(diff-hl-change ((,class :background ,blue-bg :foreground ,blue)))
-     `(diff-hl-delete ((,class :background ,red-bg :foreground ,red)))
-     `(diff-hl-insert ((,class :background ,green-bg :foreground ,green)))
+     `(diff-hl-change ((,class :background ,blue-bg-s :foreground ,blue)))
+     `(diff-hl-delete ((,class :background ,red-bg-s :foreground ,red)))
+     `(diff-hl-insert ((,class :background ,green-bg-s :foreground ,green)))
 
 ;;;;; dired
      `(dired-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))

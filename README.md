@@ -67,6 +67,10 @@ This toggles italics for keywords.
 
 This toggles the use of varying org agenda heights.
 
+* `spacemacs-theme-org-bold`:
+
+This toggles bold text for org headings.
+
 * `spacemacs-theme-org-height`:
 
 This toggles the use of varying org headings heights.
@@ -74,6 +78,10 @@ This toggles the use of varying org headings heights.
 * `spacemacs-theme-org-highlight`:
 
 This toggles highlighting of org headings.
+
+* `spacemacs-theme-org-priority-bold`:
+
+This toggles bold text for priority items in agenda view.
 
 * `spacemacs-theme-custom-colors`:
 

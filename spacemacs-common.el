@@ -868,6 +868,7 @@ to 'auto, tags may not be properly aligned. "
      `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
      `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
      `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
+     `(web-mode-current-element-highlight-face ((,class (:background ,bg3))))
      `(web-mode-doctype-face ((,class (:inherit ,font-lock-comment-face))))
      `(web-mode-function-name-face ((,class (:inherit ,font-lock-function-name-face))))
      `(web-mode-html-attr-name-face ((,class (:foreground ,func))))

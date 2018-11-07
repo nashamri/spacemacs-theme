@@ -593,7 +593,7 @@ to 'auto, tags may not be properly aligned. "
 ;;;;; linum-mode
      `(linum ((,class (:foreground ,lnum :background ,bg2 :inherit default))))
 
-;;;;; display-line-numbers-mode (Emacs 26+)
+;;;;; line-numbers
      `(line-number ((,class (:foreground ,lnum :background ,bg2 :inherit default))))
      `(line-number-current-line ((,class (:foreground ,base :background ,bg2 :inherit line-number))))
 

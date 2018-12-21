@@ -313,7 +313,7 @@ to 'auto, tags may not be properly aligned. "
      `(ediff-current-diff-A ((,class(:background ,red-bg-s :foreground ,red))))
      `(ediff-current-diff-Ancestor ((,class(:background ,aqua-bg :foreground ,aqua))))
      `(ediff-current-diff-B ((,class(:background ,green-bg-s :foreground ,green))))
-     `(ediff-current-diff-C ((,class(:background ,blue-bg :foreground ,blue))))
+     `(ediff-current-diff-C ((,class(:background ,blue-bg-s :foreground ,blue))))
      `(ediff-even-diff-A ((,class(:background ,bg3))))
      `(ediff-even-diff-Ancestor ((,class(:background ,bg3))))
      `(ediff-even-diff-B ((,class(:background ,bg3))))

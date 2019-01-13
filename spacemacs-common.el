@@ -282,14 +282,14 @@ to 'auto, tags may not be properly aligned. "
 
 ;;;;; diff
      `(diff-added             ((,class :background nil :foreground ,green)))
-     `(diff-changed           ((,class :background nil :foreground ,keyword)))
+     `(diff-changed           ((,class :background nil :foreground ,blue)))
      `(diff-header            ((,class :background ,cblk-ln-bg :foreground ,func)))
      `(diff-file-header       ((,class :background ,cblk-ln-bg :foreground ,cblk)))
      `(diff-indicator-added   ((,class :background nil :foreground ,green)))
-     `(diff-indicator-changed ((,class :background nil :foreground ,keyword)))
+     `(diff-indicator-changed ((,class :background nil :foreground ,blue)))
      `(diff-indicator-removed ((,class :background nil :foreground ,red)))
      `(diff-refine-added      ((,class :background ,green :foreground ,bg4)))
-     `(diff-refine-changed    ((,class :background ,keyword :foreground ,bg4)))
+     `(diff-refine-changed    ((,class :background ,blue :foreground ,bg4)))
      `(diff-refine-removed    ((,class :background ,red :foreground ,bg4)))
      `(diff-removed           ((,class :background nil :foreground ,red)))
 

@@ -851,6 +851,7 @@ to 'auto, tags may not be properly aligned. "
      `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,func :weight bold))))
      `(tabbar-separator ((,class (:inherit tabbar-default))))
      `(tabbar-unselected ((,class (:inherit tabbar-default :background ,bg1 :slant italic :weight light))))
+     `(tabbar-unselected-modified ((,class (:inherit tabbar-unselected :background ,bg1 :foreground ,red))))
 
 ;;;;; term
      `(term ((,class (:foreground ,base :background ,bg1))))

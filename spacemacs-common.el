@@ -849,6 +849,7 @@ to 'auto, tags may not be properly aligned. "
      `(tabbar-default ((,class (:background ,bg1 :foreground ,head1 :height 0.9))))
      `(tabbar-highlight ((,class (:underline t))))
      `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,func :weight bold))))
+     `(tabbar-selected-modified ((,class (:inherit tabbar-default :foreground ,red :weight bold))))
      `(tabbar-separator ((,class (:inherit tabbar-default))))
      `(tabbar-unselected ((,class (:inherit tabbar-default :background ,bg1 :slant italic :weight light))))
      `(tabbar-unselected-modified ((,class (:inherit tabbar-unselected :background ,bg1 :foreground ,red))))

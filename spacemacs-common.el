@@ -34,9 +34,6 @@
 
 ;;; Code:
 
-(defmacro dyn-let (varlist fn setfaces setvars)
-  (list 'let (append varlist (funcall fn)) setfaces setvars))
-
 (defgroup spacemacs-theme nil
   "Spacemacs-theme options."
   :group 'faces)
@@ -100,12 +97,8 @@ to 'auto, tags may not be properly aligned. "
    (display-graphic-p)
    (= (tty-display-color-cells) 16777216)))
 
-(defun custom-colors-override ()
-  (mapcar (lambda (x) (list (car x) (cdr x)))
-          spacemacs-theme-custom-colors))
-
 (defun create-spacemacs-theme (variant theme-name)
-  (dyn-let ((class '((class color) (min-colors 89))) ;;              ~~ Dark ~~                              ~~ Light ~~
+  (let ((class '((class color) (min-colors 89))) ;;              ~~ Dark ~~                              ~~ Light ~~
         ;;                                                          GUI       TER                           GUI       TER
         ;; generic
         (act1          (if (eq variant 'dark) (if (true-color-p) "#222226" "#121212") (if (true-color-p) "#e7e5eb" "#d7dfff")))
@@ -167,10 +160,10 @@ to 'auto, tags may not be properly aligned. "
         (blue-bg-s     (if (eq variant 'dark) (if (true-color-p) "#2d4252" "#262626") (if (true-color-p) "#d1dcdf" "#d7d7ff")))
         (magenta       (if (eq variant 'dark) (if (true-color-p) "#a31db1" "#af00df") (if (true-color-p) "#a31db1" "#800080")))
         (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
-        (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff")))
-        )
+        (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff"))))
 
-        custom-colors-override
+    (cl-loop for (var . val) in spacemacs-theme-custom-colors
+             do (set var val))
 
     (custom-theme-set-faces
      theme-name

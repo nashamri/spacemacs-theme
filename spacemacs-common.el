@@ -403,6 +403,12 @@ to 'auto, tags may not be properly aligned. "
       `(evil-goggles-undo-redo-change-face ((,class (:background ,blue-bg-s :foreground ,blue))))
       `(evil-goggles-undo-redo-remove-face ((,class (:background ,red-bg-s :foreground ,red))))
 
+;;;;; evil-mc
+      `(evil-mc-cursor-bar-face ((,class (:foreground ,mat))))
+      `(evil-mc-cursor-default-face ((,class (:background ,mat :foreground ,bg4))))
+      `(evil-mc-cursor-hbar-face ((,class (:foreground ,mat))))
+      `(evil-mc-region-face ((,class (:inherit highlight))))
+
 ;;;;; flycheck
      `(flycheck-error
        ((,(append '((supports :underline (:style line))) class)

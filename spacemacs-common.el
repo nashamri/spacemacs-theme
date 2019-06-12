@@ -404,9 +404,9 @@ to 'auto, tags may not be properly aligned. "
       `(evil-goggles-undo-redo-remove-face ((,class (:background ,red-bg-s :foreground ,red))))
 
 ;;;;; evil-mc
-      `(evil-mc-cursor-bar-face ((,class (:foreground ,mat))))
-      `(evil-mc-cursor-default-face ((,class (:background ,mat :foreground ,bg4))))
-      `(evil-mc-cursor-hbar-face ((,class (:foreground ,mat))))
+      `(evil-mc-cursor-bar-face ((,class (:foreground ,aqua))))
+      `(evil-mc-cursor-default-face ((,class (:background ,aqua :foreground ,bg4))))
+      `(evil-mc-cursor-hbar-face ((,class (:foreground ,aqua))))
       `(evil-mc-region-face ((,class (:inherit highlight))))
 
 ;;;;; flycheck

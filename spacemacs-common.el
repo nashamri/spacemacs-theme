@@ -190,7 +190,7 @@ to 'auto, tags may not be properly aligned. "
      `(font-lock-variable-name-face ((,class (:foreground ,var))))
      `(font-lock-warning-face ((,class (:foreground ,war :background ,bg1))))
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
-     `(header-line ((,class :background ,bg4)))
+     `(header-line ((,class :background ,bg2)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,bg2))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
@@ -247,6 +247,18 @@ to 'auto, tags may not be properly aligned. "
      `(cfw:face-toolbar-button-off  ((,class (:foreground ,base :weight bold))))
      `(cfw:face-toolbar-button-on   ((,class (:foreground ,base :weight bold))))
 
+;;;;; centaur-tabs
+     `(centaur-tabs-default ((,class (:background ,bg1 :foreground ,bg1))))
+     `(centaur-tabs-selected ((,class (:background ,bg1 :foreground ,base :weight bold))))
+     `(centaur-tabs-unselected ((,class (:background ,bg2 :foreground ,base-dim :weight light))))
+     `(centaur-tabs-selected-modified ((,class (:background ,bg1
+							    :foreground ,blue :weight bold))))
+     `(centaur-tabs-unselected-modified ((,class (:background ,bg2 :weight light
+							      :foreground ,blue))))
+     `(centaur-tabs-active-bar-face ((,class (:background ,keyword))))
+     `(centaur-tabs-modified-marker-selected ((,class (:inherit 'centaur-tabs-selected :foreground,keyword))))
+     `(centaur-tabs-modified-marker-unselected ((,class (:inherit 'centaur-tabs-unselected :foreground,keyword))))
+
 ;;;;; cider
      `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
      `(cider-enlightened-local ((,class (:foreground ,yellow))))
@@ -301,6 +313,9 @@ to 'auto, tags may not be properly aligned. "
      `(dired-perm-write ((,class (:foreground ,base :underline t))))
      `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :inherit bold))))
      `(dired-warning ((,class (:foreground ,war))))
+
+;;;;; doom-modeline
+     `(doom-modeline-bar ((,class (:background ,keyword))))
 
 ;;;;; ediff
      `(ediff-current-diff-A ((,class(:background ,red-bg :foreground ,red))))

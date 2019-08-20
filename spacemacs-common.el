@@ -162,8 +162,8 @@ to 'auto, tags may not be properly aligned. "
         (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
         (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff"))))
 
-    (cl-loop for (var . val) in spacemacs-theme-custom-colors
-             do (set var val))
+    (cl-loop for (cvar . val) in spacemacs-theme-custom-colors
+             do (set cvar val))
 
     (custom-theme-set-faces
      theme-name

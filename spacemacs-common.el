@@ -877,14 +877,14 @@ to 'auto, tags may not be properly aligned. "
 
 ;;;;; term
      `(term ((,class (:foreground ,base :background ,bg1))))
-     `(term-color-black ((,class (:foreground ,bg4))))
-     `(term-color-blue ((,class (:foreground ,keyword))))
-     `(term-color-cyan ((,class (:foreground ,cyan))))
-     `(term-color-green ((,class (:foreground ,green))))
-     `(term-color-magenta ((,class (:foreground ,magenta))))
-     `(term-color-red ((,class (:foreground ,red))))
-     `(term-color-white ((,class (:foreground ,base))))
-     `(term-color-yellow ((,class (:foreground ,yellow))))
+     `(term-color-black ((,class (:foreground ,bg4 :background ,bg4))))
+     `(term-color-blue ((,class (:foreground ,keyword :background ,keyword))))
+     `(term-color-cyan ((,class (:foreground ,cyan :background ,cyan))))
+     `(term-color-green ((,class (:foreground ,green :background ,green))))
+     `(term-color-magenta ((,class (:foreground ,magenta :background ,magenta))))
+     `(term-color-red ((,class (:foreground ,red :background ,red))))
+     `(term-color-white ((,class (:foreground ,base :background ,base))))
+     `(term-color-yellow ((,class (:foreground ,yellow :background ,yellow))))
 
 ;;;;; tide
      `(tide-hl-identifier-face ((,class (:foreground ,yellow :background ,yellow-bg))))

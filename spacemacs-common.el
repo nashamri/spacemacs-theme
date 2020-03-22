@@ -280,7 +280,7 @@ to 'auto, tags may not be properly aligned. "
      `(company-tooltip ((,class (:background ,ttip-bg :foreground ,ttip))))
      `(company-tooltip-annotation ((,class (:foreground ,type))))
      `(company-tooltip-common ((,class (:background ,ttip-bg :foreground ,keyword))))
-     `(company-tooltip-common-selection ((,class (:foreground ,base))))
+     `(company-tooltip-common-selection ((,class (:foreground ,keyword))))
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,ttip-sl :foreground ,base))))

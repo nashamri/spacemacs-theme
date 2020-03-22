@@ -207,6 +207,7 @@ to 'auto, tags may not be properly aligned. "
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,border))))
      `(warning ((,class (:foreground ,war))))
+     `(widget-button-pressed ((,class (:foreground ,green))))
 
 ;;;;; ace-window
      `(aw-leading-char-face ((,class (:foreground ,func :weight bold :height 2.0 :box (:line-width 1 :color ,keyword :style released-button)))))

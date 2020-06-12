@@ -109,6 +109,7 @@ to 'auto, tags may not be properly aligned. "
         (bg2           (if (eq variant 'dark) (if (true-color-p) "#212026" "#1c1c1c") (if (true-color-p) "#efeae9" "#e4e4e4")))
         (bg3           (if (eq variant 'dark) (if (true-color-p) "#100a14" "#121212") (if (true-color-p) "#e3dedd" "#d0d0d0")))
         (bg4           (if (eq variant 'dark) (if (true-color-p) "#0a0814" "#080808") (if (true-color-p) "#d2ceda" "#bcbcbc")))
+        (bg-alt        (if (eq variant 'dark) (if (true-color-p) "#42444a" "#353535") (if (true-color-p) "#efeae9" "#e4e4e4")))
         (border        (if (eq variant 'dark) (if (true-color-p) "#5d4d7a" "#111111") (if (true-color-p) "#b3b9be" "#b3b9be")))
         (cblk          (if (eq variant 'dark) (if (true-color-p) "#cbc1d5" "#b2b2b2") (if (true-color-p) "#655370" "#5f5f87")))
         (cblk-bg       (if (eq variant 'dark) (if (true-color-p) "#2f2b33" "#262626") (if (true-color-p) "#e8e3f0" "#ffffff")))
@@ -253,9 +254,9 @@ to 'auto, tags may not be properly aligned. "
      `(centaur-tabs-selected ((,class (:background ,bg1 :foreground ,base :weight bold))))
      `(centaur-tabs-unselected ((,class (:background ,bg2 :foreground ,base-dim :weight light))))
      `(centaur-tabs-selected-modified ((,class (:background ,bg1
-							    :foreground ,blue :weight bold))))
+                  :foreground ,blue :weight bold))))
      `(centaur-tabs-unselected-modified ((,class (:background ,bg2 :weight light
-							      :foreground ,blue))))
+                    :foreground ,blue))))
      `(centaur-tabs-active-bar-face ((,class (:background ,keyword))))
      `(centaur-tabs-modified-marker-selected ((,class (:inherit 'centaur-tabs-selected :foreground,keyword))))
      `(centaur-tabs-modified-marker-unselected ((,class (:inherit 'centaur-tabs-unselected :foreground,keyword))))
@@ -554,7 +555,10 @@ to 'auto, tags may not be properly aligned. "
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
 
 ;;;;; highlight-symbol
-     `(highlight-symbol-face ((,class (:background ,bg2))))
+     `(highlight-symbol-face ((,class (:background ,bg-alt))))
+
+;;;;; highlight-thing
+     `(highlight-thing       ((,class (:background ,bg-alt))))
 
 ;;;;; hydra
      `(hydra-face-blue ((,class (:foreground ,blue))))
@@ -585,7 +589,7 @@ to 'auto, tags may not be properly aligned. "
      `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :underline t))))
      `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :underline t))))
      `(ivy-remote ((,class (:foreground ,cyan))))
-     
+
 ;;;;; ivy-posframe
      `(ivy-posframe ((,class (:background ,bg3))))
 

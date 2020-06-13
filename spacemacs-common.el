@@ -301,9 +301,9 @@ to 'auto, tags may not be properly aligned. "
      `(diff-removed           ((,class :background nil :foreground ,red :extend t)))
 
 ;;;;; diff-hl
-     `(diff-hl-change ((,class :background ,blue-bg-s :foreground ,blue)))
-     `(diff-hl-delete ((,class :background ,red-bg-s :foreground ,red)))
-     `(diff-hl-insert ((,class :background ,green-bg-s :foreground ,green)))
+     `(diff-hl-insert ((,class :background ,green :foreground ,green)))
+     `(diff-hl-delete ((,class :background ,red :foreground ,red)))
+     `(diff-hl-change ((,class :background ,blue :foreground ,blue)))
 
 ;;;;; dired
      `(dired-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
@@ -483,8 +483,8 @@ to 'auto, tags may not be properly aligned. "
 
 ;;;;; git-gutter-fr
      `(git-gutter-fr:added ((,class (:foreground ,green :inherit bold))))
-     `(git-gutter-fr:deleted ((,class (:foreground ,war :inherit bold))))
-     `(git-gutter-fr:modified ((,class (:foreground ,keyword :inherit bold))))
+     `(git-gutter-fr:deleted ((,class (:foreground ,red :inherit bold))))
+     `(git-gutter-fr:modified ((,class (:foreground ,blue :inherit bold))))
 
 ;;;;; git-timemachine
      `(git-timemachine-minibuffer-detail-face ((,class (:foreground ,blue :inherit bold :background ,blue-bg))))

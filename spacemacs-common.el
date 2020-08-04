@@ -789,6 +789,12 @@ to 'auto, tags may not be properly aligned. "
      `(outline-7 ((,class (:inherit org-level-7))))
      `(outline-8 ((,class (:inherit org-level-8))))
 
+;;;;; parinfer
+     `(parinfer-pretty-parens:dim-paren-face ((,class (:foreground ,base-dim))))
+
+;;;;; parinfer-rust-mode
+     `(parinfer-rust-dim-parens ((,class (:foreground ,base-dim))))
+
 ;;;;; perspective
      `(persp-selected-face ((,class (:inherit bold :foreground ,func))))
 

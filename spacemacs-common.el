@@ -624,6 +624,9 @@ to 'auto, tags may not be properly aligned. "
      `(linum-relative-current-face ((,class (:foreground ,comp))))
 
 ;;;;; lsp
+     `(lsp-ui-doc-background ((,class (:background ,bg2))))
+     `(lsp-ui-doc-header ((,class (:foreground ,head1 :background ,head1-bg))))
+
      `(lsp-ui-sideline-code-action ((,class (:foreground ,comp))))
 
 ;;;;; magit

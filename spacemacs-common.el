@@ -930,6 +930,12 @@ to 'auto, tags may not be properly aligned. "
      `(treemacs-git-modified-face ((,class (:foreground ,blue :background ,blue-bg))))
      `(treemacs-git-untracked-face ((,class (:foreground ,aqua :background ,aqua-bg))))
 
+;;;;; tab-bar-mode
+     `(tab-bar ((,class (:foreground ,base :background ,bg1))))
+     `(tab-bar-tab ((,class (:foreground ,base :background ,bg1 :weight bold))))
+     `(tab-line ((,class (:foreground ,base :background ,bg1))))
+     `(tab-bar-tab-inactive ((,class (:foreground ,base-dim :background ,bg2 :weight light))))
+
 ;;;;; web-mode
      `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
      `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))

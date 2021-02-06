@@ -840,6 +840,10 @@ to 'auto, tags may not be properly aligned. "
      `(rcirc-track-keyword ((,class (:background ,green :foreground ,bg1))))
      `(rcirc-url ((,class (:inherit link))))
 
+;;;;; sh-mode
+     `(sh-heredoc ((,class :foreground ,str)))
+     `(sh-quoted-exec ((,class :foreground ,func)))
+
 ;;;;; shm
      `(shm-current-face ((,class (:background ,green-bg-s))))
      `(shm-quarantine-face ((,class (:background ,red-bg-s))))

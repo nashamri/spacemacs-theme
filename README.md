@@ -1,5 +1,6 @@
 # Spacemacs-theme
 
+[![NonGNU ELPA](https://elpa.nongnu.org/nongnu/spacemacs-theme.svg)](https://elpa.nongnu.org/nongnu/spacemacs-theme.html)
 [![MELPA](http://melpa.org/packages/spacemacs-theme-badge.svg)](http://melpa.org/#/spacemacs-theme) ![Made with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nashamri/spacemacs-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -21,7 +22,7 @@ The theme has good support for org mode.
 
 ## Installation
 
-You can install it from MELPA by:
+You can install it from NonGNU ELPA or MELPA by:
 
 ```
 M-x package-install RET spacemacs-theme

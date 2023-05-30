@@ -513,6 +513,11 @@ to 'auto, tags may not be properly aligned. "
      `(gnus-header-subject ((,class (:foreground ,func :inherit bold))))
      `(gnus-summary-cancelled ((,class (:background ,war :foreground ,bg1))))
 
+;;;;; goggles
+     `(goggles-added ((,class (:background ,green-bg-s))))
+     `(goggles-changed ((,class (:background ,blue-bg-s))))
+     `(goggles-removed ((,class (:background ,red-bg-s))))
+
 ;;;;; guide-key
      `(guide-key/highlight-command-face ((,class (:foreground ,base))))
      `(guide-key/key-face ((,class (:foreground ,keyword))))

@@ -171,6 +171,7 @@ to 'auto, tags may not be properly aligned. "
 
 ;;;;; basics
      `(completions-common-part ((,class (:foreground ,keyword :weight bold))))
+     `(completions-annotations ((,class (:foreground ,base-dim :italic nil))))
      `(cursor ((,class (:background ,cursor))))
      `(custom-button ((,class :background ,bg2 :foreground ,base :box (:line-width 2 :style released-button))))
      `(default ((,class (:background ,bg1 :foreground ,base))))
@@ -304,6 +305,11 @@ to 'auto, tags may not be properly aligned. "
      `(company-tooltip-mouse ((,class (:inherit highlight))))
      `(company-tooltip-search ((,class (:inherit match))))
      `(company-tooltip-selection ((,class (:background ,ttip-sl :foreground ,base))))
+
+;;;;; corfu
+     `(corfu-annotations ((,class (:foreground ,var :italic nil))))
+     `(corfu-default ((,class (:background ,ttip-bg :foreground ,ttip))))
+     `(corfu-current ((,class (:background ,ttip-sl :foreground ,base))))
 
 ;;;;; diff
      `(diff-added             ((,class :background unspecified :foreground ,green :extend t)))

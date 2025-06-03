@@ -58,7 +58,7 @@
 
 Note that if you change this to a non-nil value, you may want to
 also adjust the value of `org-agenda-tags-column'. If that is set
-to 'auto, tags may not be properly aligned. "
+to `auto', tags may not be properly aligned. "
   :type 'boolean
   :group 'spacemacs-theme)
 
@@ -163,8 +163,8 @@ to 'auto, tags may not be properly aligned. "
         (yellow        (if (eq variant 'dark) (if (true-color-p) "#b1951d" "#875f00") (if (true-color-p) "#b1951d" "#875f00")))
         (yellow-bg     (if (eq variant 'dark) (if (true-color-p) "#32322c" "#262626") (if (true-color-p) "#f6f1e1" "#ffffff"))))
 
-    (cl-loop for (cvar . val) in spacemacs-theme-custom-colors
-             do (set cvar val))
+    (dolist (pair spacemacs-theme-custom-colors)
+      (set (car pair) (cdr pair)))
 
     (custom-theme-set-faces
      theme-name

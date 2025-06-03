@@ -977,6 +977,15 @@ to `auto', tags may not be properly aligned. "
 ;;;;; tide
      `(tide-hl-identifier-face ((,class (:foreground ,yellow :background ,yellow-bg))))
 
+;;;;; transient
+     `(transient-key ((,class (:foreground ,keyword))))
+     `(transient-key-exit ((,class (:foreground ,type))))
+     `(transient-key-noop ((,class (:foreground ,base-dim))))
+     `(transient-key-recurse ((,class (:foreground ,blue))))
+     `(transient-key-return ((,class (:foreground ,mat))))
+     `(transient-key-stack ((,class (:foreground ,func))))
+     `(transient-key-stay ((,class (:foreground ,green))))
+
 ;;;;; treemacs
      `(treemacs-git-added-face ((,class (:foreground ,green :background ,green-bg))))
      `(treemacs-git-conflict-face ((,class (:foreground ,red :background ,red-bg))))

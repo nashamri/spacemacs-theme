@@ -581,6 +581,20 @@ to `auto', tags may not be properly aligned. "
      `(helm-time-zone-home ((,class (:foreground ,comp :background ,bg1))))
      `(helm-visible-mark ((,class (:foreground ,keyword :background ,bg3))))
 
+;;;;; helm-ls-git
+     `(helm-ls-git-added-copied-face ((,class (:foreground ,green))))
+     `(helm-ls-git-added-modified-face ((,class (:foreground ,cyan))))
+     `(helm-ls-git-branches-current ((,class (:foreground ,yellow))))
+     `(helm-ls-git-branches-name ((,class (:foreground ,red))))
+     `(helm-ls-git-branches-name-current ((,class (:foreground ,green))))
+     `(helm-ls-git-conflict-face ((,class (:foreground ,magenta))))
+     `(helm-ls-git-deleted-and-staged-face ((,class (:foreground ,comment))))
+     `(helm-ls-git-deleted-not-staged-face ((,class (:foreground ,war))))
+     `(helm-ls-git-modified-and-staged-face ((,class (:foreground ,war))))
+     `(helm-ls-git-modified-not-staged-face ((,class (:foreground ,yellow))))
+     `(helm-ls-git-renamed-modified-face ((,class (:foreground ,war))))
+     `(helm-ls-git-untracked-face ((,class (:foreground ,red))))
+
 ;;;;; helm-swoop
      `(helm-swoop-target-line-block-face ((,class (:foreground ,base :background ,highlight))))
      `(helm-swoop-target-line-face ((,class (:background ,highlight))))

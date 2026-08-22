@@ -31,7 +31,11 @@ M-x package-install RET spacemacs-theme
 To load the dark theme, for example, add the following to your Emacs init file:
 
 ```
-(use-package spacemacs-theme :ensure t) (load-theme 'spacemacs-dark t)
+(use-package spacemacs-theme
+  :ensure t
+  :defer t)
+
+(load-theme 'spacemacs-dark t)
 ```
 
 ## Supported modes

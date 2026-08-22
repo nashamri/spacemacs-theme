@@ -28,6 +28,12 @@ You can install it from NonGNU ELPA or MELPA by:
 M-x package-install RET spacemacs-theme
 ```
 
+To load the dark theme, for example, add the following to your Emacs init file:
+
+```
+(use-package spacemacs-theme :ensure t) (load-theme 'spacemacs-dark t)
+```
+
 ## Supported modes
 
 Some of the supported modes are:

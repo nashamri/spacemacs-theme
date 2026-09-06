@@ -102,6 +102,10 @@ This allows for specifying a list of custom colors to override spacemacs theme c
 
 This toggles the underline of matching parens when using `show-paren-mode` or similar.
 
+* `spacemacs-theme-force-gui-colors` and `spacemacs-theme-force-terminal-colors`:
+
+These force spacemacs theme to use GUI or terminal colors, ignoring the value of `display-graphic-p`. If both are toggled on, `spacemacs-theme-force-terminal-colors` takes precedence.
+
 ### Override theme's colors
 
 The theme can be customized by overriding one of the theme local variables by setting a list in the `spacemacs-theme-custom-colors` variable.
